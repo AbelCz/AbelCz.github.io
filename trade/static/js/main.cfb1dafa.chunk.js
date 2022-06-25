@@ -20658,7 +20658,7 @@
 			}
 			`;case h:return u.b`
 			$ {
-				r && u.b`
+				r && u.b
             color: var(--color-red);
 
             svg path {
