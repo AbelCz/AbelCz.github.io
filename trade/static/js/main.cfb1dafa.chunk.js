@@ -7258,38 +7258,7 @@
 				sr = "_3Jw-YBFSaAV6BvuZoFJduW",
 				cr = "_1YdoHtsa6p6Tw_29N0MREW";
 
-			function OutOfDateModal_slicedToArray(t, r) {
-				return function OutOfDateModal_arrayWithHoles(t) {
-					if (Array.isArray(t)) return t
-				}(t) || function OutOfDateModal_iterableToArrayLimit(t, r) {
-					var a = null == t ? null : "undefined" !== typeof Symbol && t[Symbol.iterator] || t["@@iterator"];
-					if (null == a) return;
-					var o, i, c = [],
-						l = !0,
-						E = !1;
-					try {
-						for (a = a.call(t); !(l = (o = a.next()).done) && (c.push(o.value), !r || c.length !== r); l = !0);
-					} catch (u) {
-						E = !0, i = u
-					} finally {
-						try {
-							l || null == a.return || a.return()
-						} finally {
-							if (E) throw i
-						}
-					}
-					return c
-				}(t, r) || function OutOfDateModal_unsupportedIterableToArray(t, r) {
-					if (!t) return;
-					if ("string" === typeof t) return OutOfDateModal_arrayLikeToArray(t, r);
-					var a = Object.prototype.toString.call(t).slice(8, -1);
-					"Object" === a && t.constructor && (a = t.constructor.name);
-					if ("Map" === a || "Set" === a) return Array.from(t);
-					if ("Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a)) return OutOfDateModal_arrayLikeToArray(t, r)
-				}(t, r) || function OutOfDateModal_nonIterableRest() {
-					throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
-				}()
-			}
+
 			dr.propTypes = {
 				children: D.a.oneOfType([D.a.arrayOf(D.a.node), D.a.node]).isRequired
 			};
