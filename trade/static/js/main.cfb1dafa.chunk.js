@@ -20655,14 +20655,7 @@
 					}
 				}
 			}
-			`;case h:return u.b`
-			$ {
-				r && u.b`
-            color: var(--color-red);
-
-            svg path {
-              stroke: var(--color-red);
-            }
+			`
           `
 			}
 
@@ -20676,12 +20669,7 @@
 					}
 				}
 			}
-			`;case L:return u.b`
-			$ {
-				r && u.b`
-            svg path {
-              stroke: var(--color-text-base);
-            }
+			`
           `
 			}
 
