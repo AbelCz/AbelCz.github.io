@@ -9054,38 +9054,6 @@
 			});
 			r.a = i
 		},
-		234: function(t, r, a) {
-			"use strict";
-			a.d(r, "a", (function() {
-				return getIsOutOfDateError
-			})), a.d(r, "b", (function() {
-				return getWalletConnectionError
-			}));
-			var o = a(48),
-				i = a.n(o),
-				c = a(2);
-			const l = "ChunkLoadError",
-				getIsOutOfDateError = ({
-					error: t
-				}) => {
-					const r = null === t || void 0 === t ? void 0 : t.name,
-						a = null === t || void 0 === t ? void 0 : t.message;
-					return r === l || i()(a, "Loading CSS chunk") || i()(a, "Unexpected token '<'") || i()(a, "expected expression, got '<'")
-				},
-				getWalletConnectionError = ({
-					error: t
-				}) => {
-					const r = null === t || void 0 === t ? void 0 : t.message;
-					return r.includes("API key not found") ? {
-						key: c.a.KEY_RECOVERY_FAILED
-					} : {
-						key: c.a.SOMETHING_WENT_WRONG,
-						params: {
-							ERROR_MESSAGE: r
-						}
-					}
-				}
-		},
 		235: function(t, r, a) {
 			"use strict";
 			a.d(r, "a", (function() {
