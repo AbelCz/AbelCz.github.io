@@ -832,3 +832,38 @@ div#tv-price-chart{
     transition: all var(--animation-speed) ease-in-out;
     transform: translateX(0px);
 }
+.cZpxWm .sc-fcmMJX {
+    transition: var(--animation-speed) linear;
+}
+.bRzrLL {
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    background-color: var(--color-layer-lighter);
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 36px;
+    padding: 0px 10px;
+}
+.cZpxWm {
+    --animation-speed: 200ms;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin-left: 6px;
+    flex: 0 1 0%;
+    transition: var(--animation-speed) linear;
+}
+.bFgzLZ {
+    display: flex;
+    flex: 1 1 0%;
+    margin-right: 6px;
+}
+.gQYBcx {
+    display: grid;
+    align-self: center;
+    padding-right: 12px;
+}
+
