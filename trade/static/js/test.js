@@ -25,12 +25,22 @@ function fetchStatus() {
 
 
   function appendDataAsTable(data) {
+    var oldPrice = localStorage.getItem(data.data.symbol+'price');
     tbl = document.getElementById('pricerealtime');
     localStorage.setItem(data.data.symbol+'price', data.data.price);
+    var currentPrice = localStorage.getItem(data.data.symbol+'price');
     asd = data.data.price.substring(0, 7);
     dsa = '$' + asd
     
+
+    if (oldPrice > currentPrice){
+        document.getElementById("pricerealtime").style.color = "red"
+    } else if (oldPrice < currentPrice) {
+        document.getElementById("pricerealtime").style.color = "green"
+    } else {
+        console.log("kek");
+    }
     // Overwrite the existing HTML with new content received.
     tbl.innerHTML = dsa;
-
+    document.getElementById("pricerealtime").style.color = "red"
 }
