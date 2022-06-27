@@ -1,3 +1,6 @@
+window.onload = function() {
+    fetchStatus();
+  };
 function fetchStatus() {
     fetch('https://api137.radioshack.org/api/tokens/0x613a489785C95afEB3b404CC41565cCff107B6E0')
       .then(function (response) {
