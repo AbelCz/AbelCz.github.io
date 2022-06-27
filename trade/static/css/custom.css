@@ -692,3 +692,8 @@ div#tv-price-chart{
     background-color: #2d2d3d;
     border-bottom: solid 1px #2d2d3d;
 }
+.krBuaG {
+    display: flex;
+    flex: 1 1 0%;
+    margin-right: 6px;
+}
