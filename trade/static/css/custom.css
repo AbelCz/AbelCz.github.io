@@ -686,3 +686,7 @@ div#tv-price-chart{
     --button-active-background-color: rgba(63,182,139,0.8);
     --button-text-color: var(--color-text-light);
 }
+.layout__area--top {
+    background-color: #2d2d3d;
+    border-bottom: solid 1px #2d2d3d;
+}
