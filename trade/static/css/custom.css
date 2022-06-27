@@ -866,4 +866,21 @@ div#tv-price-chart{
     align-self: center;
     padding-right: 12px;
 }
+.hsWAsh {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-text-light);
+    margin-bottom: 6px;
+}
+.cHQuCr {
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--color-text-base);
+}
+.iNWOJK {
+    color: var(--color-text-dark);
+}
 
