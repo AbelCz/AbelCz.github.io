@@ -26,6 +26,7 @@ function fetchStatus() {
 
   function appendDataAsTable(data) {
     tbl = document.getElementById('pricerealtime');
+    localStorage.setItem(data.data.symbol+'price', data.data.price);
     asd = data.data.price.substring(0, 7);
     dsa = '$' + asd
     
