@@ -34,13 +34,12 @@ function fetchStatus() {
     
 
     if (oldPrice > currentPrice){
-        document.getElementById("pricerealtime").style.color = "red"
+        document.getElementById("pricerealtime").style.color = "#ff5353"
         console.log("demp")
     } else if (oldPrice < currentPrice) {
-        document.getElementById("pricerealtime").style.color = "green"
+        document.getElementById("pricerealtime").style.color = "#3fb68b"
         console.log("pemp")
     } else {
-        document.getElementById("pricerealtime").style.color = "white"
         console.log("kek")
     }
     // Overwrite the existing HTML with new content received.
