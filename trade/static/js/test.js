@@ -26,7 +26,7 @@ function fetchStatus() {
 
   function appendDataAsTable(data) {
     tbl = document.getElementById('pricerealtime');
-    asd = data.data.price.substring(0, 5);
+    asd = data.data.price.substring(0, 7);
     
     // Overwrite the existing HTML with new content received.
     tbl.innerHTML = asd;
