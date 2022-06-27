@@ -883,4 +883,12 @@ div#tv-price-chart{
 .iNWOJK {
     color: var(--color-text-dark);
 }
-
+.cZpxWm {
+    --animation-speed: 200ms;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin-left: 6px;
+    flex: 0 1 0%;
+    transition: var(--animation-speed) linear;
+}
