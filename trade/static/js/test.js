@@ -27,6 +27,6 @@ function fetchStatus() {
     tbl = document.getElementById('pricerealtime');
     
     // Overwrite the existing HTML with new content received.
-    tbl.innerHTML = "New Heading";
+    tbl.innerHTML = data.price;
 
 }
