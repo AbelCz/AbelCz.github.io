@@ -806,3 +806,29 @@ div#tv-price-chart{
     color: var(--color-purple);
     cursor: pointer;
 }
+.cCnfTA {
+    --animation-speed: 200ms;
+    position: relative;
+    background-color: var(--color-layer-darker);
+    border-radius: 20px;
+    cursor: pointer;
+    appearance: none;
+    transition: all var(--animation-speed) ease-in-out;
+    --toggle-distance: 12px;
+    height: 18px;
+    width: 30px;
+}
+.cCnfTA::after {
+    height: 18px;
+    width: 18px;
+}
+.cCnfTA::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    background-color: var(--color-layer-lightest);
+    border-radius: 50%;
+    transition: all var(--animation-speed) ease-in-out;
+    transform: translateX(0px);
+}
