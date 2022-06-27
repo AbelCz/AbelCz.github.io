@@ -770,3 +770,12 @@ div#tv-price-chart{
     border-radius: 8px;
     padding: 0px 16px;
 }
+.hsWAsh {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-text-light);
+    margin-bottom: 6px;
+}
