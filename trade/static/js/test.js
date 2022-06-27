@@ -18,3 +18,20 @@ function fetchStatus() {
     // Invoke the request every 5 seconds.
     setInterval(fetchStatus, fetchInterval);
   });
+
+
+  function appendDataAsTable(data) {
+    tbl = document.getElementsByClassName('pricerealtime');
+    
+    // Overwrite the existing HTML with new content received.
+    tbl.innerHTML = '';
+
+    addRow(tbl, 'Layer Number', data.currentLayer);
+    addRow(tbl, 'Fan Speed', data.params.fanPercent[0] + '%');
+    addRow(tbl, 'Print Progress', data.fractionPrinted + '%');
+    addRow(tbl, 'Current Speed', data.speeds.top + 'mm/s');
+    addRow(tbl, 'Hotend Temp', data.temps.current[1] + '°C');
+    addRow(tbl, 'Bed Temp', data.temps.current[0] + '°C');
+    addRow(tbl, 'Chamber Temp', data.temps.current[2] + '°C');
+
+}
