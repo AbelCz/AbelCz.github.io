@@ -470,16 +470,6 @@
     color: var(--color-text-dark);
     margin-bottom: 16px;
 }
-.cHQuCr {
-    font-size: 15px;
-    line-height: 20px;
-    color: var(--color-text-dark);
-    flex: 1 1 0%;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    margin-bottom: 4px;
-}
 @media (max-width: 1024px){
 .bRzrLL .sc-jQAxuV:first-child {
     padding-left: 20px;
