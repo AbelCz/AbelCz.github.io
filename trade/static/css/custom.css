@@ -346,6 +346,12 @@
     white-space: nowrap;
     overflow: auto;
 }
+.iNWOJK {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-text-dark);
+    margin-top: 4px;
+}
 .efTTFJ {
     font-family: "Relative Pro";
     font-weight: 500;
@@ -464,6 +470,16 @@
     color: var(--color-text-dark);
     margin-bottom: 16px;
 }
+.cHQuCr {
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-text-dark);
+    flex: 1 1 0%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
 @media (max-width: 1024px){
 .bRzrLL .sc-jQAxuV:first-child {
     padding-left: 20px;
@@ -489,13 +505,14 @@
     flex: 1 1 220px;
 }}
 .hsWAsh {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 28px;
+    line-height: 32px;
     color: var(--color-text-light);
-    margin-bottom: 6px;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    padding: 0px 28px;
+    flex-direction: column;
 }
 .bRzrLL {
     display: flex;
@@ -862,16 +879,4 @@ div#tv-price-chart{
     font-size: 13px;
     line-height: 16px;
     color: var(--color-text-base);
-}
-.iNWOJK {
-    color: var(--color-text-dark);
-}
-.cZpxWm {
-    --animation-speed: 200ms;
-    display: flex;
-    flex-direction: row;
-    height: 40px;
-    margin-left: 6px;
-    flex: 0 1 0%;
-    transition: var(--animation-speed) linear;
 }
