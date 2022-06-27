@@ -38,9 +38,8 @@ function fetchStatus() {
     } else if (oldPrice < currentPrice) {
         document.getElementById("pricerealtime").style.color = "green"
     } else {
-        console.log("kek");
+        console.log("kek")
     }
     // Overwrite the existing HTML with new content received.
     tbl.innerHTML = dsa;
-    document.getElementById("pricerealtime").style.color = "red"
 }
