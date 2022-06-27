@@ -550,3 +550,13 @@
     padding-left: 24px;
     padding-right: 24px;
 }}
+@media (max-width: 1336px){
+.bLeETg {
+    padding-left: 24px;
+    padding-right: 24px;
+}}
+.dGJRan {
+    grid-area: Main / Main / Main / Main;
+    min-height: 0px;
+    display: flex;
+}
