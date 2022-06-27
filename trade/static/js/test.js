@@ -21,7 +21,7 @@ function fetchStatus() {
 
 
   function appendDataAsTable(data) {
-    tbl = document.getElementsByClassName('pricerealtime');
+    tbl = document.getElementById('pricerealtime');
     
     // Overwrite the existing HTML with new content received.
     tbl.innerHTML = "New Heading";
