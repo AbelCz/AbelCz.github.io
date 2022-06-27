@@ -29,6 +29,6 @@ function fetchStatus() {
     asd = data.data.price.substring(0, 7);
     
     // Overwrite the existing HTML with new content received.
-    tbl.innerHTML = asd;
+    tbl.innerHTML = "$"&asd;
 
 }
