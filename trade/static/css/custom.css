@@ -779,3 +779,30 @@ div#tv-price-chart{
     color: var(--color-text-light);
     margin-bottom: 6px;
 }
+.eSyZIh {
+    background-color: var(--color-layer-dark);
+    border-radius: 4px;
+    padding: 12px;
+    display: grid;
+    margin-bottom: 14px;
+}
+.eQUdeu {
+    height: 14px;
+    width: 14px;
+    margin-right: 6px;
+}
+.zRuTu {
+    margin: -6px -10px -6px auto;
+}
+.cHQuCr {
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--color-text-base);
+}
+.iNWOJK {
+    color: var(--color-text-dark);
+}
+.eXirsP {
+    color: var(--color-purple);
+    cursor: pointer;
+}
