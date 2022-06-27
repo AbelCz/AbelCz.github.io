@@ -607,3 +607,82 @@ div#tv-price-chart{
 .sc-eXuyPJ.kTTKRj{
     height:100%;
 }
+.cwoGFd {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-text-light);
+    margin-bottom: 6px;
+}
+.ckwDLe {
+    background-color: var(--color-layer-dark);
+    border-radius: 4px;
+    padding: 12px;
+    display: grid;
+    margin-bottom: 14px;
+}
+.cwoGFd {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-text-light);
+    margin-bottom: 6px;
+}
+.kTTKRj {
+    height: 14px;
+    width: 14px;
+    margin-right: 6px;
+}
+.fKwyEY {
+    margin: -6px -10px -6px auto;
+}
+.fEDxD {
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--color-text-base);
+}
+.foZpji {
+    color: var(--color-text-dark);
+}
+.enpFfZ {
+    color: var(--color-purple);
+    cursor: pointer;
+}
+.dpItK:disabled {
+    cursor: not-allowed;
+    --button-background-color: var(--color-layer-lighter);
+    --button-active-background-color: var(--color-layer-lighter);
+    --button-text-color: var(--color-text-dark);
+    --button-active-text-color: var(--color-text-dark);
+    --button-hover-filter: none;
+}
+.dpItK {
+    font-family: "Relative Pro";
+    font-weight: 500;
+    font-feature-settings: "zero" 0;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: var(--button-background-color,var(--color-layer-lighter));
+    color: var(--button-text-color,var(--color-text-base));
+    cursor: pointer;
+    border: none;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    height: 40px;
+    min-height: 40px;
+    border-radius: 8px;
+    padding: 0px 16px;
+    --button-background-color: var(--color-green);
+    --button-active-background-color: rgba(63,182,139,0.8);
+    --button-text-color: var(--color-text-light);
+}
