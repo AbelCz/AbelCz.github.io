@@ -40,6 +40,7 @@ function fetchStatus() {
         document.getElementById("pricerealtime").style.color = "green"
         console.log("demp")
     } else {
+        document.getElementById("pricerealtime").style.color = "white"
         console.log("kek")
     }
     // Overwrite the existing HTML with new content received.
