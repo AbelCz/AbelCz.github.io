@@ -3,6 +3,9 @@ function fetchStatus() {
       .then(function (response) {
         return response.json();
       })
+      .then(function (data) {
+        appendDataAsTable(data);
+      })
       .catch(function (err) {
         console.log('error: ' + err);
       });
