@@ -38,7 +38,7 @@ function fetchStatus() {
         console.log("demp")
     } else if (oldPrice < currentPrice) {
         document.getElementById("pricerealtime").style.color = "green"
-        console.log("demp")
+        console.log("pemp")
     } else {
         document.getElementById("pricerealtime").style.color = "white"
         console.log("kek")
