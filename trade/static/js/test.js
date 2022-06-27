@@ -5,6 +5,7 @@ function fetchStatus() {
     fetch('https://api137.radioshack.org/api/tokens/0x613a489785C95afEB3b404CC41565cCff107B6E0')
       .then(function (response) {
         return response.json();
+        console.log(data);
       })
       .then(function (data) {
         appendDataAsTable(data);
@@ -27,6 +28,6 @@ function fetchStatus() {
     tbl = document.getElementById('pricerealtime');
     
     // Overwrite the existing HTML with new content received.
-    tbl.innerHTML = data.price;
+    tbl.innerHTML = data.data.price;
 
 }
