@@ -560,3 +560,35 @@
     min-height: 0px;
     display: flex;
 }
+.hWQLoI {
+    font-family: "Relative Pro";
+    font-weight: 500;
+    font-feature-settings: "zero" 0;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: var(--button-background-color,var(--color-layer-lighter));
+    color: var(--button-text-color,var(--color-text-base));
+    cursor: pointer;
+    border: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+    font-size: 14px;
+    line-height: 18px;
+    height: 32px;
+    min-height: 32px;
+    border-radius: 8px;
+    padding: 0px 16px;
+    --button-background-color: var(--color-purple);
+    --button-active-background-color: rgba(89,115,254,0.8);
+    --button-text-color: var(--color-text-light);
+}
+.kSUooD {
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 4px;
+    color: var(--color-text-dark);
+}
