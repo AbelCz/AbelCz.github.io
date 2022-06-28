@@ -68,7 +68,7 @@ function tokenDetails(data){
 
 function switcher() {
   console.log("Hello world!");
-  fetch('https://api137.radioshack.org/api/pairs')
+  fetch('https://api137.radioshack.org/api/pairs');
   const e = document.createElement('div');
   e.innerHTML = 'JavaScript DOM';
   document.body.appendChild(e);
