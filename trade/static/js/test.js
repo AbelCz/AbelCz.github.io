@@ -194,6 +194,7 @@ function fetchTokenlist(){
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
     m.setAttribute("role","button")
     m.setAttribute("href",href_for_tokens)
+    m.setAttribute("id","pairing"+zozo)
     document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[0].appendChild(m)
     
     var n = document.createElement('div')
