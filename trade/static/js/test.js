@@ -173,17 +173,14 @@ function fetchTokenlist(){
 
 
 
-    let keyNames = Object.keys(data2.data);
-      for (var zozo = 0; zozo <= totalpairs; zozo++) {
-      base_symbols = data2.data[keyNames[x]].base_symbol;
-      base_names = data2.data[keyNames[x]].base_name;
-      quote_symbols = data2.data[keyNames[x]].quote_symbol;
-      url_logos = "https://abelcz.github.io/currencies/"+base_symbols+".svg"
-      quote_symbols = data2.data[keyNames[x]].price;
-    }
 
 
     for (var zozo = 0; zozo <= totalpairs; zozo++) {
+      base_symbols = data2.data[keyNames[zozo]].base_symbol;
+      base_names = data2.data[keyNames[zozo]].base_name;
+      quote_symbols = data2.data[keyNames[zozo]].quote_symbol;
+      url_logos = "https://abelcz.github.io/currencies/"+base_symbols+".svg"
+      quote_symbols = data2.data[keyNames[zozo]].price;
       //eth button
     var m = document.createElement('div')
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
