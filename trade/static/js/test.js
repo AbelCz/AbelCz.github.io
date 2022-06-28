@@ -64,3 +64,9 @@ function tokenDetails(data){
   symboloftoken3.innerHTML = symboloftokentext;
   symboloftoken4.innerHTML = symboloftokentext;
 };
+
+document.getElementsByClassName("_30_dV41WvMclCi77kevilg").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert = "YOU CLICKED ME!";
+}
