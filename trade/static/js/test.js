@@ -23,6 +23,17 @@ function fetchStatus() {
     setInterval(fetchStatus, fetchInterval);
   });
 
+  function getTheCurrentLink{
+  var currentUrl = window.location.href;
+  currentUrl.indexOf("?")+1, currentUrl.lastIndexOf(";");
+  }
+
+
+
+
+
+
+
   function appendDataAsTable(data) {
     var oldPrice = localStorage.getItem(data.data.symbol+'price');
     tbl = document.getElementById('pricerealtime');
