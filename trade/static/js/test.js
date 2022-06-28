@@ -189,7 +189,7 @@ function fetchTokenlist(){
     var m = document.createElement('div')
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
     m.setAttribute("role","button")
-    m.href = base_addresses+"_"+quote_addresses
+    m.setAttribute = ("href",base_addresses+"_"+quote_addresses)
     document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[0].appendChild(m)
     
     var n = document.createElement('div')
