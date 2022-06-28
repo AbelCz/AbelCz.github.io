@@ -1,5 +1,12 @@
 window.onload = function() {
     fetchStatus();
+
+
+
+
+
+
+    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG").addEventListener("click", addRedirectForTokens);
   };
 function fetchStatus() {
     fetch('https://api137.radioshack.org/api/tokens/0x613a489785C95afEB3b404CC41565cCff107B6E0')
@@ -23,6 +30,9 @@ function fetchStatus() {
     setInterval(fetchStatus, fetchInterval);
   });
 
+  function addRedirectForTokens(event){
+    location.href = "google.com";
+  }
 
   function appendDataAsTable(data) {
     var oldPrice = localStorage.getItem(data.data.symbol+'price');
