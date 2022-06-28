@@ -99,16 +99,16 @@ function switcher() {
 
   const k = document.createElement('div');
   k.classList.add("_14rwWgDcatef27EFjPdYOM");
-  document.getElementsByClassName("GV27ba5q8OKFWJJOAIZpH-t")[0].appendChild(k);
+  document.getElementsByClassName("GV27ba5q8OKFWJJOAIZpH")[0].appendChild(k);
 
   const l = document.createElement('div');
   l.classList.add("_6_s1igBgOZG_l67nN_HjG");
-  document.getElementsByClassName("_14rwWgDcatef27EFjPdYOM-t")[0].appendChild(l);
+  document.getElementsByClassName("_14rwWgDcatef27EFjPdYOM")[0].appendChild(l);
 //eth button
   const m = document.createElement('div');
   m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo","_1uC2xzVGl7L8alfssRyH8r");
   m.setAttribute("role","button");
-  document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG-t")[0].appendChild(m);
+  document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[0].appendChild(m);
 
   const n = document.createElement('div');
   n.classList.add("_2jve0XRK1SS7xTFWQHU7sV");
