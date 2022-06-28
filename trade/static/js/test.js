@@ -153,5 +153,20 @@ function switcher() {
 
  
   fetch('https://api137.radioshack.org/api/pairs');
-  console.log('data.children.length');
+  fetchTokenlist(data);
 }
+
+
+function fetchTokenlist(){
+  fetch('https://api137.radioshack.org/api/pairs')
+  .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          tokenList(data);
+        })
+  }
+  function tokenList(data){
+    var totalpairs = Object.keys(data.data[i]).length;
+    console.log(totalpairs);
+  }
