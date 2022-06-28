@@ -85,6 +85,7 @@ function tokenDetails(data){
   symboloftoken2 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6 number2');
   symboloftoken3 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6');
   symboloftoken4 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO _1Io-xGeWSmRodp84w_CceQ');
+  tokenlogo = document.getElementById('tokenLogoPage');
   fullnameoftoken.innerHTML = fullnameoftokentext;
   //fullnameoftoken2.innerHTML = fullnameoftokentext;
   fullnameoftoken3.innerHTML = 'Connect your ' + fullnameoftokentext + ' wallet to deposit funds & start trading.';
@@ -92,6 +93,9 @@ function tokenDetails(data){
   symboloftoken2.innerHTML = symboloftokentext;
   symboloftoken3.innerHTML = symboloftokentext;
   symboloftoken4.innerHTML = symboloftokentext;
+  lowercase_symbols2 = symboloftokentext.toLowerCase();
+  url_logos2 = "https://abelcz.github.io/currencies/"+lowercase_symbols2+".svg";
+  tokenlogo.src = url_logos2;
 };
 
 
