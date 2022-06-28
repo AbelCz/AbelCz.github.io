@@ -6,7 +6,7 @@ window.onload = function() {
 
 
 
-    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG").addEventListener("click", addRedirectForTokens);
+    document.getElementById("_6_s1igBgOZG_l67nN_HjG").addEventListener("click", addRedirectForTokens);
   };
 function fetchStatus() {
     fetch('https://api137.radioshack.org/api/tokens/0x613a489785C95afEB3b404CC41565cCff107B6E0')
@@ -115,6 +115,7 @@ function switcher() {
 
     const l = document.createElement('div');
     l.classList.add("_6_s1igBgOZG_l67nN_HjG");
+    l.setAttribute("id","_6_s1igBgOZG_l67nN_HjG");
     document.getElementsByClassName("_14rwWgDcatef27EFjPdYOM")[0].appendChild(l);
     //eth button
     /*const m = document.createElement('div');
