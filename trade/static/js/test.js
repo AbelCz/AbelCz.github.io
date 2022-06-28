@@ -82,7 +82,7 @@ function switcher() {
   document.getElementsByClassName("_3kxlwrAELU8bAzRcWY5C4U")[0].appendChild(f);
 
   const g = document.createElement('span');
-  g.classList.add("AZo34VCmA4oZOJ3Yp3mqn._2JsEUUssaQhHp3oz89-xZs");
+  g.classList.add("AZo34VCmA4oZOJ3Yp3mqn","_2JsEUUssaQhHp3oz89-xZs");
   document.getElementsByClassName("_3kxlwrAELU8bAzRcWY5C4U")[0].appendChild(g);
 
   const h = document.createElement('span');
@@ -106,7 +106,7 @@ function switcher() {
   document.getElementsByClassName("_14rwWgDcatef27EFjPdYOM-t")[0].appendChild(l);
 //eth button
   const m = document.createElement('div');
-  m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo._1uC2xzVGl7L8alfssRyH8r");
+  m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo","_1uC2xzVGl7L8alfssRyH8r");
   m.setAttribute("role","button");
   document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG-t")[0].appendChild(m);
 
@@ -119,7 +119,7 @@ function switcher() {
   document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[0].appendChild(o);
 
   const p = document.createElement('div');
-  p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63._242klziznfQnEkLJuh1ZoS");
+  p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS");
   document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[0].appendChild(p);
 
   const q = document.createElement('img');
@@ -131,7 +131,7 @@ function switcher() {
   document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[0].appendChild(r);
 
   const s = document.createElement('span');
-  s.classList.add("_38idpiULmwLdV8ZLER8eXp.aZJzIkLG4sRsoY7PeO5H6");
+  s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6");
   s.innerHTML = "ETH";
   document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[0].appendChild(s);
 
@@ -144,7 +144,7 @@ function switcher() {
   document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[0].appendChild(u);
 
   const v = document.createElement('div');
-  v.classList.add("_1spo-4DNNHD_uNqIyedTNs _3CAUNSCsacK-I2JgikLL4R");
+  v.classList.add("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R");
   document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[0].appendChild(v);
 
   const w = document.createElement('span');
