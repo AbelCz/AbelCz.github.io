@@ -152,8 +152,8 @@ function switcher() {
   document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[0].appendChild(w);
 
  
-  fetch('https://api137.radioshack.org/api/pairs');
-  fetchTokenlist(data);
+
+  fetchTokenlist();
 }
 
 
