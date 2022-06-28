@@ -105,7 +105,6 @@ function tokenDetails(data){
   fullnameoftoken.innerHTML = fullnameoftokentext;
   //fullnameoftoken2.innerHTML = fullnameoftokentext;
   fullnameoftoken3.innerHTML = 'Connect your ' + fullnameoftokentext + ' wallet to deposit funds & start trading.';
-  symboloftoken.innerHTML = symboloftokentext;
   symboloftoken2.innerHTML = symboloftokentext;
   symboloftoken3.innerHTML = symboloftokentext;
   symboloftoken4.innerHTML = symboloftokentext;
@@ -127,6 +126,7 @@ function tokenDetails(data){
         symbolcolletoral2 = document.getElementById('sc-kTCsyW gxdqsh');
         symbolcolletoral.innerHTML = symbolcolletoraltext;
         symbolcolletoral2.innerHTML = symbolcolletoraltext;
+        symboloftoken.innerHTML = symboloftokentext+" / "+symbolcolletoraltext;
       })
       .catch(function (err) {
         console.log('error: ' + err);
@@ -142,6 +142,8 @@ function tokenDetails(data){
         symbolcolletoral2 = document.getElementById('sc-kTCsyW gxdqsh');
         symbolcolletoral.innerHTML = symbolcolletoraltext;
         symbolcolletoral2.innerHTML = symbolcolletoraltext;
+        symboloftoken.innerHTML = symboloftokentext;
+        symboloftoken.innerHTML = symboloftokentext+" / "+symbolcolletoraltext;
       })
       .catch(function (err) {
         console.log('error: ' + err);
