@@ -31,6 +31,7 @@ function fetchStatus() {
   });
 
   function addRedirectForTokens(event){
+    console.log(event.target.href);
     location.href = "google.com";
   }
 
