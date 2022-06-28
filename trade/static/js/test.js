@@ -3,7 +3,7 @@ window.onload = function() {
   };
 function fetchStatus() {
     var currentUrl = window.location.href;
-    if (currentUrl.includes(",")){
+    if (currentUrl.includes("?")){
       firstToken = currentUrl.indexOf("?")+1, currentUrl.lastIndexOf(";")
       fetch('https://api137.radioshack.org/api/tokens/'+firstToken)
       .then(function (response) {
