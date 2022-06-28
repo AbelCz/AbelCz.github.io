@@ -41,14 +41,17 @@ function fetchStatus() {
     var currentPrice = localStorage.getItem(data.data.symbol+'price');
     asd = data.data.price.substring(0, 7);
     dsa = '$' + asd;
-    
+    var pemp = new Audio('/sounds/nice.m4a');
+    var demp = new Audio('/sounds/bruh.m4a');
 
     if (oldPrice > currentPrice){
         document.getElementById("pricerealtime").style.color = "#ff5353"
         console.log("demp")
+        demp.play();
     } else if (oldPrice < currentPrice) {
         document.getElementById("pricerealtime").style.color = "#3fb68b"
         console.log("pemp")
+        pemp.play();
     } else {
         console.log("kek")
     }
