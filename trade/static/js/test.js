@@ -53,6 +53,12 @@ function fetchStatus() {
     ethereum.request({ method: 'eth_requestAccounts' });
   });
 
+  const ethereumButto2n = document.querySelector('sc-giAqHp.hWQLoI');
+
+  ethereumButton2.addEventListener('click', () => {
+    //Will Start the metamask extension
+    ethereum.request({ method: 'eth_requestAccounts' });
+  });
 
 
   function appendDataAsTable(data) {
