@@ -68,8 +68,8 @@ function tokenDetails(data){
 
 function switcher() {
   console.log("Hello world!");
-  const listbuttonExists = document.getElementsByClassName("closed").length = 0;
-  if (listbuttonExists){
+  const listbuttonExists = document.getElementsByClassName("closed");
+  if (listbuttonExists === null){
     //delete
     document.getElementsByClassName("_30_dV41WvMclCi77kevilg")[0].innerHTML = "";
     //create
