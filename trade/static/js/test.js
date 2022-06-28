@@ -198,47 +198,56 @@ function fetchTokenlist(){
     
     var n = document.createElement('div')
     n.classList.add("_2jve0XRK1SS7xTFWQHU7sV")
+    m.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[zozo].appendChild(n);
 
   
     var o = document.createElement('div')
     o.classList.add("_3703-MxhX16pYBOSod3SpG")
+    m.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[zozo].appendChild(o)
 
     var p = document.createElement('div')
     p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")
+    m.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(p)
   //add image
 
     var q = document.createElement('img')
     q.src = url_logos
+    m.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[zozo].appendChild(q)
   //add name
 
     var r = document.createElement('span')
     r.innerHTML = base_names
+    m.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(r)
   //add ticker
 
     var s = document.createElement('span');
     s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6")
     s.innerHTML =  base_symbols+"/"+quote_symbols
+    m.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(s)
 
  
     var t = document.createElement('div')
     t.classList.add("_2d-dptgdt6bp7FHSPkHbT6")
+    m.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[zozo].appendChild(t)
   // price here
 
     var u = document.createElement('span')
     u.innerHTML = prices
+    m.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[zozo].appendChild(u)
 
 
     var v = document.createElement('div');
     v.classList.add("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")
     document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[zozo].appendChild(v)
+    m.setAttribute("href",href_for_tokens)
   //price change
 
     var w = document.createElement('span')
@@ -246,5 +255,6 @@ function fetchTokenlist(){
     document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[zozo].appendChild(w)
 
     document.getElementsByClassName("_30_dV41WvMclCi77kevilg","open")[0].setAttribute("id","closed");
+    m.setAttribute("href",href_for_tokens)
     }
   }
