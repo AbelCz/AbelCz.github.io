@@ -179,47 +179,47 @@ function fetchTokenlist(){
     const m = document.createElement('div');
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo");
     m.setAttribute("role","button");
-    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[0].appendChild(m);
+    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[i].appendChild(m);
 
     const n = document.createElement('div');
     n.classList.add("_2jve0XRK1SS7xTFWQHU7sV");
-    document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[0].appendChild(n);
+    document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[i].appendChild(n);
 
     const o = document.createElement('div');
     o.classList.add("_3703-MxhX16pYBOSod3SpG");
-    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[0].appendChild(o);
+    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[i].appendChild(o);
 
     const p = document.createElement('div');
     p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS");
-    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[0].appendChild(p);
+    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[i].appendChild(p);
   //add image
     const q = document.createElement('img');
     q.src = "/currencies/eth.svg";
-    document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[0].appendChild(q);
+    document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[i].appendChild(q);
   //add name
     const r = document.createElement('span');
     r.innerHTML = "Ethereum";
-    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[0].appendChild(r);
+    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[i].appendChild(r);
   //add ticker
     const s = document.createElement('span');
     s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6");
     s.innerHTML = "ETH";
-    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[0].appendChild(s);
+    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[i].appendChild(s);
 
     const t = document.createElement('div');
     t.classList.add("_2d-dptgdt6bp7FHSPkHbT6");
-    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[0].appendChild(t);
+    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[i].appendChild(t);
   // price here
     const u = document.createElement('span');
     u.innerHTML = "price here";
-    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[0].appendChild(u);
+    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[i].appendChild(u);
 
     const v = document.createElement('div');
     v.classList.add("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R");
-    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[0].appendChild(v);
+    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[i].appendChild(v);
   //price change
     const w = document.createElement('span');
     w.innerHTML = "percentage";
-    document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[0].appendChild(w);
+    document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[i].appendChild(w);
     }
   }
