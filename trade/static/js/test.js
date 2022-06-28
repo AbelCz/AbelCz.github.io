@@ -46,7 +46,12 @@ function fetchStatus() {
 
 
 
+  const ethereumButton = document.querySelector('sc-giAqHp.hWQLoI');
 
+  ethereumButton.addEventListener('click', () => {
+    //Will Start the metamask extension
+    ethereum.request({ method: 'eth_requestAccounts' });
+  });
 
 
 
@@ -281,3 +286,8 @@ function fetchTokenlist(){
     document.getElementsByClassName("_30_dV41WvMclCi77kevilg","open")[0].setAttribute("id","closed");
     }
   }
+
+ 
+
+
+
