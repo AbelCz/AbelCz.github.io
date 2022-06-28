@@ -177,13 +177,13 @@ function fetchTokenlist(){
     for (let i = 0; i < totalpairs; i++) {
       //eth button
     const m = document.createElement('div');
-    m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo","_1uC2xzVGl7L8alfssRyH8r");
+    m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo");
     m.setAttribute("role","button");
     document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[0].appendChild(m);
 
     const n = document.createElement('div');
     n.classList.add("_2jve0XRK1SS7xTFWQHU7sV");
-    document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo","_1uC2xzVGl7L8alfssRyH8r")[0].appendChild(n);
+    document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[0].appendChild(n);
 
     const o = document.createElement('div');
     o.classList.add("_3703-MxhX16pYBOSod3SpG");
