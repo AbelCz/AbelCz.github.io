@@ -174,7 +174,7 @@ function fetchTokenlist(){
 
 
 
-    for (let i = 0; i < totalpairs.length; i++) {
+    for (let i = 0; i < totalpairs; i++) {
       //eth button
     const m = document.createElement('div');
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo","_1uC2xzVGl7L8alfssRyH8r");
