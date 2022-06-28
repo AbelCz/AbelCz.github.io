@@ -171,7 +171,7 @@ function fetchTokenlist(){
     console.log("total tokens " + totalpairs);
     console.log(data2.data);
 
-    for (var zozo = 1; zozo <= totalpairs; numberzo++) {
+    for (var zozo = 0; zozo <= totalpairs; numberzo++) {
       //eth button
     var m = document.createElement('div')
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
