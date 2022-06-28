@@ -180,7 +180,7 @@ function fetchTokenlist(){
     
     var n = document.createElement('div')
     n.classList.add("_2jve0XRK1SS7xTFWQHU7sV")
-    document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[zozo].appendChild(n)
+    document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[zozo].appendChild(n);
 
   
     var o = document.createElement('div')
