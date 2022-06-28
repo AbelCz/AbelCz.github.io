@@ -67,6 +67,8 @@ function tokenDetails(data){
 
 document.getElementsByClassName("_30_dV41WvMclCi77kevilg").addEventListener("click", myFunction);
 
-function myFunction() {
+function switcher() {
   alert = "YOU CLICKED ME!";
+  fetch('https://api137.radioshack.org/api/pairs')
+  const e = document.createElement('div');
 }
