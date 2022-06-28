@@ -174,13 +174,13 @@ function fetchTokenlist(){
 
 
 
-    for (let i = 0; i < totalpairs; i++) {
+    for (let i = 1; i < totalpairs; i++) {
       //eth button
     var m = "m"+[i];
      m = document.createElement('div');
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo");
     m.setAttribute("role","button");
-    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG").appendChild(m);
+    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[i].appendChild(m);
     
     var n = "n"+[i];
      n = document.createElement('div');
