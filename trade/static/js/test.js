@@ -28,15 +28,15 @@ function fetchStatus() {
     var oldPrice = localStorage.getItem(data.data.symbol+'price');
     tbl = document.getElementById('pricerealtime');
     fullnameoftoken = document.getElementsByClassName('_3TcfXW9zOvs5Y857gZVxgv');
-    fullnameoftoken2 = document.getElementsByClassName('_1WwkcxTzl-09aDCpRhYU1u')
+    fullnameoftoken2 = document.getElementsByClassName('_1WwkcxTzl-09aDCpRhYU1u');
     symboloftoken = document.getElementsByClassName('_3Bx-FZIaBbVKssHb-LYGou');
     symboloftoken2 = document.getElementsByClassName('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6');
     symboloftoken3 = document.getElementsByClassName('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO _1Io-xGeWSmRodp84w_CceQ');
-    symboloftoken4 = document.getElementsByClassName('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6')
+    symboloftoken4 = document.getElementsByClassName('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6');
     localStorage.setItem(data.data.symbol+'price', data.data.price);
     var currentPrice = localStorage.getItem(data.data.symbol+'price');
     asd = data.data.price.substring(0, 7);
-    dsa = '$' + asd
+    dsa = '$' + asd;
     
 
     if (oldPrice > currentPrice){
@@ -50,12 +50,12 @@ function fetchStatus() {
     }
     // Overwrite the existing HTML with new content received.
     tbl.innerHTML = dsa;
-    fullnameoftoken.innerHTML = data.data.fullnameoftoken
-    fullnameoftoken2.innerHTML = "Connect your " + data.data.fullnameoftoken + " wallet to deposit funds & start trading."
-    symboloftoken.innerHTML = data.data.symbol
-    symboloftoken2.innerHTML = data.data.symbol
-    symboloftoken3.innerHTML = data.data.symbol
-    symboloftoken4.innerHTML = data.data.symbol
+    fullnameoftoken.innerHTML = data.data.fullnameoftoken;
+    fullnameoftoken2.innerHTML = "Connect your " + data.data.fullnameoftoken + " wallet to deposit funds & start trading.";
+    symboloftoken.innerHTML = data.data.symbol;
+    symboloftoken2.innerHTML = data.data.symbol;
+    symboloftoken3.innerHTML = data.data.symbol;
+    symboloftoken4.innerHTML = data.data.symbol;
 }
 
 _3TcfXW9zOvs5Y857gZVxgv
