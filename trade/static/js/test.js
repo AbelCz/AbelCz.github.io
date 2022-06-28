@@ -87,7 +87,7 @@ function switcher() {
 
   const h = document.createElement('span');
   h.innerHTML = "Tap to close";
-  document.getElementsByClassName("AZo34VCmA4oZOJ3Yp3mqn._2JsEUUssaQhHp3oz89-xZs")[0].appendChild(h);
+  document.getElementsByClassName("AZo34VCmA4oZOJ3Yp3mqn","_2JsEUUssaQhHp3oz89-xZs")[0].appendChild(h);
 
   const i = document.createElement('svg');
   i.innerHTML = '<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.6038 4.48532C2.80395 4.74532 3.19605 4.74532 3.3962 4.48532L5.84441 1.305C6.09751 0.976213 5.86313 0.5 5.44821 0.5H0.551788C0.136868 0.5 -0.0975129 0.976213 0.155586 1.305L2.6038 4.48532Z" fill="#6f6e84"></path></svg>';
@@ -112,7 +112,7 @@ function switcher() {
 
   const n = document.createElement('div');
   n.classList.add("_2jve0XRK1SS7xTFWQHU7sV");
-  document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo._1uC2xzVGl7L8alfssRyH8r")[0].appendChild(n);
+  document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo","_1uC2xzVGl7L8alfssRyH8r")[0].appendChild(n);
 
   const o = document.createElement('div');
   o.classList.add("_3703-MxhX16pYBOSod3SpG");
@@ -124,7 +124,7 @@ function switcher() {
 
   const q = document.createElement('img');
   q.src = "/currencies/eth.svg";
-  document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63._242klziznfQnEkLJuh1ZoS")[0].appendChild(q);
+  document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[0].appendChild(q);
 
   const r = document.createElement('span');
   r.innerHTML = "Ethereum";
@@ -149,7 +149,7 @@ function switcher() {
 
   const w = document.createElement('span');
   w.innerHTML = "percentage"
-  document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs _3CAUNSCsacK-I2JgikLL4R")[0].appendChild(w);
+  document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[0].appendChild(w);
 
 
 
