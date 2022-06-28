@@ -87,7 +87,7 @@ function fetchStatus() {
     tbl.innerHTML = dsa;
 };
 
-function tokenDetails(data, data3){
+function tokenDetails(data){
   var fullnameoftokentext = data.data.name;
   var symboloftokentext = data.data.symbol;
   //var symbolcolletoraltext = data3.data.symbol;
@@ -114,6 +114,39 @@ function tokenDetails(data, data3){
   lowercase_symbols2 = symboloftokentext.toLowerCase();
   url_logos2 = "https://abelcz.github.io/currencies/"+lowercase_symbols2+".svg";
   tokenlogo.src = url_logos2;
+  var currentUrl2 = window.location.href;
+    if (currentUrl2.includes("?")){
+      var secondToken = currentUrl.split('_').pop();
+      fetch('https://api137.radioshack.org/api/tokens/'+secondToken)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data3) {
+        var symbolcolletoraltext = data3.data.symbol;
+        symbolcolletoral = document.getElementById('priceinwhat');
+        symbolcolletoral2 = document.getElementById('sc-kTCsyW gxdqsh');
+        symbolcolletoral.innerHTML = symbolcolletoraltext;
+        symbolcolletoral2.innerHTML = symbolcolletoraltext;
+      })
+      .catch(function (err) {
+        console.log('error: ' + err);
+      });
+    } else {
+    fetch('https://api137.radioshack.org/api/tokens/0x2791bca1f2de4661ed88a30c99a7a9449aa84174')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data3) {
+        var symbolcolletoraltext = data3.data.symbol;
+        symbolcolletoral = document.getElementById('priceinwhat');
+        symbolcolletoral2 = document.getElementById('sc-kTCsyW gxdqsh');
+        symbolcolletoral.innerHTML = symbolcolletoraltext;
+        symbolcolletoral2.innerHTML = symbolcolletoraltext;
+      })
+      .catch(function (err) {
+        console.log('error: ' + err);
+      });
+  }
 };
 
 
