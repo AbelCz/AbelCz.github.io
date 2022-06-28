@@ -171,7 +171,7 @@ function fetchTokenlist(){
     console.log("total tokens " + totalpairs);
     console.log(data2.data);
 
-    for (var numberzo = 1; numberzo <= totalpairs; numberzo++) {
+    for (var zozo = 1; zozo <= totalpairs; numberzo++) {
       //eth button
     var m = document.createElement('div')
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
@@ -180,51 +180,51 @@ function fetchTokenlist(){
     
     var n = document.createElement('div')
     n.classList.add("_2jve0XRK1SS7xTFWQHU7sV")
-    document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[totalpairs].appendChild(n)
+    document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[zozo].appendChild(n)
 
   
     var o = document.createElement('div')
     o.classList.add("_3703-MxhX16pYBOSod3SpG")
-    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[totalpairs].appendChild(o)
+    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[zozo].appendChild(o)
 
     var p = document.createElement('div')
     p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")
-    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(p)
+    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(p)
   //add image
 
     var q = document.createElement('img')
     q.src = "/currencies/eth.svg"
-    document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[totalpairs].appendChild(q)
+    document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[zozo].appendChild(q)
   //add name
 
     var r = document.createElement('span')
     r.innerHTML = "Ethereum"
-    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(r)
+    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(r)
   //add ticker
 
     var s = document.createElement('span');
     s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6")
     s.innerHTML = "ETH"
-    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(s)
+    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(s)
 
  
     var t = document.createElement('div')
     t.classList.add("_2d-dptgdt6bp7FHSPkHbT6")
-    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[totalpairs].appendChild(t)
+    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[zozo].appendChild(t)
   // price here
 
     var u = document.createElement('span')
     u.innerHTML = "price here"
-    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[totalpairs].appendChild(u)
+    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[zozo].appendChild(u)
 
 
     var v = document.createElement('div');
     v.classList.add("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")
-    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[totalpairs].appendChild(v)
+    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[zozo].appendChild(v)
   //price change
 
     var w = document.createElement('span')
     w.innerHTML = "percentage"
-    document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[totalpairs].appendChild(w)
+    document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[zozo].appendChild(w)
     }
   }
