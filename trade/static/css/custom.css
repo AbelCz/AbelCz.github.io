@@ -880,3 +880,6 @@ div#tv-price-chart{
     line-height: 16px;
     color: var(--color-text-base);
 }
+#pricerealtime{
+    color: #c3c2d4;
+}
