@@ -46,17 +46,17 @@ function fetchStatus() {
 
 
 
-  const ethereumButton = document.querySelector('sc-giAqHp.hWQLoI');
+  const ethereumButton = document.getElementsByClassName('hWQLoI');
 
-  ethereumButton.addEventListener('click', () => {
+  ethereumButton[0].addEventListener('click', () => {
     //Will Start the metamask extension
     console.log("deez ballu");
     ethereum.request({ method: 'eth_requestAccounts' });
   });
 
-  const ethereumButton2 = document.querySelector('sc-giAqHp.hWQLoI');
+  const ethereumButton2 = document.getElementsByClassName('jvuCRv');
 
-  ethereumButton2.addEventListener('click', () => {
+  ethereumButton2[0].addEventListener('click', () => {
     //Will Start the metamask extension
     ethereum.request({ method: 'eth_requestAccounts' });
   });
