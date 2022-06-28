@@ -185,7 +185,7 @@ function fetchTokenlist(){
       prices = data2.data[keyNames[zozo]].price;
       base_addresses = data2.data[keyNames[zozo]].base_address;
       quote_addresses = data2.data[keyNames[zozo]].quote_address;
-      href_for_tokens = base_addresses+"_"+quote_addresses
+      href_for_tokens = "/"+base_addresses+"_"+quote_addresses
       //eth button
     var m = document.createElement('div')
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
