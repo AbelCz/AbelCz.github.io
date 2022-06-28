@@ -173,58 +173,58 @@ function fetchTokenlist(){
 
     for (let i = 0; i < totalpairs; i++) {
       //eth button
-    const m = document.createElement('div');
+    var m = document.createElement('div');
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo");
     m.setAttribute("role","button");
     document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG").appendChild(m);
     
-    const n = document.createElement('div');
+    var n = document.createElement('div');
     n.classList.add("_2jve0XRK1SS7xTFWQHU7sV");
     document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[totalpairs].appendChild(n);
 
   
-    const o = document.createElement('div');
+    var o = document.createElement('div');
     o.classList.add("_3703-MxhX16pYBOSod3SpG");
     document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[totalpairs].appendChild(o);
 
 
-    const p = document.createElement('div');
+    var p = document.createElement('div');
     p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS");
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(p);
   //add image
 
-    const q = document.createElement('img');
+    var q = document.createElement('img');
     q.src = "/currencies/eth.svg";
     document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[totalpairs].appendChild(q);
   //add name
 
-    const r = document.createElement('span');
+    var r = document.createElement('span');
     r.innerHTML = "Ethereum";
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(r);
   //add ticker
 
-    const s = document.createElement('span');
+    var s = document.createElement('span');
     s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6");
     s.innerHTML = "ETH";
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(s);
 
  
-    const t = document.createElement('div');
+    var t = document.createElement('div');
     t.classList.add("_2d-dptgdt6bp7FHSPkHbT6");
     document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[totalpairs].appendChild(t);
   // price here
 
-    const u = document.createElement('span');
+    var u = document.createElement('span');
     u.innerHTML = "price here";
     document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[totalpairs].appendChild(u);
 
 
-    const v = document.createElement('div');
+    var v = document.createElement('div');
     v.classList.add("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R");
     document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[totalpairs].appendChild(v);
   //price change
 
-    const w = document.createElement('span');
+    var w = document.createElement('span');
     w.innerHTML = "percentage";
     document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[totalpairs].appendChild(w);
     }
