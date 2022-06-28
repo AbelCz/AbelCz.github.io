@@ -70,6 +70,6 @@ function switcher() {
   console.log("Hello world!");
   fetch('https://api137.radioshack.org/api/pairs');
   const e = document.createElement('div');
-  e.innerHTML = 'JavaScript DOM';
+  e.innerHTML = '<div class="_3kxlwrAELU8bAzRcWY5C4U"><span class="_30CFAEwoCaJLtTWSr1YyU4">Select market</span><span class="AZo34VCmA4oZOJ3Yp3mqn _2JsEUUssaQhHp3oz89-xZs"><span>Tap to close</span><svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.6038 4.48532C2.80395 4.74532 3.19605 4.74532 3.3962 4.48532L5.84441 1.305C6.09751 0.976213 5.86313 0.5 5.44821 0.5H0.551788C0.136868 0.5 -0.0975129 0.976213 0.155586 1.305L2.6038 4.48532Z" fill="#6f6e84"></path></svg></span></div>';
   document.body.appendChild(e);
 }
