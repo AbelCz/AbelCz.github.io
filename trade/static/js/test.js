@@ -194,7 +194,7 @@ function fetchTokenlist(){
 
     var q = document.createElement('img')
 
-    q.src = "/currencies/"+data2.data[zozo].base_symbol+".svg"
+    
     document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[zozo].appendChild(q)
   //add name
 
