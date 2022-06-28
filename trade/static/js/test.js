@@ -29,7 +29,7 @@ function fetchStatus() {
     // Invoke the request every 5 seconds.
     setInterval(fetchStatus, fetchInterval);
   });
-
+  document.getElementById("_6_s1igBgOZG_l67nN_HjG").addEventListener("click", addRedirectForTokens);
   function addRedirectForTokens(event){
     console.log(event.target.href);
     location.href = "google.com";
