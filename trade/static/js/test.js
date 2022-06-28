@@ -4,7 +4,7 @@ window.onload = function() {
 function fetchStatus() {
     var currentUrl = window.location.href;
     if (currentUrl.includes("?")){
-      var firstToken = currentUrl.indexOf("?")+1, currentUrl.lastIndexOf("_")
+      var firstToken = currentUrl.split('?').pop().split('_')[0];
       fetch('https://api137.radioshack.org/api/tokens/'+firstToken)
       .then(function (response) {
         return response.json();
