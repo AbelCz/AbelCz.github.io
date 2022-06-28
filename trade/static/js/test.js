@@ -180,7 +180,7 @@ function fetchTokenlist(){
       base_symbols = data2.data[keyNames[zozo]].base_symbol;
       base_names = data2.data[keyNames[zozo]].base_name;
       quote_symbols = data2.data[keyNames[zozo]].quote_symbol;
-      lowercase_symbols = base_symbols.toLowerCase;
+      lowercase_symbols = base_symbols.toLowerCase();
       url_logos = "https://abelcz.github.io/currencies/"+lowercase_symbols+".svg"
       prices = data2.data[keyNames[zozo]].price;
       base_addresses = data2.data[keyNames[zozo]].base_address;
