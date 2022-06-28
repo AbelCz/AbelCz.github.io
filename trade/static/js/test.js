@@ -182,11 +182,13 @@ function fetchTokenlist(){
       quote_symbols = data2.data[keyNames[zozo]].quote_symbol;
       url_logos = "https://abelcz.github.io/currencies/"+text.toLowerCase(base_symbols)+".svg"
       prices = data2.data[keyNames[zozo]].price;
+      base_addresses = data2.data[keyNames[zozo]].base_address;
+      quote_addresses = data2.data[keyNames[zozo]].quote_address;
       //eth button
     var m = document.createElement('div')
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
     m.setAttribute("role","button")
-    m.href = base_symbol+"_"+quote_symbol
+    m.href = base_address+"_"+quote_address
     document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[0].appendChild(m)
     
     var n = document.createElement('div')
