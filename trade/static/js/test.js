@@ -71,7 +71,7 @@ function switcher() {
   const e = document.createElement('div');
   e.classList.add("_3kxlwrAELU8bAzRcWY5C4U");
   var g = document.getElementsByClassName("_30_dV41WvMclCi77kevilg");
-  document.getElementsByClassName("_30_dV41WvMclCi77kevilg").appendChild(e);
+  document.getElementsByClassName("_30_dV41WvMclCi77kevilg")[0].appendChild(e);
   const f = document.createElement('div');
   fetch('https://api137.radioshack.org/api/pairs');
 }
