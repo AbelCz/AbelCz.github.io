@@ -75,7 +75,7 @@ function switcher() {
 
   const f = document.createElement('span');
   f.classList.add("_30CFAEwoCaJLtTWSr1YyU4");
-  f.innerHTML("Select market");
+  f.innerHTML = "Select market";
   document.getElementsByClassName("_3kxlwrAELU8bAzRcWY5C4U")[0].appendChild(f);
 
   const g = document.createElement('span');
@@ -83,11 +83,11 @@ function switcher() {
   document.getElementsByClassName("_3kxlwrAELU8bAzRcWY5C4U")[0].appendChild(g);
 
   const h = document.createElement('span');
-  h.innerHTML("Tap to close");
+  h.innerHTML = "Tap to close";
   document.getElementsByClassName("AZo34VCmA4oZOJ3Yp3mqn _2JsEUUssaQhHp3oz89-xZs")[0].appendChild(h);
 
   const i = document.createElement('svg');
-  i.innerHTML('<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.6038 4.48532C2.80395 4.74532 3.19605 4.74532 3.3962 4.48532L5.84441 1.305C6.09751 0.976213 5.86313 0.5 5.44821 0.5H0.551788C0.136868 0.5 -0.0975129 0.976213 0.155586 1.305L2.6038 4.48532Z" fill="#6f6e84"></path></svg>')
+  i.innerHTML = '<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.6038 4.48532C2.80395 4.74532 3.19605 4.74532 3.3962 4.48532L5.84441 1.305C6.09751 0.976213 5.86313 0.5 5.44821 0.5H0.551788C0.136868 0.5 -0.0975129 0.976213 0.155586 1.305L2.6038 4.48532Z" fill="#6f6e84"></path></svg>';
   document.getElementsByClassName("AZo34VCmA4oZOJ3Yp3mqn _2JsEUUssaQhHp3oz89-xZs")[0].appendChild(i);
 
 
