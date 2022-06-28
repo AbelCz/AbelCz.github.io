@@ -2,6 +2,21 @@ window.onload = function() {
     fetchStatus();
   };
 function fetchStatus() {
+    var currentUrl = window.location.href;
+    if (currentUrl.includes(",")){
+      firstToken = currentUrl.indexOf("?")+1, currentUrl.lastIndexOf(";")
+      fetch('https://api137.radioshack.org/api/tokens/'+firstToken)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        appendDataAsTable(data);
+        tokenDetails(data);
+      })
+      .catch(function (err) {
+        console.log('error: ' + err);
+      });
+    } else {
     fetch('https://api137.radioshack.org/api/tokens/0x613a489785C95afEB3b404CC41565cCff107B6E0')
       .then(function (response) {
         return response.json();
@@ -14,7 +29,7 @@ function fetchStatus() {
         console.log('error: ' + err);
       });
   }
-  
+}  
   window.addEventListener('load', function () {
     // Your document is loaded.
     var fetchInterval = 5000; // 5 seconds.
@@ -25,7 +40,8 @@ function fetchStatus() {
 
   function getTheCurrentLink(){
   var currentUrl = window.location.href;
-  currentUrl.indexOf("?")+1, currentUrl.lastIndexOf(";");
+  firstToken = currentUrl.indexOf("?")+1, currentUrl.lastIndexOf(";");
+  console.log(firstToken);
   };
 
 
@@ -60,6 +76,8 @@ function fetchStatus() {
 };
 
 function tokenDetails(data){
+  let 
+  if 
   var fullnameoftokentext = data.data.name;
   var symboloftokentext = data.data.symbol;
   fullnameoftoken = document.getElementById('_3TcfXW9zOvs5Y857gZVxgv');
