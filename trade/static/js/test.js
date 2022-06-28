@@ -76,8 +76,6 @@ function fetchStatus() {
 };
 
 function tokenDetails(data){
-  let 
-  if 
   var fullnameoftokentext = data.data.name;
   var symboloftokentext = data.data.symbol;
   fullnameoftoken = document.getElementById('_3TcfXW9zOvs5Y857gZVxgv');
