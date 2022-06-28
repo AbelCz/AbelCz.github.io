@@ -162,11 +162,11 @@ function fetchTokenlist(){
   .then(function (response) {
           return response.json();
         })
-        .then(function (data) {
-          tokenList(data);
+        .then(function (data2) {
+          tokenList(data2);
         })
   }
-  function tokenList(data){
-    var totalpairs = Object.keys(data.data[0]).length;
+  function tokenList(data2){
+    var totalpairs = Object.keys(data2.data).length;
     console.log("total tokens" + totalpairs);
   }
