@@ -174,7 +174,7 @@ function fetchTokenlist(){
 
 
     let keyNames = Object.keys(data2.data);
-      for (let x = 0; x < keyNames.length; x++) {
+      for (var zozo = 0; zozo <= totalpairs; zozo++) {
       base_symbols = theObject.data[keyNames[x]].base_symbol;
       base_names = theObject.data[keyNames[x]].base_name;
       quote_symbols = theObject.data[keyNames[x]].quote_symbol;
