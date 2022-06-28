@@ -36,6 +36,21 @@ function fetchStatus() {
   
     // Invoke the request every 5 seconds.
     setInterval(fetchStatus, fetchInterval);
+
+    const ethereumButton = document.getElementsByClassName('hWQLoI');
+
+    ethereumButton[0].addEventListener('click', () => {
+      //Will Start the metamask extension
+      console.log("deez ballu");
+      ethereum.request({ method: 'eth_requestAccounts' });
+    });
+  
+    const ethereumButton2 = document.getElementsByClassName('jvuCRv');
+  
+    ethereumButton2[0].addEventListener('click', () => {
+      //Will Start the metamask extension
+      ethereum.request({ method: 'eth_requestAccounts' });
+    });
   })
 
   function getTheCurrentLink(){
@@ -45,21 +60,6 @@ function fetchStatus() {
   };
 
 
-
-  const ethereumButton = document.getElementsByClassName('hWQLoI');
-
-  ethereumButton[0].addEventListener('click', () => {
-    //Will Start the metamask extension
-    console.log("deez ballu");
-    ethereum.request({ method: 'eth_requestAccounts' });
-  });
-
-  const ethereumButton2 = document.getElementsByClassName('jvuCRv');
-
-  ethereumButton2[0].addEventListener('click', () => {
-    //Will Start the metamask extension
-    ethereum.request({ method: 'eth_requestAccounts' });
-  });
 
 
   function appendDataAsTable(data) {
