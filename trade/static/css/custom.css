@@ -886,4 +886,84 @@ div#tv-price-chart{
 .iIvBHT .sc-kTCsyW {
     transition: var(--animation-speed) linear;
 }
-
+.joRTNm {
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    -webkit-box-align: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.KigMW {
+    color: var(--color-text-dark);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    height: 36px;
+    padding: 0px 24px 0px 0px;
+    cursor: default;
+    border-top: solid 1px var(--color-border-grey);
+    user-select: none;
+}
+.vPeNx {
+    display: flex;
+    border-right: solid 1px var(--color-border-grey);
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 36px;
+    padding: 2px;
+}
+.cOYSrZ {
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 2px;
+}
+.vPeNx {
+    display: flex;
+    border-right: solid 1px var(--color-border-grey);
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 36px;
+    padding: 2px;
+}
+.cOYSrZ {
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 2px;
+}
+.bwRbQ {
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    flex: 1 1 0%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+}
