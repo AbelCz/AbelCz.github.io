@@ -68,7 +68,7 @@ function tokenDetails(data){
 
 function switcher() {
   console.log("Hello world!");
-  if (document.getElementById("_30_dV41WvMclCi77kevilg")[0].tabIndex = 0){
+  if (document.getElementsByClassName("_30_dV41WvMclCi77kevilg.open")[0]){
   //delete
   document.getElementsByClassName("_30_dV41WvMclCi77kevilg")[0].innerHTML = "";
   //create
@@ -150,7 +150,7 @@ function switcher() {
   const w = document.createElement('span');
   w.innerHTML = "percentage"
   document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[0].appendChild(w);*/
-  document.getElementById("_30_dV41WvMclCi77kevilg").tabIndex = 1;
+  document.getElementsByClassName("_30_dV41WvMclCi77kevilg.open").classList.add('closed');
  
 
   fetchTokenlist();
