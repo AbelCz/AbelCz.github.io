@@ -26,7 +26,7 @@ function fetchStatus() {
   function getTheCurrentLink(){
   var currentUrl = window.location.href;
   currentUrl.indexOf("?")+1, currentUrl.lastIndexOf(";");
-  }
+  };
 
 
 
