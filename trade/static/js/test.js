@@ -87,9 +87,10 @@ function fetchStatus() {
     tbl.innerHTML = dsa;
 };
 
-function tokenDetails(data){
+function tokenDetails(data, data3){
   var fullnameoftokentext = data.data.name;
   var symboloftokentext = data.data.symbol;
+  //var symbolcolletoraltext = data3.data.symbol;
   fullnameoftoken = document.getElementById('_3TcfXW9zOvs5Y857gZVxgv');
   //fullnameoftoken2 = document.getElementById('3Bx-FZIaBbVKssHb-LYGou');
   fullnameoftoken3 = document.getElementById('_1WwkcxTzl-09aDCpRhYU1u');
@@ -97,6 +98,9 @@ function tokenDetails(data){
   symboloftoken2 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6 number2');
   symboloftoken3 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6');
   symboloftoken4 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO _1Io-xGeWSmRodp84w_CceQ');
+  //symbolcolletoral = document.getElementById('priceinwhat');
+  //symbolcolletoral2 = document.getElementById('sc-kTCsyW gxdqsh');
+
   tokenlogo = document.getElementById('tokenLogoPage');
   fullnameoftoken.innerHTML = fullnameoftokentext;
   //fullnameoftoken2.innerHTML = fullnameoftokentext;
@@ -105,6 +109,8 @@ function tokenDetails(data){
   symboloftoken2.innerHTML = symboloftokentext;
   symboloftoken3.innerHTML = symboloftokentext;
   symboloftoken4.innerHTML = symboloftokentext;
+  //symbolcolletoral.innerHTML = symbolcolletoraltext;
+  //symbolcolletoral2.innerHTML = symbolcolletoraltext;
   lowercase_symbols2 = symboloftokentext.toLowerCase();
   url_logos2 = "https://abelcz.github.io/currencies/"+lowercase_symbols2+".svg";
   tokenlogo.src = url_logos2;
