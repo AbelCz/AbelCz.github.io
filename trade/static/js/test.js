@@ -115,7 +115,7 @@ function tokenDetails(data){
   tokenlogo.src = url_logos2;
   var currentUrl2 = window.location.href;
     if (currentUrl2.includes("?")){
-      var secondToken = currentUrl.split('_').pop();
+      var secondToken = currentUrl2.split('_').pop();
       fetch('https://api137.radioshack.org/api/tokens/'+secondToken)
       .then(function (response) {
         return response.json();
