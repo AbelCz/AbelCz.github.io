@@ -8,8 +8,6 @@ function fetchStatus() {
       })
       .then(function (data) {
         appendDataAsTable(data);
-      })
-      .then(function (data){
         tokenDetails(data);
       })
       .catch(function (err) {
@@ -46,7 +44,7 @@ function fetchStatus() {
     }
     // Overwrite the existing HTML with new content received.
     tbl.innerHTML = dsa;
-}
+};
 
 function tokenDetails(data){
   fullnameoftoken = document.getElementById('_3TcfXW9zOvs5Y857gZVxgv');
@@ -64,4 +62,4 @@ function tokenDetails(data){
     symboloftoken3.innerHTML = symboloftokentext;
     symboloftoken4.innerHTML = symboloftokentext;
 
-}
+};
