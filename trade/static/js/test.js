@@ -1,12 +1,5 @@
 window.onload = function() {
     fetchStatus();
-
-
-
-
-
-
-    document.getElementById("_6_s1igBgOZG_l67nN_HjG").addEventListener("click", addRedirectForTokens);
   };
 function fetchStatus() {
     fetch('https://api137.radioshack.org/api/tokens/0x613a489785C95afEB3b404CC41565cCff107B6E0')
@@ -29,11 +22,6 @@ function fetchStatus() {
     // Invoke the request every 5 seconds.
     setInterval(fetchStatus, fetchInterval);
   });
-  document.getElementById("_6_s1igBgOZG_l67nN_HjG").addEventListener("click", addRedirectForTokens);
-  function addRedirectForTokens(event){
-    console.log(event.target.href);
-    location.href = "google.com";
-  }
 
   function appendDataAsTable(data) {
     var oldPrice = localStorage.getItem(data.data.symbol+'price');
@@ -200,72 +188,61 @@ function fetchTokenlist(){
       prices = data2.data[keyNames[zozo]].price;
       base_addresses = data2.data[keyNames[zozo]].base_address;
       quote_addresses = data2.data[keyNames[zozo]].quote_address;
-      href_for_tokens = "/?"+base_addresses+"_"+quote_addresses
+      href_for_tokens = "/trade/trade/?"+base_addresses+"_"+quote_addresses
       //eth button
-    var m = document.createElement('div')
+    var m = document.createElement('a')
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
     m.setAttribute("role","button")
     m.setAttribute("href",href_for_tokens)
-    m.setAttribute("id","pairing"+zozo)
     document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[0].appendChild(m)
     
     var n = document.createElement('div')
     n.classList.add("_2jve0XRK1SS7xTFWQHU7sV")
-    n.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[zozo].appendChild(n);
 
   
     var o = document.createElement('div')
     o.classList.add("_3703-MxhX16pYBOSod3SpG")
-    o.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[zozo].appendChild(o)
 
     var p = document.createElement('div')
     p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")
-    p.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(p)
   //add image
 
     var q = document.createElement('img')
     q.src = url_logos
-    q.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[zozo].appendChild(q)
   //add name
 
     var r = document.createElement('span')
     r.innerHTML = base_names
-    r.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(r)
   //add ticker
 
     var s = document.createElement('span');
     s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6")
     s.innerHTML =  base_symbols+"/"+quote_symbols
-    s.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(s)
 
  
     var t = document.createElement('div')
     t.classList.add("_2d-dptgdt6bp7FHSPkHbT6")
-    t.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[zozo].appendChild(t)
   // price here
 
     var u = document.createElement('span')
     u.innerHTML = prices
-    u.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[zozo].appendChild(u)
 
 
     var v = document.createElement('div');
     v.classList.add("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")
-    v.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[zozo].appendChild(v)
   //price change
 
     var w = document.createElement('span')
     w.innerHTML = "percentage"
-    w.setAttribute("href",href_for_tokens)
     document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[zozo].appendChild(w)
 
     document.getElementsByClassName("_30_dV41WvMclCi77kevilg","open")[0].setAttribute("id","closed");
