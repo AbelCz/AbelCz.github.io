@@ -54,7 +54,7 @@ function tokenDetails(data){
   fullnameoftoken3 = document.getElementById('_1WwkcxTzl-09aDCpRhYU1u');
   symboloftoken = document.getElementById('_3Bx-FZIaBbVKssHb-LYGou');
   symboloftoken2 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6')[0];
-  symboloftoken3 = document.getElementById('_38idpiULmwLdV8ZLER8eXp._2p9QAAMCqbu8kWNa-OxhxO._1Io-xGeWSmRodp84w_CceQ');
+  symboloftoken3 = document.getElementById('_38idpiULmwLdV8ZLER8eXp._2p9QAAMCqbu8kWNa-OxhxO._1Io-xGeWSmRodp84w_CceQ')[0];
   symboloftoken4 = document.getElementById('_38idpiULmwLdV8ZLER8eXp._2p9QAAMCqbu8kWNa-OxhxO.aZJzIkLG4sRsoY7PeO5H6');
   fullnameoftoken.innerHTML = fullnameoftokentext;
   //fullnameoftoken2.innerHTML = fullnameoftokentext;
