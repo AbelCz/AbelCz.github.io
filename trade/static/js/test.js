@@ -50,10 +50,11 @@ function fetchStatus() {
 
   ethereumButton.addEventListener('click', () => {
     //Will Start the metamask extension
+    console.log("deez ballu");
     ethereum.request({ method: 'eth_requestAccounts' });
   });
 
-  const ethereumButto2n = document.querySelector('sc-giAqHp.hWQLoI');
+  const ethereumButton2 = document.querySelector('sc-giAqHp.hWQLoI');
 
   ethereumButton2.addEventListener('click', () => {
     //Will Start the metamask extension
