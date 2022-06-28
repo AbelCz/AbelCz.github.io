@@ -68,6 +68,9 @@ function tokenDetails(data){
 
 function switcher() {
   console.log("Hello world!");
+
+  //delete
+  document.getElementsByClassName("_30_dV41WvMclCi77kevilg")[0].innerHTML = "";
   //create
   const e = document.createElement('div');
   e.classList.add("_3kxlwrAELU8bAzRcWY5C4U");
