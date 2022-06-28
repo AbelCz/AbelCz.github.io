@@ -169,4 +169,5 @@ function fetchTokenlist(){
   function tokenList(data2){
     var totalpairs = Object.keys(data2.data).length;
     console.log("total tokens" + totalpairs);
+    console.log(data2.data);
   }
