@@ -176,7 +176,7 @@ function fetchTokenlist(){
     var m = document.createElement('div')
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
     m.setAttribute("role","button")
-    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[1].appendChild(m)
+    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[0].appendChild(m)
     
     var n = document.createElement('div')
     n.classList.add("_2jve0XRK1SS7xTFWQHU7sV")
