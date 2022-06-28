@@ -258,3 +258,8 @@ function fetchTokenlist(){
     document.getElementsByClassName("_30_dV41WvMclCi77kevilg","open")[0].setAttribute("id","closed");
     }
   }
+
+  document.querySelector('_1i_jfKy_CR-3JEUUoLyTyo').click(){
+    innerstuff = innerHTML(div[0].getAttribute("href"));
+    location.href = innerstuff;
+  }
