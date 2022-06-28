@@ -176,7 +176,7 @@ function fetchTokenlist(){
 
     for (let i = 0; i < totalpairs; i++) {
       //eth button
-    var m = "m"+[i;
+    var m = "m"+[i];
     const m = document.createElement('div');
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo");
     m.setAttribute("role","button");
