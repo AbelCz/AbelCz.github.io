@@ -57,5 +57,3 @@ function fetchStatus() {
     symboloftoken3.innerHTML = data.data.symbol;
     symboloftoken4.innerHTML = data.data.symbol;
 }
-
-_3TcfXW9zOvs5Y857gZVxgv
