@@ -173,59 +173,58 @@ function fetchTokenlist(){
 
     for (var numberzo = 0; numberzo <= totalpairs; numberzo++) {
       //eth button
-    var m = document.createElement('div');
-    m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo");
-    m.setAttribute("role","button");
-    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG").appendChild(m);
+    var m = document.createElement('div')
+    m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
+    m.setAttribute("role","button")
+    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG").appendChild(m)
     
-    var n = document.createElement('div');
-    n.classList.add("_2jve0XRK1SS7xTFWQHU7sV");
-    document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[totalpairs].appendChild(n);
+    var n = document.createElement('div')
+    n.classList.add("_2jve0XRK1SS7xTFWQHU7sV")
+    document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[totalpairs].appendChild(n)
 
   
-    var o = document.createElement('div');
-    o.classList.add("_3703-MxhX16pYBOSod3SpG");
-    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[totalpairs].appendChild(o);
+    var o = document.createElement('div')
+    o.classList.add("_3703-MxhX16pYBOSod3SpG")
+    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[totalpairs].appendChild(o)
 
-
-    var p = document.createElement('div');
-    p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS");
-    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(p);
+    var p = document.createElement('div')
+    p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")
+    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(p)
   //add image
 
-    var q = document.createElement('img');
-    q.src = "/currencies/eth.svg";
-    document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[totalpairs].appendChild(q);
+    var q = document.createElement('img')
+    q.src = "/currencies/eth.svg"
+    document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[totalpairs].appendChild(q)
   //add name
 
-    var r = document.createElement('span');
-    r.innerHTML = "Ethereum";
-    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(r);
+    var r = document.createElement('span')
+    r.innerHTML = "Ethereum"
+    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(r)
   //add ticker
 
     var s = document.createElement('span');
-    s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6");
-    s.innerHTML = "ETH";
-    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(s);
+    s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6")
+    s.innerHTML = "ETH"
+    document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[totalpairs].appendChild(s)
 
  
-    var t = document.createElement('div');
-    t.classList.add("_2d-dptgdt6bp7FHSPkHbT6");
-    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[totalpairs].appendChild(t);
+    var t = document.createElement('div')
+    t.classList.add("_2d-dptgdt6bp7FHSPkHbT6")
+    document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[totalpairs].appendChild(t)
   // price here
 
-    var u = document.createElement('span');
-    u.innerHTML = "price here";
-    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[totalpairs].appendChild(u);
+    var u = document.createElement('span')
+    u.innerHTML = "price here"
+    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[totalpairs].appendChild(u)
 
 
     var v = document.createElement('div');
-    v.classList.add("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R");
-    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[totalpairs].appendChild(v);
+    v.classList.add("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")
+    document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[totalpairs].appendChild(v)
   //price change
 
-    var w = document.createElement('span');
-    w.innerHTML = "percentage";
-    document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[totalpairs].appendChild(w);
+    var w = document.createElement('span')
+    w.innerHTML = "percentage"
+    document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[totalpairs].appendChild(w)
     }
   }
