@@ -53,9 +53,9 @@ function tokenDetails(data){
   //fullnameoftoken2 = document.getElementById('3Bx-FZIaBbVKssHb-LYGou');
   fullnameoftoken3 = document.getElementById('_1WwkcxTzl-09aDCpRhYU1u');
   symboloftoken = document.getElementById('_3Bx-FZIaBbVKssHb-LYGou');
-  symboloftoken2 = document.getElementById('_38idpiULmwLdV8ZLER8eXp\ _2p9QAAMCqbu8kWNa-OxhxO\ aZJzIkLG4sRsoY7PeO5H6'[1]);
-  symboloftoken3 = document.getElementById('_38idpiULmwLdV8ZLER8eXp\ _2p9QAAMCqbu8kWNa-OxhxO\ aZJzIkLG4sRsoY7PeO5H6'[2]);
-  symboloftoken4 = document.getElementById('_38idpiULmwLdV8ZLER8eXp\ _2p9QAAMCqbu8kWNa-OxhxO\ _1Io-xGeWSmRodp84w_CceQ'[1]);
+  symboloftoken2 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6');
+  symboloftoken3 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6');
+  symboloftoken4 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO _1Io-xGeWSmRodp84w_CceQ');
   fullnameoftoken.innerHTML = fullnameoftokentext;
   //fullnameoftoken2.innerHTML = fullnameoftokentext;
   fullnameoftoken3.innerHTML = 'Connect your ' + fullnameoftokentext + ' wallet to deposit funds & start trading.';
