@@ -136,8 +136,8 @@ function tokenDetails(data){
       .then(function (response) {
         return response.json();
       })
-      .then(function (data3) {
-        var symbolcolletoraltext = data3.data.symbol;
+      .then(function (data4) {
+        var symbolcolletoraltext = data4.data.symbol;
         symbolcolletoral = document.getElementById('priceinwhat');
         symbolcolletoral2 = document.getElementById('sc-kTCsyW gxdqsh');
         symbolcolletoral.innerHTML = symbolcolletoraltext;
