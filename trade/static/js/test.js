@@ -105,7 +105,7 @@ function switcher() {
   l.classList.add("_6_s1igBgOZG_l67nN_HjG");
   document.getElementsByClassName("_14rwWgDcatef27EFjPdYOM")[0].appendChild(l);
 //eth button
-  const m = document.createElement('div');
+  /*const m = document.createElement('div');
   m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo","_1uC2xzVGl7L8alfssRyH8r");
   m.setAttribute("role","button");
   document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[0].appendChild(m);
@@ -149,7 +149,7 @@ function switcher() {
 //price change
   const w = document.createElement('span');
   w.innerHTML = "percentage"
-  document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[0].appendChild(w);
+  document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[0].appendChild(w);*/
 
  
 
