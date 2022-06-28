@@ -171,12 +171,12 @@ function fetchTokenlist(){
     console.log("total tokens " + totalpairs);
     console.log(data2.data);
 
-    for (var numberzo = 0; numberzo <= totalpairs; numberzo++) {
+    for (var numberzo = 1; numberzo <= totalpairs; numberzo++) {
       //eth button
     var m = document.createElement('div')
     m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
     m.setAttribute("role","button")
-    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG").appendChild(m)
+    document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[1].appendChild(m)
     
     var n = document.createElement('div')
     n.classList.add("_2jve0XRK1SS7xTFWQHU7sV")
