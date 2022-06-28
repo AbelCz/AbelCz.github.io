@@ -68,7 +68,8 @@ function tokenDetails(data){
 
 function switcher() {
   console.log("Hello world!");
-  if (document.getElementsByClassName("_30_dV41WvMclCi77kevilg.open")[0]){
+  const listbuttonExists = document.getElementsByClassName('_30_dV41WvMclCi77kevilg.open').length > 0;
+  if (listbuttonExists){
   //delete
   document.getElementsByClassName("_30_dV41WvMclCi77kevilg")[0].innerHTML = "";
   //create
