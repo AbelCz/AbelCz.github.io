@@ -198,12 +198,12 @@ function fetchTokenlist(){
     document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[0].appendChild(q);
   //add name
     const r = document.createElement('span');
-    r.innerHTML = "Ethereum" + ;
+    r.innerHTML = "Ethereum";
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[0].appendChild(r);
   //add ticker
     const s = document.createElement('span');
     s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6");
-    s.innerHTML = "ETH" + ;
+    s.innerHTML = "ETH";
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[0].appendChild(s);
 
     const t = document.createElement('div');
@@ -211,7 +211,7 @@ function fetchTokenlist(){
     document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[0].appendChild(t);
   // price here
     const u = document.createElement('span');
-    u.innerHTML = "price here" + ;
+    u.innerHTML = "price here";
     document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[0].appendChild(u);
 
     const v = document.createElement('div');
@@ -219,7 +219,7 @@ function fetchTokenlist(){
     document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[0].appendChild(v);
   //price change
     const w = document.createElement('span');
-    w.innerHTML = "percentage" + 
+    w.innerHTML = "percentage";
     document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[0].appendChild(w);
     }
   }
