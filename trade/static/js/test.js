@@ -51,7 +51,7 @@ function fetchStatus() {
 function tokenDetails(data){
   fullnameoftoken = document.getElementById('_3TcfXW9zOvs5Y857gZVxgv');
   var fullnameoftokentext = data.data.name;
-  var symboloftoken = data.data.symbol;
+  var symboloftokentext = data.data.symbol;
     fullnameoftoken2 = document.getElementById('_1WwkcxTzl-09aDCpRhYU1u');
     symboloftoken = document.getElementById('_3Bx-FZIaBbVKssHb-LYGou');
     symboloftoken2 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6');
@@ -59,9 +59,9 @@ function tokenDetails(data){
     symboloftoken4 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6');
     fullnameoftoken.innerHTML = fullnameoftokentext;
     fullnameoftoken2.innerHTML = 'Connect your ' + fullnameoftokentext + ' wallet to deposit funds & start trading.';
-    symboloftoken.innerHTML = symboloftoken;
-    symboloftoken2.innerHTML = symboloftoken;
-    symboloftoken3.innerHTML = symboloftoken;
-    symboloftoken4.innerHTML = symboloftoken;
+    symboloftoken.innerHTML = symboloftokentext;
+    symboloftoken2.innerHTML = symboloftokentext;
+    symboloftoken3.innerHTML = symboloftokentext;
+    symboloftoken4.innerHTML = symboloftokentext;
 
 }
