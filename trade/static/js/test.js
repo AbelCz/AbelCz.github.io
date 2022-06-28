@@ -180,7 +180,7 @@ function fetchTokenlist(){
       base_symbols = data2.data[keyNames[zozo]].base_symbol;
       base_names = data2.data[keyNames[zozo]].base_name;
       quote_symbols = data2.data[keyNames[zozo]].quote_symbol;
-      url_logos = "https://abelcz.github.io/currencies/"+base_symbols+".svg"
+      url_logos = "https://abelcz.github.io/currencies/"+text.toLowerCase(base_symbols)+".svg"
       prices = data2.data[keyNames[zozo]].price;
       //eth button
     var m = document.createElement('div')
