@@ -170,6 +170,18 @@ function fetchTokenlist(){
     var totalpairs = Object.keys(data2.data).length;
     console.log("total tokens " + totalpairs);
     console.log(data2.data);
+    keyNames = Object.keys(data2.data);
+
+
+    let keyNames = Object.keys(data2.data);
+      for (let x = 0; x < keyNames.length; x++) {
+      base_symbols = theObject.data[keyNames[x]].base_symbol;
+      base_names = theObject.data[keyNames[x]].base_name;
+      quote_symbols = theObject.data[keyNames[x]].quote_symbol;
+      url_logos = "https://abelcz.github.io/currencies/"+base_symbols+".svg"
+      quote_symbols = theObject.data[keyNames[x]].price;
+    }
+
 
     for (var zozo = 0; zozo <= totalpairs; zozo++) {
       //eth button
@@ -193,19 +205,18 @@ function fetchTokenlist(){
   //add image
 
     var q = document.createElement('img')
-
-    
+    q.src = url_logos
     document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[zozo].appendChild(q)
   //add name
 
     var r = document.createElement('span')
-    r.innerHTML = data2.data[zozo].base_name
+    r.innerHTML = base_names
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(r)
   //add ticker
 
     var s = document.createElement('span');
     s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6")
-    s.innerHTML =  data2.data[zozo].base_symbol+"/"+quote_symbol
+    s.innerHTML =  base_symbols+"/"+quote_symbols
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(s)
 
  
