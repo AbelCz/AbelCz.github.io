@@ -21,7 +21,7 @@ function fetchStatus() {
   
     // Invoke the request every 5 seconds.
     setInterval(fetchStatus, fetchInterval);
-  });
+  })
 
   function getTheCurrentLink(){
   var currentUrl = window.location.href;
