@@ -47,9 +47,9 @@ function fetchStatus() {
 };
 
 function tokenDetails(data){
-  fullnameoftoken = document.getElementById('_3TcfXW9zOvs5Y857gZVxgv');
   var fullnameoftokentext = data.data.name;
   var symboloftokentext = data.data.symbol;
+  fullnameoftoken = document.getElementById('_3TcfXW9zOvs5Y857gZVxgv');
     fullnameoftoken2 = document.getElementById('_1WwkcxTzl-09aDCpRhYU1u');
     symboloftoken = document.getElementById('_3Bx-FZIaBbVKssHb-LYGou');
     symboloftoken2 = document.getElementById('_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6');
@@ -61,5 +61,4 @@ function tokenDetails(data){
     symboloftoken2.innerHTML = symboloftokentext;
     symboloftoken3.innerHTML = symboloftokentext;
     symboloftoken4.innerHTML = symboloftokentext;
-
 };
