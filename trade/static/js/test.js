@@ -65,10 +65,11 @@ function tokenDetails(data){
   symboloftoken4.innerHTML = symboloftokentext;
 };
 
-document.getElementsByClassName("_30_dV41WvMclCi77kevilg").addEventListener("click", myFunction);
 
 function switcher() {
-  alert = "YOU CLICKED ME!";
+  console.log("Hello world!");
   fetch('https://api137.radioshack.org/api/pairs')
   const e = document.createElement('div');
+  e.innerHTML = 'JavaScript DOM';
+  document.body.appendChild(e);
 }
