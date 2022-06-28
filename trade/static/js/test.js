@@ -194,18 +194,18 @@ function fetchTokenlist(){
 
     var q = document.createElement('img')
 
-    q.src = "/currencies/"+data.data[zozo].base_symbol+".svg"
+    q.src = "/currencies/"+data2.data[zozo].base_symbol+".svg"
     document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[zozo].appendChild(q)
   //add name
 
     var r = document.createElement('span')
-    r.innerHTML = data.data[zozo].base_name
+    r.innerHTML = data2.data[zozo].base_name
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(r)
   //add ticker
 
     var s = document.createElement('span');
     s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6")
-    s.innerHTML =  data.data[zozo].base_symbol+"/"+quote_symbol
+    s.innerHTML =  data2.data[zozo].base_symbol+"/"+quote_symbol
     document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(s)
 
  
@@ -215,7 +215,7 @@ function fetchTokenlist(){
   // price here
 
     var u = document.createElement('span')
-    u.innerHTML = data.data[zozo].price
+    u.innerHTML = data2.data[zozo].price
     document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[zozo].appendChild(u)
 
 
