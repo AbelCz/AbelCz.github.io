@@ -57,6 +57,7 @@ function fetchStatus() {
     hideTheBook[4].addEventListener('click', () => {
       // hide the book
       showPreviousTrades();
+      console.log(nice);
     });
   })
 
