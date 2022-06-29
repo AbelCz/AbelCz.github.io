@@ -362,7 +362,7 @@ function fetchPreviousTrades(){
           .then(function (data6) {
             PreviousTrades(data6);
           })
-    };
+    }
     function PreviousTrades(data6){
       var totaltrades = Object.keys(data6.data).length;
       let keyNames = Object.keys(data6.data);
@@ -406,6 +406,10 @@ function fetchPreviousTrades(){
         toprow6.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3U1i7AzOk6yO_edgzEnIJI")
         toprow6.innerHTML = "Time"
         document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow6)
+
+        var bottomrow = document.createElement('div')
+        toprow.classList.add("_3rhft_8tou3TxOH2wrLf_P")
+        document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
       }
     }
 
