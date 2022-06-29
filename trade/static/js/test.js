@@ -373,7 +373,7 @@ function fetchPreviousTrades(){
       console.log("daasdadsa");
       rightside = currentUrl10.split('_').pop();
       console.log("bbb");
-      const totaltrades = (leftside, rightside, arr) => {
+      const radioShack = (leftside, rightside, arr) => {
         console.log("nyananan");
         for (let intern = 0; intern < arr.length; intern++) {
             console.log("ccc");
