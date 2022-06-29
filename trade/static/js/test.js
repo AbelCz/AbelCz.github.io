@@ -376,8 +376,9 @@ function fetchPreviousTrades(){
       rightside = currentUrl10.split('_').pop().toLowerCase();
       console.log("rightside: "+rightside);
         for (let i = 0; i < data.length; i++) {
+          console.log("exp0");
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
-                console.log("true");
+              console.log("exp1");
                 tokens_in = data[i].tokenAddressIn;
                 tokens_out = data[i].tokenAddressOut;
                 tx_hash = data[i].amountUsd;
@@ -417,7 +418,7 @@ function fetchPreviousTrades(){
                 toprow.classList.add("_3rhft_8tou3TxOH2wrLf_P")
                 document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
-              console.log("true");
+              console.log("exp2");
               tokens_in = data[i].tokenAddressIn;
               tokens_out = data[i].tokenAddressOut;
               tx_hash = data[i].amountUsd;
@@ -457,7 +458,7 @@ function fetchPreviousTrades(){
               toprow.classList.add("_3rhft_8tou3TxOH2wrLf_P")
               document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
             } 
-        console.log("false");
+        console.log("exp3");
       //var totaltrades = Object.keys(data6.tokenAddressIn).length;
       //console.log("total trades " + totaltrades);
       //console.log(data6.data);
