@@ -364,8 +364,8 @@ function fetchPreviousTrades(){
           })
     }
     function PreviousTrades(data6){
-      var totaltrades = Object.keys(data6.arr.tokenAddressIn).length;
-      let keyTokensIn = Object.keys(data6.arr.tokenAddressIn);
+      var totaltrades = Object.keys(data6.tokenAddressIn).length;
+      let keyTokensIn = Object.keys(data6.tokenAddressIn);
       console.log("total trades " + totaltrades);
       console.log(data6.data);
   
