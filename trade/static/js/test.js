@@ -366,25 +366,20 @@ function fetchPreviousTrades(){
 };
 
     function PreviousTrades(data6){
-      console.log("zzzertr")
       var currentUrl10 = window.location.href;
-      console.log("dadadad");
       leftside = currentUrl10.split('?').pop().split('_')[0];
       console.log("rightside: "+leftside);
-      console.log("daasdadsa");
       rightside = currentUrl10.split('_').pop();
       console.log("rightside: "+rightside);
-      console.log("bbb");
       const totaltrades = (leftside, rightside, data6) => {
         for (var intern = 0; intern < data6.length; intern++) {
             if (data6[intern].tokenAddressIn === leftside && data6[intern].tokenAddressOut === rightside) {
-                return true;
+                console.log("true");
             } else if (data6[intern].tokenAddressIn === rightside && data6[intern].tokenAddressOut === leftside) {
-              return true;
+              console.log("true");
             } 
         };
-        console.log("succ");
-        return false;
+        console.log("true");
       };
       //var totaltrades = Object.keys(data6.tokenAddressIn).length;
       //console.log("total trades " + totaltrades);
