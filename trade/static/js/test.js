@@ -371,7 +371,7 @@ function fetchPreviousTrades(){
   
       for (var dodo = 0; dodo <= totaltrades; dodo++) {
         tokens_in = data6.tokenAddressIn[dodo];
-        tokens_out = data6.tokenAddressOut[dodo]];
+        tokens_out = data6.tokenAddressOut[dodo];
         tx_hash = data2.amountUsd[dodo];
         timestamp = data2.timestamp[dodo];
         tokens_in_amount = data2.tokenAmountIn[dodo];
