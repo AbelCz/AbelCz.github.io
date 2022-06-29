@@ -363,11 +363,24 @@ function fetchPreviousTrades(){
             PreviousTrades(data6);
           })
     }
+
     function PreviousTrades(data6){
-      var totaltrades = Object.keys(data6.tokenAddressIn).length;
-      let keyTokensIn = Object.keys(data6.tokenAddressIn);
-      console.log("total trades " + totaltrades);
-      console.log(data6.data);
+      var currentUrl = window.location.href;
+      lefside = currentUrl.split('?').pop().split('_')[0];
+      rightside = currentUrl2.split('_').pop();
+      const totaltrades = (leftside, rightside, arr) => {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr.tokenAddressIn === leftside && tokenAddressOut === rightside) {
+                return true;
+            } else if (arr.tokenAddressIn === rightside && tokenAddressOut === leftside) {
+                return true;
+            } 
+        };
+        return false;
+    };
+      //var totaltrades = Object.keys(data6.tokenAddressIn).length;
+      //console.log("total trades " + totaltrades);
+      //console.log(data6.data);
   
       for (var dodo = 0; dodo <= totaltrades; dodo++) {
         tokens_in = data6[dodo].tokenAddressIn;
