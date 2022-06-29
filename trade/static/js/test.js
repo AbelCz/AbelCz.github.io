@@ -367,7 +367,7 @@ function fetchPreviousTrades(){
 
     function PreviousTrades(data6){
       var currentUrl = window.location.href;
-      lefside = currentUrl.split('?').pop().split('_')[0];
+      leftside = currentUrl.split('?').pop().split('_')[0];
       rightside = currentUrl.split('_').pop();
       console.log("bbb");
       const totaltrades = (leftside, rightside, arr) => {
