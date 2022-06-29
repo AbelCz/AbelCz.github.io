@@ -375,7 +375,6 @@ function fetchPreviousTrades(){
       console.log("rightside: "+leftside);
       rightside = currentUrl10.split('_').pop();
       console.log("rightside: "+rightside);
-      const totaltrades = (leftside, rightside, data) => {
         for (let i = 0; i < data.length; i++) {
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
                 console.log("true");
@@ -384,7 +383,6 @@ function fetchPreviousTrades(){
             } 
         };
         console.log("true");
-      };
       //var totaltrades = Object.keys(data6.tokenAddressIn).length;
       //console.log("total trades " + totaltrades);
       //console.log(data6.data);
