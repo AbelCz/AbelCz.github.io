@@ -346,7 +346,7 @@ function fetchTokenlist(){
   //var oldBookButton = document.getElementsByClassName("_3wFHO7dX4-NDkAql126wyt _-0q9IsXZcH1dLHnmhteQ7")[1];
   hideOrderBook.classList.add('_3wFHO7dX4-NDkAql126wyt');
   hideOrderBook.classList.remove('_3wFHO7dX4-NDkAql126wyt');
-  var theBigTradeButton = document.getElementsByClassName[5];
+  var theBigTradeButton = document.getElementsByClassName('_3wFHO7dX4-NDkAql126wyt')[5];
   theBigTradeButton.classList.add('_3wFHO7dX4-NDkAql126wyt');
   theBigTradeButton.classList.remove('_3wFHO7dX4-NDkAql126wyt');
  }
