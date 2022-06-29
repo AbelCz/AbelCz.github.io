@@ -371,9 +371,9 @@ function fetchPreviousTrades(){
 
     function PreviousTrades(data){
       var currentUrl10 = window.location.href;
-      leftside = currentUrl10.split('?').pop().split('_')[0].toLocaleLowerCase;
+      leftside = currentUrl10.split('?').pop().split('_')[0].toLowerCase();
       console.log("rightside: "+leftside);
-      rightside = currentUrl10.split('_').pop().toLocaleLowerCase;
+      rightside = currentUrl10.split('_').pop().toLowerCase();
       console.log("rightside: "+rightside);
         for (let i = 0; i < data.length; i++) {
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
