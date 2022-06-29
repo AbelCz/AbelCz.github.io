@@ -364,18 +364,19 @@ function fetchPreviousTrades(){
           })
     }
     function PreviousTrades(data6){
+      var jsonObj = JSON.parse(data6)
       var totaltrades = Object.keys(data6.tokenAddressIn).length;
       let keyTokensIn = Object.keys(data6.tokenAddressIn);
       console.log("total trades " + totaltrades);
       console.log(data6.data);
   
       for (var dodo = 0; dodo <= totaltrades; dodo++) {
-        tokens_in = data6.tokenAddressIn[dodo];
-        tokens_out = data6.tokenAddressOut[dodo];
-        tx_hash = data2.amountUsd[dodo];
-        timestamp = data2.timestamp[dodo];
-        tokens_in_amount = data2.tokenAmountIn[dodo];
-        tokens_out_amount = data2.tokenAmountOut[dodo];
+        tokens_in = jsonObj[dodo].tokenAddressIn;
+        tokens_out = jsonObj[dodo].tokenAddressOut;
+        tx_hash = jsonObj[dodo].amountUsd;
+        timestamp = jsonObj[dodo].timestamp;
+        tokens_in_amount = jsonObj[dodo].tokenAmountIn;
+        tokens_out_amount = jsonObj[dodo].tokenAmountOut;
         href_for_txid = "https://blockscan.com/tx/"+tx_hash
         //top row button
         var toprow = document.createElement('div')
