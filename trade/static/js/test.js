@@ -377,7 +377,7 @@ function fetchPreviousTrades(){
             } 
         };
         return false;
-    };
+    }
       //var totaltrades = Object.keys(data6.tokenAddressIn).length;
       //console.log("total trades " + totaltrades);
       //console.log(data6.data);
