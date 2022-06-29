@@ -373,7 +373,8 @@ function fetchPreviousTrades(){
             if (data6.tokenAddressIn === leftside && tokenAddressOut === rightside) {
                 return true;
             } else if (data6.tokenAddressIn === rightside && tokenAddressOut === leftside) {
-                return true;
+              console.log(data6[i].amountUsd);  
+              return true;
             } 
         };
         return false;
