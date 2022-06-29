@@ -363,7 +363,7 @@ function fetchPreviousTrades(){
             PreviousTrades(data6);
             console.log("got tot eh first one");
           })
-    }
+    };
 
     function PreviousTrades(data6){
       var currentUrl = window.location.href;
