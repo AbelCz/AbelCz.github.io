@@ -378,52 +378,89 @@ function fetchPreviousTrades(){
         for (let i = 0; i < data.length; i++) {
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
                 console.log("true");
+                tokens_in = data[i].tokenAddressIn;
+                tokens_out = data[i].tokenAddressOut;
+                tx_hash = data[i].amountUsd;
+                timestamp = data[i].timestamp;
+                tokens_in_amount = data[i].tokenAmountIn;
+                tokens_out_amount = data[i].tokenAmountOut;
+                href_for_txid = "https://blockscan.com/tx/"+tx_hash;
+                //top row button
+                var toprow = document.createElement('div')
+                toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No")
+                document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
+
+                var toprow2 = document.createElement('div')
+                toprow2.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj")
+                toprow2.innerHTML = "Size "
+                document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow2)
+
+                var toprow3 = document.createElement('div')
+                toprow3.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt")
+                document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprow3)
+
+                var toprow4 = document.createElement('div')
+                toprow4.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy")
+                toprow4.innerHTML = "Price "
+                document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow4)
+
+                var toprow5 = document.createElement('div')
+                toprow5.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt")
+                document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow5)
+
+                var toprow = document.createElement('div')
+                toprow6.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3U1i7AzOk6yO_edgzEnIJI")
+                toprow6.innerHTML = "Time"
+                document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow6)
+
+                var bottomrow = document.createElement('div')
+                toprow.classList.add("_3rhft_8tou3TxOH2wrLf_P")
+                document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
               console.log("true");
+              tokens_in = data[i].tokenAddressIn;
+              tokens_out = data[i].tokenAddressOut;
+              tx_hash = data[i].amountUsd;
+              timestamp = data[i].timestamp;
+              tokens_in_amount = data[i].tokenAmountIn;
+              tokens_out_amount = data[i].tokenAmountOut;
+              href_for_txid = "https://blockscan.com/tx/"+tx_hash;
+              //top row button
+              var toprow = document.createElement('div')
+              toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No")
+              document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
+
+              var toprow2 = document.createElement('div')
+              toprow2.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj")
+              toprow2.innerHTML = "Size "
+              document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow2)
+
+              var toprow3 = document.createElement('div')
+              toprow3.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt")
+              document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprow3)
+
+              var toprow4 = document.createElement('div')
+              toprow4.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy")
+              toprow4.innerHTML = "Price "
+              document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow4)
+
+              var toprow5 = document.createElement('div')
+              toprow5.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt")
+              document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow5)
+
+              var toprow = document.createElement('div')
+              toprow6.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3U1i7AzOk6yO_edgzEnIJI")
+              toprow6.innerHTML = "Time"
+              document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow6)
+
+              var bottomrow = document.createElement('div')
+              toprow.classList.add("_3rhft_8tou3TxOH2wrLf_P")
+              document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
             } 
-        console.log("true");
+        console.log("false");
       //var totaltrades = Object.keys(data6.tokenAddressIn).length;
       //console.log("total trades " + totaltrades);
       //console.log(data6.data);
-
-        tokens_in = data[i].tokenAddressIn;
-        tokens_out = data[i].tokenAddressOut;
-        tx_hash = data[i].amountUsd;
-        timestamp = data[i].timestamp;
-        tokens_in_amount = data[i].tokenAmountIn;
-        tokens_out_amount = data[i].tokenAmountOut;
-        href_for_txid = "https://blockscan.com/tx/"+tx_hash;
-        //top row button
-        var toprow = document.createElement('div')
-        toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No")
-        document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
-
-        var toprow2 = document.createElement('div')
-        toprow2.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj")
-        toprow2.innerHTML = "Size "
-        document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow2)
-
-        var toprow3 = document.createElement('div')
-        toprow3.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt")
-        document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprow3)
-
-        var toprow4 = document.createElement('div')
-        toprow4.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy")
-        toprow4.innerHTML = "Price "
-        document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow4)
-
-        var toprow5 = document.createElement('div')
-        toprow5.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt")
-        document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow5)
-
-        var toprow = document.createElement('div')
-        toprow6.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3U1i7AzOk6yO_edgzEnIJI")
-        toprow6.innerHTML = "Time"
-        document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow6)
-
-        var bottomrow = document.createElement('div')
-        toprow.classList.add("_3rhft_8tou3TxOH2wrLf_P")
-        document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
       }
       };
 
