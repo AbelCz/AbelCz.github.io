@@ -376,20 +376,16 @@ function fetchPreviousTrades(){
       console.log("rightside: "+rightside);
       console.log("bbb");
       const totaltrades = (leftside, rightside, data6) => {
-        console.log("nyananan");
         for (let intern = 0; intern < data6.length; intern++) {
-            console.log("ccc");
             if (data6[intern].tokenAddressIn === leftside && data6[intern].tokenAddressOut === rightside) {
-              console.log("ddd");
                 return true;
             } else if (data6[intern].tokenAddressIn === rightside && data6[intern].tokenAddressOut === leftside) {
-              console.log("zzz");  
               return true;
             } 
         };
-        console.log("www");
+        console.log("succ");
         return false;
-      ;}
+      };
       //var totaltrades = Object.keys(data6.tokenAddressIn).length;
       //console.log("total trades " + totaltrades);
       //console.log(data6.data);
