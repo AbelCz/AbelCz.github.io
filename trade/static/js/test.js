@@ -433,8 +433,8 @@ function fetchPreviousTrades(){
 
 function fetchWalletStatus(){
   if(!web3.isConnected()) {
-    getElementsByClassName("jvuCRv")[0].innerHTML="";
-    getElementsByClassName("hWQLoI")[0].innerHTML="";
+    getElementsByClassName("jvuCRv")[0].style.display = "none";
+    getElementsByClassName("hWQLoI")[0].style.display = "none";
     // show some dialog to ask the user to start a node
 
 } else {
