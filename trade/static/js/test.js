@@ -366,11 +366,12 @@ function fetchPreviousTrades(){
     };
 
     function PreviousTrades(data6){
-      var currentUrl = window.location.href;
-      leftside = currentUrl.split('?').pop().split('_')[0];
-      rightside = currentUrl.split('_').pop();
+      var currentUrl10 = window.location.href;
+      leftside = currentUrl10.split('?').pop().split('_')[0];
+      rightside = currentUrl10.split('_').pop();
       console.log("bbb");
       const totaltrades = (leftside, rightside, arr) => {
+        console.log("nyananan");
         for (let intern = 0; intern < data6.length; intern++) {
             console.log("ccc");
             if (arr.tokenAddressIn === leftside && tokenAddressOut === rightside) {
