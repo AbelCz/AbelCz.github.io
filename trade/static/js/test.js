@@ -370,19 +370,19 @@ function fetchPreviousTrades(){
       var currentUrl10 = window.location.href;
       console.log("dadadad");
       leftside = currentUrl10.split('?').pop().split('_')[0];
-      console.log("rightside: "+leftside);
+       console.log("rightside: "+rightside);
       console.log("daasdadsa");
       rightside = currentUrl10.split('_').pop();
       console.log("rightside: "+rightside);
       console.log("bbb");
-      const radioShack = (leftside, rightside, arr) => {
+      const totaltrades = (leftside, rightside, data6) => {
         console.log("nyananan");
-        for (let intern = 0; intern < arr.length; intern++) {
+        for (let intern = 0; intern < data6.length; intern++) {
             console.log("ccc");
-            if (arr.tokenAddressIn === leftside && tokenAddressOut === rightside) {
+            if (data6.tokenAddressIn === leftside && tokenAddressOut === rightside) {
               console.log("ddd");
                 return true;
-            } else if (arr.tokenAddressIn === rightside && tokenAddressOut === leftside) {
+            } else if (data6.tokenAddressIn === rightside && tokenAddressOut === leftside) {
               console.log("zzz");  
               return true;
             } 
