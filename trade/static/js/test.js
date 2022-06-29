@@ -368,11 +368,11 @@ function fetchPreviousTrades(){
       var currentUrl = window.location.href;
       lefside = currentUrl.split('?').pop().split('_')[0];
       rightside = currentUrl.split('_').pop();
-      const totaltrades = (leftside, rightside, arr) => {
-        for (let i = 0; i < arr.length; i++) {
-            if (arr.tokenAddressIn === leftside && tokenAddressOut === rightside) {
+      const totaltrades = (leftside, rightside, data6) => {
+        for (let i = 0; i < data6.length; i++) {
+            if (data6.tokenAddressIn === leftside && tokenAddressOut === rightside) {
                 return true;
-            } else if (arr.tokenAddressIn === rightside && tokenAddressOut === leftside) {
+            } else if (data6.tokenAddressIn === rightside && tokenAddressOut === leftside) {
                 return true;
             } 
         };
