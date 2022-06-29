@@ -355,7 +355,7 @@ function fetchTokenlist(){
   fetchPreviousTrades();
  }
 function fetchPreviousTrades(){
-    fetch('https://api.radioshack.org/v1/trades/range?start=0&end=9999999999')
+    fetch('https://api.radioshack.org/v1/trades/range?start=1655861751&end=9999999999')
     .then(function (response) {
             return response.json();
           })
@@ -366,8 +366,8 @@ function fetchPreviousTrades(){
     function PreviousTrades(data6){
       var totaltrades = Object.keys(data6.tokenAddressIn).length;
       let keyTokensIn = Object.keys(data6.tokenAddressIn);
-      console.log("total tokens " + totaltrades);
-      console.log(data2.data);
+      console.log("total trades " + totaltrades);
+      console.log(data6.data);
   
       for (var dodo = 0; dodo <= totaltrades; dodo++) {
         tokens_in = data6.tokenAddressIn[dodo];
