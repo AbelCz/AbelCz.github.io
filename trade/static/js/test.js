@@ -381,7 +381,6 @@ function fetchPreviousTrades(){
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
               console.log("true");
             } 
-        };
         console.log("true");
       //var totaltrades = Object.keys(data6.tokenAddressIn).length;
       //console.log("total trades " + totaltrades);
@@ -425,6 +424,7 @@ function fetchPreviousTrades(){
         var bottomrow = document.createElement('div')
         toprow.classList.add("_3rhft_8tou3TxOH2wrLf_P")
         document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
+      };
       };
 
 function fetchWalletStatus() {
