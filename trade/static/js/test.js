@@ -369,16 +369,21 @@ function fetchPreviousTrades(){
       var currentUrl = window.location.href;
       lefside = currentUrl.split('?').pop().split('_')[0];
       rightside = currentUrl.split('_').pop();
+      console.log("bbb");
       const totaltrades = (leftside, rightside, data6) => {
         for (let intern = 0; intern < data6.length; intern++) {
+            console.log("ccc");
             if (data6.tokenAddressIn === leftside && tokenAddressOut === rightside) {
+              console.log("ddd");
                 return true;
             } else if (data6.tokenAddressIn === rightside && tokenAddressOut === leftside) {
-              console.log(data6[intern].amountUsd);  
+              console.log("zzz");  
               return true;
             } 
         };
+        console.log("www");
         return false;
+        
     }
       //var totaltrades = Object.keys(data6.tokenAddressIn).length;
       //console.log("total trades " + totaltrades);
