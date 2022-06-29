@@ -431,17 +431,15 @@ function fetchPreviousTrades(){
       }
     };
 
-function fetchWalletStatus(){
-  if(!web3.isConnected()) {
-    getElementsByClassName("sc-giAqHp.jvuCRv")[0].style.display = "none";
+function fetchWalletStatus() {
+  try {
+      Session.set('connected',web3.isConnected())
+      getElementsByClassName("sc-giAqHp.jvuCRv")[0].style.display = "none";
     getElementsByClassName("sc-giAqHp.hWQLoI")[0].style.display = "none";
-    // show some dialog to ask the user to start a node
-
-} else {
-
-   // start web3 filters, calls, etc
-
-}
+  }
+  catch (e) {
+      Session.set('connected',false)
+  }
 }
 
 
