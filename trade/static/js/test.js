@@ -340,7 +340,7 @@ function fetchTokenlist(){
   }
 
  function showPreviousTrades(){
-  var hideOrderBook = document.getElementsByClassName("zhf4mQmHC-bvUHRiL0ncA");
+  var hideOrderBook = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
   hideOrderBook.innerHTML = "";
  }
 
