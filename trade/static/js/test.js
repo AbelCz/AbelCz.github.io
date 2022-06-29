@@ -375,10 +375,10 @@ function fetchPreviousTrades(){
       rightside = currentUrl10.split('_').pop();
       console.log("rightside: "+rightside);
       const totaltrades = (leftside, rightside, data) => {
-        for (var intern = 0; intern < data.length; intern++) {
-            if (data[intern].tokenAddressIn === leftside && data[intern].tokenAddressOut === rightside) {
+        for (let i = 0; i < data.length; i++) {
+            if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
                 console.log("true");
-            } else if (data[intern].tokenAddressIn === rightside && data[intern].tokenAddressOut === leftside) {
+            } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
               console.log("true");
             } 
         };
