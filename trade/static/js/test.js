@@ -348,7 +348,7 @@ function fetchTokenlist(){
   hideOrderBookButton.classList.add('_3wFHO7dX4-NDkAql126wyt');
   hideOrderBookButton.classList.remove('_3wFHO7dX4-NDkAql126wyt');
   hideOrderBookButton.classList.remove('_-0q9IsXZcH1dLHnmhteQ7');
-  var theBigTradeButton = document.getElementsByClassName('_3wFHO7dX4-NDkAql126wyt')[4];
+  var theBigTradeButton = document.getElementsByClassName('_3wFHO7dX4-NDkAql126wyt')[3];
   theBigTradeButton.classList.add('_3wFHO7dX4-NDkAql126wyt');
   theBigTradeButton.classList.add('_-0q9IsXZcH1dLHnmhteQ7');
   theBigTradeButton.classList.remove('_3wFHO7dX4-NDkAql126wyt');
