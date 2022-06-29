@@ -360,8 +360,9 @@ function fetchPreviousTrades(){
             return response.json();
           })
           .then(function (data6) {
-            PreviousTrades(data6);
             console.log("got tot eh first one");
+            await delay(5000);
+            PreviousTrades(data6);
           })
 };
 
