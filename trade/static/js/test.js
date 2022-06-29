@@ -370,8 +370,10 @@ function fetchPreviousTrades(){
       var currentUrl10 = window.location.href;
       console.log("dadadad");
       leftside = currentUrl10.split('?').pop().split('_')[0];
+      console.log("rightside: "+leftside);
       console.log("daasdadsa");
       rightside = currentUrl10.split('_').pop();
+      console.log("rightside: "+rightside);
       console.log("bbb");
       const radioShack = (leftside, rightside, arr) => {
         console.log("nyananan");
