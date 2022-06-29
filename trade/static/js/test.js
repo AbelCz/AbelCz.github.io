@@ -380,9 +380,9 @@ function fetchPreviousTrades(){
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
               console.log("exp1");
                 tokens_in = data[i].tokenAddressIn;
-                console.log(tokens_in);
+                console.log(tokens_in)[i];
                 tokens_out = data[i].tokenAddressOut;
-                console.log(tokens_out);
+                console.log(tokens_out)[i];
                 tx_hash = data[i].amountUsd;
                 timestamp = data[i].timestamp;
                 tokens_in_amount = data[i].tokenAmountIn;
