@@ -52,9 +52,9 @@ function fetchStatus() {
       ethereum.request({ method: 'eth_requestAccounts' });
     });
 
-    const hideTheBook = document.getElementsByClassName("_2_fbqvCSTUXAOwBZueSnou._3wFHO7dX4-NDkAql126wyt");
+    const hideTheBook = document.getElementsByClassName("_3wFHO7dX4-NDkAql126wyt");
 
-    hideTheBook[0].addEventListener('click', () => {
+    hideTheBook[4].addEventListener('click', () => {
       // hide the book
       showPreviousTrades();
     });
