@@ -364,21 +364,19 @@ function fetchPreviousTrades(){
           })
     }
     function PreviousTrades(data6){
-      var totaltrades = Object.keys(data6.data).length;
-      let keyNames = Object.keys(data6.data);
+      var totaltrades = Object.keys(data6.tokenAddressIn).length;
+      let keyTokensIn = Object.keys(data6.tokenAddressIn);
       console.log("total tokens " + totaltrades);
       console.log(data2.data);
   
       for (var dodo = 0; dodo <= totaltrades; dodo++) {
-        base_symbols = data2.data[keyNames[dodo]].base_symbol;
-        base_names = data2.data[keyNames[dodo]].base_name;
-        quote_symbols = data2.data[keyNames[dodo]].quote_symbol;
-        lowercase_symbols = base_symbols.toLowerCase();
-        url_logos = "https://abelcz.github.io/currencies/"+lowercase_symbols+".svg"
-        prices = data2.data[keyNames[dodo]].price;
-        base_addresses = data2.data[keyNames[dodo]].base_address;
-        quote_addresses = data2.data[keyNames[dodo]].quote_address;
-        href_for_tokens = "/trade/trade/?"+base_addresses+"_"+quote_addresses
+        tokens_in = data6.tokenAddressIn[dodo];
+        tokens_out = data6.tokenAddressOut[dodo]];
+        tx_hash = data2.amountUsd[dodo];
+        timestamp = data2.timestamp[dodo];
+        tokens_in_amount = data2.tokenAmountIn[dodo];
+        tokens_out_amount = data2.tokenAmountOut[dodo];
+        href_for_txid = "https://blockscan.com/tx/"+tx_hash
         //top row button
         var toprow = document.createElement('div')
         toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No")
