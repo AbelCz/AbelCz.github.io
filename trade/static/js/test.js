@@ -363,6 +363,9 @@ function fetchPreviousTrades(){
             console.log("got tot eh first one");
             PreviousTrades(data6);
           })
+          .catch(function (err) {
+            console.log('error: ' + err);
+          });
 };
 
     function PreviousTrades(data6){
