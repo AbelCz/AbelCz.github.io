@@ -363,11 +363,14 @@ function fetchPreviousTrades(){
             PreviousTrades(data6);
             console.log("got tot eh first one");
           })
-    };
+};
 
     function PreviousTrades(data6){
+      console.log("zzzertr")
       var currentUrl10 = window.location.href;
+      console.log("dadadad");
       leftside = currentUrl10.split('?').pop().split('_')[0];
+      console.log("daasdadsa");
       rightside = currentUrl10.split('_').pop();
       console.log("bbb");
       const totaltrades = (leftside, rightside, arr) => {
