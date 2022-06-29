@@ -386,14 +386,13 @@ function fetchPreviousTrades(){
       //var totaltrades = Object.keys(data6.tokenAddressIn).length;
       //console.log("total trades " + totaltrades);
       //console.log(data6.data);
-  
-      for (var dodo = 0; dodo <= totaltrades; dodo++) {
-        tokens_in = data6[dodo].tokenAddressIn;
-        tokens_out = data6[dodo].tokenAddressOut;
-        tx_hash = data6[dodo].amountUsd;
-        timestamp = data6[dodo].timestamp;
-        tokens_in_amount = data6[dodo].tokenAmountIn;
-        tokens_out_amount = data6[dodo].tokenAmountOut;
+
+        tokens_in = data[i].tokenAddressIn;
+        tokens_out = data[i].tokenAddressOut;
+        tx_hash = data[i].amountUsd;
+        timestamp = data[i].timestamp;
+        tokens_in_amount = data[i].tokenAmountIn;
+        tokens_out_amount = data[i].tokenAmountOut;
         href_for_txid = "https://blockscan.com/tx/"+tx_hash
         //top row button
         var toprow = document.createElement('div')
@@ -426,8 +425,7 @@ function fetchPreviousTrades(){
         var bottomrow = document.createElement('div')
         toprow.classList.add("_3rhft_8tou3TxOH2wrLf_P")
         document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
-      }
-    };
+      };
 
 function fetchWalletStatus() {
   try {
