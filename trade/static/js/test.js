@@ -361,6 +361,7 @@ function fetchPreviousTrades(){
           })
           .then(function (data6) {
             PreviousTrades(data6);
+            console.log("got tot eh first one");
           })
     }
 
@@ -369,11 +370,11 @@ function fetchPreviousTrades(){
       lefside = currentUrl.split('?').pop().split('_')[0];
       rightside = currentUrl.split('_').pop();
       const totaltrades = (leftside, rightside, data6) => {
-        for (let i = 0; i < data6.length; i++) {
+        for (let intern = 0; intern < data6.length; intern++) {
             if (data6.tokenAddressIn === leftside && tokenAddressOut === rightside) {
                 return true;
             } else if (data6.tokenAddressIn === rightside && tokenAddressOut === leftside) {
-              console.log(data6[i].amountUsd);  
+              console.log(data6[intern].amountUsd);  
               return true;
             } 
         };
