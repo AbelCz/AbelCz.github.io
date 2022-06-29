@@ -359,26 +359,26 @@ function fetchPreviousTrades(){
     .then(function (response) {
             return response.json();
           })
-          .then(function (data6) {
+          .then(function (data) {
             console.log("got tot eh first one");
-            PreviousTrades(data6);
+            PreviousTrades(data);
           })
           .catch(function (err) {
             console.log('error: ' + err);
           });
 };
 
-    function PreviousTrades(data6){
+    function PreviousTrades(data){
       var currentUrl10 = window.location.href;
       leftside = currentUrl10.split('?').pop().split('_')[0];
       console.log("rightside: "+leftside);
       rightside = currentUrl10.split('_').pop();
       console.log("rightside: "+rightside);
-      const totaltrades = (leftside, rightside, data6) => {
-        for (var intern = 0; intern < data6.length; intern++) {
-            if (data6[intern].tokenAddressIn === leftside && data6[intern].tokenAddressOut === rightside) {
+      const totaltrades = (leftside, rightside, data) => {
+        for (var intern = 0; intern < data.length; intern++) {
+            if (data[intern].tokenAddressIn === leftside && data[intern].tokenAddressOut === rightside) {
                 console.log("true");
-            } else if (data6[intern].tokenAddressIn === rightside && data6[intern].tokenAddressOut === leftside) {
+            } else if (data[intern].tokenAddressIn === rightside && data[intern].tokenAddressOut === leftside) {
               console.log("true");
             } 
         };
