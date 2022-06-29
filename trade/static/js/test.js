@@ -267,7 +267,7 @@ function fetchTokenlist(){
   function tokenList(data2){
     var totalpairs = Object.keys(data2.data).length;
     let keyNames = Object.keys(data2.data);
-    console.log("total tokens " + totalpairs);
+    console.log("total trades " + totalpairs);
     console.log(data2.data);
 
     for (var zozo = 0; zozo <= totalpairs; zozo++) {
@@ -339,7 +339,7 @@ function fetchTokenlist(){
       document.getElementsByClassName("_30_dV41WvMclCi77kevilg","open")[0].setAttribute("id","closed");
     }
   }
-
+// the previous trades section omg om gom go mgo mgom gogm ogm ogm ogm gomog m ogmo gmogm ogm ogm gomg ogm o mgo mogm ogmom gom gom go mgo mgo gmo gm
  function showPreviousTrades(){
   var hideOrderBook = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
   hideOrderBook.innerHTML = "";
@@ -352,7 +352,124 @@ function fetchTokenlist(){
   theBigTradeButton.classList.add('_3wFHO7dX4-NDkAql126wyt');
   theBigTradeButton.classList.add('_-0q9IsXZcH1dLHnmhteQ7');
   theBigTradeButton.classList.remove('_3wFHO7dX4-NDkAql126wyt');
+  fetchPreviousTrades();
  }
+function fetchPreviousTrades(){
+    fetch('https://api.radioshack.org/v1/trades/range?start=0&end=9999999999')
+    .then(function (response) {
+            return response.json();
+          })
+          .then(function (data6) {
+            PreviousTrades(data6);
+          })
+    };
+    function PreviousTrades(data6){
+      var totaltrades = Object.keys(data6.data).length;
+      let keyNames = Object.keys(data6.data);
+      console.log("total tokens " + totaltrades);
+      console.log(data2.data);
+  
+      for (var dodo = 0; dodo <= totaltrades; dodo++) {
+        base_symbols = data2.data[keyNames[dodo]].base_symbol;
+        base_names = data2.data[keyNames[dodo]].base_name;
+        quote_symbols = data2.data[keyNames[dodo]].quote_symbol;
+        lowercase_symbols = base_symbols.toLowerCase();
+        url_logos = "https://abelcz.github.io/currencies/"+lowercase_symbols+".svg"
+        prices = data2.data[keyNames[dodo]].price;
+        base_addresses = data2.data[keyNames[dodo]].base_address;
+        quote_addresses = data2.data[keyNames[dodo]].quote_address;
+        href_for_tokens = "/trade/trade/?"+base_addresses+"_"+quote_addresses
+        //top row button
+        var toprow = document.createElement('div')
+        toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No")
+        document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
+
+        var toprow2 = document.createElement('div')
+        toprow2.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj")
+        toprow2.innerHTML = "Size "
+        document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow2)
+
+        var toprow3 = document.createElement('div')
+        toprow3.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt")
+        document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprow3)
+
+        var toprow4 = document.createElement('div')
+        toprow4.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy")
+        toprow4.innerHTML = "Price "
+        document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow4)
+
+        var toprow5 = document.createElement('div')
+        toprow5.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt")
+        document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow5)
+
+        var toprow = document.createElement('div')
+        toprow6.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3U1i7AzOk6yO_edgzEnIJI")
+        toprow6.innerHTML = "Time"
+        document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow6)
+        
+        //eth button
+        var m = document.createElement('a')
+        m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo")
+        m.setAttribute("role","button")
+        m.setAttribute("href",href_for_tokens)
+        document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[0].appendChild(m)
+        
+        var n = document.createElement('div')
+        n.classList.add("_2jve0XRK1SS7xTFWQHU7sV")
+        document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[dodo].appendChild(n);
+  
+      
+        var o = document.createElement('div')
+        o.classList.add("_3703-MxhX16pYBOSod3SpG")
+        document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[dodo].appendChild(o)
+  
+        var p = document.createElement('div')
+        p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")
+        document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[dodo].appendChild(p)
+        //add image
+  
+        var q = document.createElement('img')
+        q.src = url_logos
+        document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[dodo].appendChild(q)
+        //add name
+  
+        var r = document.createElement('span')
+        r.innerHTML = base_names
+        document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[dodo].appendChild(r)
+        //add ticker
+  
+        var s = document.createElement('span');
+        s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6")
+        s.innerHTML =  base_symbols+"/"+quote_symbols
+        document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[dodo].appendChild(s)
+  
+    
+        var t = document.createElement('div')
+        t.classList.add("_2d-dptgdt6bp7FHSPkHbT6")
+        document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[dodo].appendChild(t)
+        // price here
+  
+        var u = document.createElement('span')
+        u.innerHTML = prices
+        document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[dodo].appendChild(u)
+  
+  
+        var v = document.createElement('div');
+        v.classList.add("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")
+        document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[dodo].appendChild(v)
+        //price change
+  
+        var w = document.createElement('span')
+        w.innerHTML = "percentage"
+        document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[dodo].appendChild(w)
+  
+        document.getElementsByClassName("_30_dV41WvMclCi77kevilg","open")[0].setAttribute("id","closed");
+      }
+    }
+
+
+
+ 
 
 
 
