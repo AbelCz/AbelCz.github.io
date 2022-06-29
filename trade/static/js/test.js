@@ -57,7 +57,7 @@ function fetchStatus() {
     hideTheBook[4].addEventListener('click', () => {
       // hide the book
       showPreviousTrades();
-      console.log(nice);
+      console.log("nice");
     });
   })
 
@@ -364,7 +364,7 @@ function fetchPreviousTrades(){
           })
     }
     function PreviousTrades(data6){
-      var jsonObj = JSON.parse(data6)
+      var jsonObj = JSON.parse(data6);
       var totaltrades = Object.keys(data6.tokenAddressIn).length;
       let keyTokensIn = Object.keys(data6.tokenAddressIn);
       console.log("total trades " + totaltrades);
