@@ -367,7 +367,7 @@ function fetchPreviousTrades(){
     function PreviousTrades(data6){
       var currentUrl = window.location.href;
       lefside = currentUrl.split('?').pop().split('_')[0];
-      rightside = currentUrl2.split('_').pop();
+      rightside = currentUrl.split('_').pop();
       const totaltrades = (leftside, rightside, arr) => {
         for (let i = 0; i < arr.length; i++) {
             if (arr.tokenAddressIn === leftside && tokenAddressOut === rightside) {
