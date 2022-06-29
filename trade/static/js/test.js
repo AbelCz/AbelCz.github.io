@@ -361,7 +361,6 @@ function fetchPreviousTrades(){
           })
           .then(function (data6) {
             console.log("got tot eh first one");
-            await delay(5000);
             PreviousTrades(data6);
           })
 };
