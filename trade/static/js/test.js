@@ -51,6 +51,13 @@ function fetchStatus() {
       //Will Start the metamask extension
       ethereum.request({ method: 'eth_requestAccounts' });
     });
+
+    const hideTheBook = document.getElementsByClassName("_2_fbqvCSTUXAOwBZueSnou._3wFHO7dX4-NDkAql126wyt");
+
+    hideTheBook[0].addEventListener('click', () => {
+      // hide the book
+      showPreviousTrades();
+    });
   })
 
   function getTheCurrentLink(){
@@ -332,7 +339,10 @@ function fetchTokenlist(){
     }
   }
 
- 
+ function showPreviousTrades(){
+  var hideOrderBook = document.getElementsByClassName("zhf4mQmHC-bvUHRiL0ncA");
+  hideOrderBook.innerHTML = "";
+ }
 
 
 
