@@ -376,7 +376,7 @@ function fetchPreviousTrades(){
       console.log("rightside: "+rightside);
       console.log("bbb");
       const totaltrades = (leftside, rightside, data6) => {
-        for (let intern = 0; intern < data6.length; intern++) {
+        for (var intern = 0; intern < data6.length; intern++) {
             if (data6[intern].tokenAddressIn === leftside && data6[intern].tokenAddressOut === rightside) {
                 return true;
             } else if (data6[intern].tokenAddressIn === rightside && data6[intern].tokenAddressOut === leftside) {
@@ -430,7 +430,7 @@ function fetchPreviousTrades(){
         toprow.classList.add("_3rhft_8tou3TxOH2wrLf_P")
         document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow)
       }
-    }
+    };
 
 
 
