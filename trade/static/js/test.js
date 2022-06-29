@@ -373,14 +373,14 @@ function fetchPreviousTrades(){
       console.log("daasdadsa");
       rightside = currentUrl10.split('_').pop();
       console.log("bbb");
-      const totaltrades = (leftside, rightside, arr) => {
+      const totaltrades = (leftside, rightside, data6) => {
         console.log("nyananan");
         for (let intern = 0; intern < data6.length; intern++) {
             console.log("ccc");
-            if (arr.tokenAddressIn === leftside && tokenAddressOut === rightside) {
+            if (data6.tokenAddressIn === leftside && tokenAddressOut === rightside) {
               console.log("ddd");
                 return true;
-            } else if (arr.tokenAddressIn === rightside && tokenAddressOut === leftside) {
+            } else if (data6.tokenAddressIn === rightside && tokenAddressOut === leftside) {
               console.log("zzz");  
               return true;
             } 
