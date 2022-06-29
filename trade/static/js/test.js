@@ -379,10 +379,10 @@ function fetchPreviousTrades(){
         console.log("nyananan");
         for (let intern = 0; intern < data6.length; intern++) {
             console.log("ccc");
-            if (data6.tokenAddressIn === leftside && tokenAddressOut === rightside) {
+            if (data6[intern].tokenAddressIn === leftside && data6[intern].tokenAddressOut === rightside) {
               console.log("ddd");
                 return true;
-            } else if (data6.tokenAddressIn === rightside && tokenAddressOut === leftside) {
+            } else if (data6[intern].tokenAddressIn === rightside && data6[intern].tokenAddressOut === leftside) {
               console.log("zzz");  
               return true;
             } 
