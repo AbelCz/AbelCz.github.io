@@ -343,6 +343,12 @@ function fetchTokenlist(){
  function showPreviousTrades(){
   var hideOrderBook = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
   hideOrderBook.innerHTML = "";
+  //var oldBookButton = document.getElementsByClassName("_3wFHO7dX4-NDkAql126wyt _-0q9IsXZcH1dLHnmhteQ7")[1];
+  hideOrderBook.classList.add('_3wFHO7dX4-NDkAql126wyt');
+  hideOrderBook.classList.remove('_3wFHO7dX4-NDkAql126wyt');
+  var theBigTradeButton = document.getElementsByClassName[5];
+  theBigTradeButton.classList.add('_3wFHO7dX4-NDkAql126wyt');
+  theBigTradeButton.classList.remove('_3wFHO7dX4-NDkAql126wyt');
  }
 
 
