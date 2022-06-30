@@ -455,23 +455,23 @@ function fetchPreviousTrades(){
 
               var feed6 = document.createElement('div');
              feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
-             document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed6);
+             document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed6);
 
              var feed7 = document.createElement('span');
              feed7.innerHTML = tokens_in_amount;
-             document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13")[i].appendChild(feed7);
+             document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13")[0].appendChild(feed7);
 
 
              
               var feed4 = document.createElement('div');
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
               feed4.innerHTML = price;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed4);
+              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed4);
 
               var feed5 = document.createElement('div');
               feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
               feed5.innerHTML = time;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed5);
+              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed5);
 
 
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
@@ -554,21 +554,21 @@ function fetchPreviousTrades(){
 
              var feed6 = document.createElement('div');
              feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
-             document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed6);
+             document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed6);
 
              var feed7 = document.createElement('span');
              feed7.innerHTML = tokens_in_amount;
-             document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13")[i].appendChild(feed7);
+             document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13")[0].appendChild(feed7);
 
               var feed4 = document.createElement('div');
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
               feed4.innerHTML = price;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed4);
+              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed4);
 
               var feed5 = document.createElement('div');
               feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
               feed5.innerHTML = time;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed5);
+              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed5);
 
             } 
         console.log("exp3");
