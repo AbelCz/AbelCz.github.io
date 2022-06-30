@@ -90,7 +90,7 @@ function fetchStatus() {
         console.log("pemp")
         pemp.play();
     } else {
-        console.log("kek")
+      return;
     }
     // Overwrite the existing HTML with new content received.
     tbl.innerHTML = dsa;
