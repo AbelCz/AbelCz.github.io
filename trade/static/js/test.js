@@ -437,11 +437,13 @@ function fetchPreviousTrades(){
           tokens_out = data[i].tokenAddressOut;
           tx_hash = data[i].hash;
           //console.log("hash: "+tx_hash);
-          timestamp = data[i].timestamp;
           tokens_in_amount = Math.round(data[i].tokenAmountIn * 100) / 100;
           tokens_out_amount = Math.round(data[i].tokenAmountOut * 100) / 100;
           price = Math.round(data[i].amountUsd * 100) / 100;
           time = data[i].timestamp;
+          let datetime = new Date(0);
+          datetime.setUTCSeconds(time);
+          let timestamp = datetime.toString().substring(16, 24);
           href_for_txid = "https://blockscan.com/tx/"+tx_hash;
 
           
@@ -498,27 +500,13 @@ function fetchPreviousTrades(){
 
               let feed5 = document.createElement('div');
               feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
-              feed5.innerHTML = time;
+              feed5.innerHTML = timestamp;
               els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
               els[els.length - 1].appendChild(feed5);
 
 
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
-              console.log('tokens_in_amount2=', tokens_in_amount);
 
-              console.log(data[i]);
-              console.log("exp2");
-              tokens_in = data[i].tokenAddressIn;
-              tokens_out = data[i].tokenAddressOut;
-              tx_hash = data[i].hash;
-              console.log("hash: "+tx_hash);
-              timestamp = data[i].timestamp;
-              tokens_in_amount = data[i].tokenAmountIn;
-              tokens_out_amount = data[i].tokenAmountOut;
-              price = data[i].amountUsd;
-              time = data[i].timestamp;
-              href_for_txid = "https://blockscan.com/tx/"+tx_hash;
-              //top row button
 
               // feed 1 loop here
               //let feed2 = document.createElement('div');
@@ -564,7 +552,7 @@ function fetchPreviousTrades(){
 
               let feed5 = document.createElement('div');
               feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
-              feed5.innerHTML = time;
+              feed5.innerHTML = timestamp;
               els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
               els[els.length - 1].appendChild(feed5);
 
