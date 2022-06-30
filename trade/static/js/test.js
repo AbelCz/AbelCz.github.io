@@ -403,10 +403,10 @@ function fetchPreviousTrades(){
       document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow2);
 
       //var thisShitcoin = document.getElementsByClassName("_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6")[0].innerHTML;
-      let toprowSymbol = document.createElement('div');
-      toprowSymbol.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_1Io-xGeWSmRodp84w_CceQ");
-      toprowSymbol.innerHTML = "test";
-      docoument.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprowSymbol);
+      //let toprowSymbol = document.createElement('div');
+      //toprowSymbol.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_1Io-xGeWSmRodp84w_CceQ");
+      //toprowSymbol.innerHTML = "test";
+      //docoument.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprowSymbol);
 
 
       let toprow3 = document.createElement('div');
@@ -418,10 +418,10 @@ function fetchPreviousTrades(){
       toprow4.innerHTML = "Price ";
       document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow4);
 
-      //let toprow41 = document.createElement('div');
-      //toprow41.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
-      //toprow41.innerHTML = "USD";
-      //document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow41);
+      let toprow41 = document.createElement('div');
+      toprow41.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
+      toprow41.innerHTML = "USD";
+      document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow41);
 
       let toprow5 = document.createElement('div');
       toprow5.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
