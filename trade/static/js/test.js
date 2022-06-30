@@ -429,6 +429,9 @@ function fetchPreviousTrades(){
 
 
 
+        let max = 0;
+        let buys = 0;
+        let sells = 0;
 
         for (let i = 0; i < lengthnessoflinks; i++) {
           //console.log('i=', i);
@@ -446,8 +449,9 @@ function fetchPreviousTrades(){
           let timestamp = datetime.toString().substring(16, 24);
           href_for_txid = "https://blockscan.com/tx/"+tx_hash;
 
-          
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
+              buys++;
+              max = Math.max(max, tokens_in_amount);
               console.log('tokens_in_amount=', tokens_in_amount);
               console.log(data[i]);
               console.log("exp1");
@@ -506,7 +510,8 @@ function fetchPreviousTrades(){
 
 
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
-
+              sells++;
+              max = Math.max(max, tokens_in_amount);
 
               // feed 1 loop here
               //let feed2 = document.createElement('div');
@@ -557,12 +562,36 @@ function fetchPreviousTrades(){
               els[els.length - 1].appendChild(feed5);
 
             } 
+            
         console.log("exp3");
       //let totaltrades = Object.keys(data6.tokenAddressIn).length;
       //console.log("total trades " + totaltrades);
       //console.log(data6.data);
       }
-      };
+      console.log('max=', max);
+      console.log('buys=', buys);
+      console.log('sells=', sells);
+      let buyEls = document.getElementsByClassName("_1C-D0uZhA8Ep3ASdoMbdPR _2xqGgVJfiUA6YcqvCn_Z13");
+      let sellEls = document.getElementsByClassName("_1C-D0uZhA8Ep3ASdoMbdPR _3f6v7G3F-zXEJU7j-zQ_8R");
+      console.log('buyEls=', buyEls.length);
+      console.log('sellEls=', sellEls.length);
+
+      let currBuy = 0;
+      let currSell = 0;
+      for (let i = 0; i < lengthnessoflinks; i++) {
+        let percent = Math.round(data[i].tokenAmountIn / max * 100);
+        console.log('percent=', percent);
+        if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
+          buyEls[currBuy].style.width = `${percent}px`;
+          currBuy++;
+        } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
+          console.log('sellEls[currSell]=', sellEls[currSell]);
+          sellEls[currSell].style.width = `${percent}px`;
+          currSell++;
+        }
+      }
+
+    };
 
 function fetchWalletStatus() {
   try {
