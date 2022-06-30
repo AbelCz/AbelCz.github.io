@@ -377,6 +377,8 @@ function fetchPreviousTrades(){
       var lengthnessoflinks = data.length;
       console.log(lengthnessoflinks);
       console.log("rightside: "+rightside);
+      var getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
+      getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
         for (let i = 0; i < lengthnessoflinks; i++) {
           console.log("total links lengthness:"+lengthnessoflinks);
           tokens_in = data[i].tokenAddressIn;
@@ -389,8 +391,6 @@ function fetchPreviousTrades(){
           price = data[i].amountUsd;
           time = data[i].timestamp;
           href_for_txid = "https://blockscan.com/tx/"+tx_hash;
-          var getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
-          getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
               console.log(data[i]);
               console.log("exp1");
