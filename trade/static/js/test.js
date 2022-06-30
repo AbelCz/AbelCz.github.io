@@ -354,7 +354,7 @@ function fetchTokenlist(){
   theBigTradeButton.classList.add('_-0q9IsXZcH1dLHnmhteQ7');
   theBigTradeButton.classList.remove('_3wFHO7dX4-NDkAql126wyt');
   
-  fetchPreviousTrades());
+  fetchPreviousTrades();
  }
 function fetchPreviousTrades(){
     const secondsSinceEpoch = Math.round(Date.now() / 1000 - 3600)
