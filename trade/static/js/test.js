@@ -374,23 +374,23 @@ function fetchPreviousTrades(){
       leftside = currentUrl10.split('?').pop().split('_')[0].toLowerCase();
       console.log("rightside: "+leftside);
       rightside = currentUrl10.split('_').pop().toLowerCase();
-      var lengthnessoflinks = data.tokenAddressIn === leftside && data.tokenAddressOut === rightside;
+      var lengthnessoflinks = data.length;
       console.log(lengthnessoflinks);
       console.log("rightside: "+rightside);
         for (let i = 0; i < lengthnessoflinks; i++) {
           console.log("exp0");
+          tokens_in = data[i].tokenAddressIn;
+          tokens_out = data[i].tokenAddressOut;
+          tx_hash = data[i].hash;
+          console.log("hash: "+tx_hash);
+          timestamp = data[i].timestamp;
+          tokens_in_amount = data[i].tokenAmountIn;
+          tokens_out_amount = data[i].tokenAmountOut;
+          price = data[i].amountUsd;
+          time = data[i].timestamp;
+          href_for_txid = "https://blockscan.com/tx/"+tx_hash;
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
               console.log("exp1");
-                tokens_in = data[i].tokenAddressIn;
-                tokens_out = data[i].tokenAddressOut;
-                tx_hash = data[i].hash;
-                console.log("hash: "+tx_hash);
-                timestamp = data[i].timestamp;
-                tokens_in_amount = data[i].tokenAmountIn;
-                tokens_out_amount = data[i].tokenAmountOut;
-                price = data[i].amountUsd;
-                time = data[i].timestamp;
-                href_for_txid = "https://blockscan.com/tx/"+tx_hash;
                 //top row button
                 var getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
                 getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
