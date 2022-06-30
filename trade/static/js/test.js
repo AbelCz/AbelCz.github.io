@@ -518,7 +518,7 @@ function fetchPreviousTrades(){
 
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
               sells++;
-              max = Math.max(max, tokens_in_amount);
+              max = Math.max(max, tokens_out_amount);
 
               // feed 1 loop here
               //let feed2 = document.createElement('div');
@@ -551,7 +551,7 @@ function fetchPreviousTrades(){
              els[els.length - 1].appendChild(feed6);
 
              let feed7 = document.createElement('span');
-              feed7.innerHTML = tokens_in_amount;
+              feed7.innerHTML = tokens_out_amount;
               els = document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj _3f6v7G3F-zXEJU7j-zQ_8R");
               console.log(els);
               els[els.length - 1].appendChild(feed7);
