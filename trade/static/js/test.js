@@ -532,7 +532,7 @@ function fetchPreviousTrades(){
 
               console.log('222 document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")=', document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9"));
               let pricecolor = document.createElement('div');
-              pricecolor.classList.add("_1C-D0uZhA8Ep3ASdoMbdPR","_2xqGgVJfiUA6YcqvCn_Z13");
+              pricecolor.classList.add("_1C-D0uZhA8Ep3ASdoMbdPR","_3f6v7G3F-zXEJU7j-zQ_8R");
               pricecolor.style = "width:2px";
               //pricecolor. add width 1px
               let els = document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9");
