@@ -546,13 +546,13 @@ function fetchPreviousTrades(){
               els[els.length - 1].appendChild(feed3);
 
              let feed6 = document.createElement('div');
-             feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
+             feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_3f6v7G3F-zXEJU7j-zQ_8R");
             els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
              els[els - 1].appendChild(feed6);
 
              let feed7 = document.createElement('span');
              feed7.innerHTML = tokens_in_amount;
-             els = document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj _2xqGgVJfiUA6YcqvCn_Z13");
+             els = document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj _3f6v7G3F-zXEJU7j-zQ_8R");
              console.log(els);
              els[els - 1].appendChild(feed7);
 
