@@ -440,7 +440,7 @@ function fetchPreviousTrades(){
 
                 var feed2 = document.createElement('div');
               feed2.classList.add("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9");
-              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[i].appendChild(feed2);
+              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].appendChild(feed2);
 
               var pricecolor = document.createElement('div');
               pricecolor.classList.add("_1C-D0uZhA8Ep3ASdoMbdPR","_2xqGgVJfiUA6YcqvCn_Z13");
@@ -534,7 +534,7 @@ function fetchPreviousTrades(){
               
               var feed2 = document.createElement('div');
               feed2.classList.add("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9");
-              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[i].appendChild(feed2);
+              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].appendChild(feed2);
               
               // feed 1 loop here
               //var feed2 = document.createElement('div');
