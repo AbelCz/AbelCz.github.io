@@ -389,7 +389,7 @@ function fetchPreviousTrades(){
           price = data[i].amountUsd;
           time = data[i].timestamp;
           href_for_txid = "https://blockscan.com/tx/"+tx_hash;
-            if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
+            if (tokens_in === leftside && tokens_out === rightside) {
               console.log(data[i]);
               console.log("exp1");
                 //top row button
@@ -475,7 +475,7 @@ function fetchPreviousTrades(){
               document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed5);
 
 
-            } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
+            } else if (tokens_in === rightside && tokens_out === leftside) {
               console.log(data[i]);
               console.log("exp2");
               tokens_in = data[i].tokenAddressIn;
