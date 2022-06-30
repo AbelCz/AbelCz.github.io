@@ -372,7 +372,6 @@ function fetchPreviousTrades(){
     function PreviousTrades(data){
       var currentUrl10 = window.location.href;
       var lengthnessoflinks = data.length;
-      console.log("data length: "+data.length);
       leftside = currentUrl10.split('?').pop().split('_')[0].toLowerCase();
       console.log("rightside: "+leftside);
       rightside = currentUrl10.split('_').pop().toLowerCase();
