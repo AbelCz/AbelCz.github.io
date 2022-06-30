@@ -458,10 +458,10 @@ function fetchPreviousTrades(){
               feed4.innerHTML = price;
               document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed4);
 
-              var feed = document.createElement('div');
-              feed4.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
-              feed4.innerHTML = time;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed4);
+              var feed5 = document.createElement('div');
+              feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
+              feed5.innerHTML = time;
+              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed5);
 
 
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
@@ -549,10 +549,10 @@ function fetchPreviousTrades(){
               feed4.innerHTML = price;
               document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed4);
 
-              var feed = document.createElement('div');
-              feed4.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
-              feed4.innerHTML = time;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed4);
+              var feed5 = document.createElement('div');
+              feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
+              feed5.innerHTML = time;
+              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed5);
 
             } 
         console.log("exp3");
