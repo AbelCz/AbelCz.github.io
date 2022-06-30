@@ -417,14 +417,14 @@ function fetchPreviousTrades(){
                 toprow5.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
                 document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow5);
 
-                var toprow = document.createElement('div');
+                var toprow6 = document.createElement('div');
                 toprow6.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3U1i7AzOk6yO_edgzEnIJI");
                 toprow6.innerHTML = "Time";
                 document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow6);
 
                 var bottomrow = document.createElement('div');
-                toprow.classList.add("_3rhft_8tou3TxOH2wrLf_P");
-                document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow);
+                bottomrow.classList.add("_3rhft_8tou3TxOH2wrLf_P");
+                document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(bottomrow);
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
               console.log("exp2");
               tokens_in = data[i].tokenAddressIn;
@@ -466,14 +466,14 @@ function fetchPreviousTrades(){
               toprow5.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
               document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow5);
 
-              var toprow = document.createElement('div');
+              var toprow6 = document.createElement('div');
               toprow6.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3U1i7AzOk6yO_edgzEnIJI");
               toprow6.innerHTML = "Time";
               document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow6);
 
               var bottomrow = document.createElement('div');
-              toprow.classList.add("_3rhft_8tou3TxOH2wrLf_P");
-              document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow);
+              bottomrow.classList.add("_3rhft_8tou3TxOH2wrLf_P");
+              document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(bottomrow);
             } 
         console.log("exp3");
       //var totaltrades = Object.keys(data6.tokenAddressIn).length;
