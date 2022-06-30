@@ -355,9 +355,9 @@ function fetchTokenlist(){
   theBigTradeButton.classList.remove('_3wFHO7dX4-NDkAql126wyt');
   
   //every 5 sec
-  let fetchInterval2 = 5000; // 5 seconds.
+  let fetchInterval2 = 1000; // 1 seconds.
   
-  // Invoke the request every 5 seconds.
+  // Invoke the request every 1 seconds.
   setInterval(fetchPreviousTrades, fetchInterval2);
   //fetchPreviousTrades();
  }
