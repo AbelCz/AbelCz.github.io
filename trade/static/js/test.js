@@ -389,13 +389,12 @@ function fetchPreviousTrades(){
           price = data[i].amountUsd;
           time = data[i].timestamp;
           href_for_txid = "https://blockscan.com/tx/"+tx_hash;
+          var getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
+          getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
               console.log(data[i]);
               console.log("exp1");
                 //top row button
-                var getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
-                getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
-
                 var toproww = document.createElement('div');
                 toproww.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
                 document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].appendChild(toproww);
@@ -489,8 +488,6 @@ function fetchPreviousTrades(){
               time = data[i].timestamp;
               href_for_txid = "https://blockscan.com/tx/"+tx_hash;
               //top row button
-              var getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
-              getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
 
               var toproww = document.createElement('div');
               toproww.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
