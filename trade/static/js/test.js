@@ -388,6 +388,13 @@ function fetchPreviousTrades(){
                 tokens_out_amount = data[i].tokenAmountOut;
                 href_for_txid = "https://blockscan.com/tx/"+tx_hash;
                 //top row button
+                var getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
+                getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
+
+                var toproww = document.createElement('div');
+                toproww.classList.add("_2nZgkBSqEo0JyF1xLxrfaa");
+                document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toproww);
+
                 var toprow = document.createElement('div');
                 toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No");
                 document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow);
@@ -429,6 +436,14 @@ function fetchPreviousTrades(){
               tokens_out_amount = data[i].tokenAmountOut;
               href_for_txid = "https://blockscan.com/tx/"+tx_hash;
               //top row button
+              var getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
+              getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
+
+              var toproww = document.createElement('div');
+              toproww.classList.add("_2nZgkBSqEo0JyF1xLxrfaa");
+              document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toproww);
+
+
               var toprow = document.createElement('div');
               toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No");
               document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow);
