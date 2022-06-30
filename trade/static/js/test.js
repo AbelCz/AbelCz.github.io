@@ -551,10 +551,10 @@ function fetchPreviousTrades(){
              els[els - 1].appendChild(feed6);
 
              let feed7 = document.createElement('span');
-             feed7.innerHTML = tokens_in_amount;
-             els = document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj _3f6v7G3F-zXEJU7j-zQ_8R");
-             console.log(els);
-             els[els - 1].appendChild(feed7);
+              feed7.innerHTML = tokens_in_amount;
+              els = document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj _3f6v7G3F-zXEJU7j-zQ_8R");
+              console.log(els);
+              els[els.length - 1].appendChild(feed7);
 
               let feed4 = document.createElement('div');
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
