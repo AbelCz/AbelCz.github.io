@@ -379,99 +379,121 @@ function fetchPreviousTrades(){
       console.log("rightside: "+rightside);
       var getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
       getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
+
+      var toproww = document.createElement('div');
+      toproww.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
+      document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].appendChild(toproww);
+
+      console.log('toproww=', toproww);
+
+      var toprow = document.createElement('div');
+      toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No");
+      document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow);
+
+      var toprow2 = document.createElement('div');
+      toprow2.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj");
+      toprow2.innerHTML = "Size ";
+      document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow2);
+
+      var toprow3 = document.createElement('div');
+      toprow3.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
+      document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprow3);
+
+      var toprow4 = document.createElement('div');
+      toprow4.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy");
+      toprow4.innerHTML = "Price ";
+      document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow4);
+
+      var toprow5 = document.createElement('div');
+      toprow5.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
+      document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow5);
+
+      var toprow6 = document.createElement('div');
+      toprow6.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3U1i7AzOk6yO_edgzEnIJI");
+      toprow6.innerHTML = "Time";
+      document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow6);
+
+      var bottomrow = document.createElement('div');
+      bottomrow.classList.add("_3rhft_8tou3TxOH2wrLf_P");
+      document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(bottomrow);
+      // add price
+      //var feed = document.createElement('div');
+      //feed.classList.add("_3rhft_8tou3TxOH2wrLf_P");
+      //document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(feed);
+      // feed 1 loop here
+      //var feed = document.createElement('div');
+      //feed.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
+      //document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed);
+
+      var feed2 = document.createElement('div');
+      feed2.classList.add("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9");
+      document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].appendChild(feed2);
+
+
+
+
         for (let i = 0; i < lengthnessoflinks; i++) {
+          console.log('i=', i);
           console.log("total links lengthness:"+lengthnessoflinks);
           tokens_in = data[i].tokenAddressIn;
           tokens_out = data[i].tokenAddressOut;
           tx_hash = data[i].hash;
-          console.log("hash: "+tx_hash[i]);
+          console.log("hash: "+tx_hash);
           timestamp = data[i].timestamp;
           tokens_in_amount = data[i].tokenAmountIn;
           tokens_out_amount = data[i].tokenAmountOut;
           price = data[i].amountUsd;
           time = data[i].timestamp;
           href_for_txid = "https://blockscan.com/tx/"+tx_hash;
+
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
               console.log(data[i]);
               console.log("exp1");
                 //top row button
-                var toproww = document.createElement('div');
-                toproww.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
-                document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].appendChild(toproww);
-
-                var toprow = document.createElement('div');
-                toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No");
-                document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow);
-
-                var toprow2 = document.createElement('div');
-                toprow2.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj");
-                toprow2.innerHTML = "Size ";
-                document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow2);
-
-                var toprow3 = document.createElement('div');
-                toprow3.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
-                document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprow3);
-
-                var toprow4 = document.createElement('div');
-                toprow4.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy");
-                toprow4.innerHTML = "Price ";
-                document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow4);
-
-                var toprow5 = document.createElement('div');
-                toprow5.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
-                document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow5);
-
-                var toprow6 = document.createElement('div');
-                toprow6.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3U1i7AzOk6yO_edgzEnIJI");
-                toprow6.innerHTML = "Time";
-                document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow6);
-
-                var bottomrow = document.createElement('div');
-                bottomrow.classList.add("_3rhft_8tou3TxOH2wrLf_P");
-                document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(bottomrow);
-                // add price
-                //var feed = document.createElement('div');
-                //feed.classList.add("_3rhft_8tou3TxOH2wrLf_P");
-                //document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(feed);
-                // feed 1 loop here
-                //var feed = document.createElement('div');
-                //feed.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
-                //document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed);
-
-                var feed2 = document.createElement('div');
-              feed2.classList.add("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9");
-              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].appendChild(feed2);
-
+                
+              console.log('document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")=', document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9"));
+              console.log(11);
               var pricecolor = document.createElement('div');
+              console.log(12);
               pricecolor.classList.add("_1C-D0uZhA8Ep3ASdoMbdPR","_2xqGgVJfiUA6YcqvCn_Z13");
+              console.log(13);
               //pricecolor. add width 1px
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[i].appendChild(pricecolor);
+              console.log('i=', i);
+              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[0].appendChild(pricecolor);
 
+              console.log(22);
               
-                //other elements here
+              //other elements here
               var feed3 = document.createElement('div');
               feed3.classList.add("_1s82us_xipfJAAmP5kFka9");
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[i].appendChild(feed3);
-
+              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed3);
+              
+              console.log(23);
               var feed6 = document.createElement('div');
-             feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
-             document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed6);
-
-             var feed7 = document.createElement('span');
-             feed7.innerHTML = tokens_in_amount;
-             document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj _2xqGgVJfiUA6YcqvCn_Z13")[i].appendChild(feed7);
-
+              feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
+              let els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
+              els[els.length - 1].appendChild(feed6);
+              
+              console.log(24);
+              var feed7 = document.createElement('span');
+              feed7.innerHTML = tokens_in_amount;
+              els = document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj _2xqGgVJfiUA6YcqvCn_Z13");
+              els[els.length - 1].appendChild(feed7);
+              
+              console.log(25);
 
              
               var feed4 = document.createElement('div');
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
               feed4.innerHTML = price;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed4);
+              els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
+              els[els.length - 1].appendChild(feed4);
 
               var feed5 = document.createElement('div');
               feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
               feed5.innerHTML = time;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed5);
+              els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
+              els[els.length - 1].appendChild(feed5);
 
 
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
@@ -489,85 +511,45 @@ function fetchPreviousTrades(){
               href_for_txid = "https://blockscan.com/tx/"+tx_hash;
               //top row button
 
-              var toproww = document.createElement('div');
-              toproww.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
-              document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].appendChild(toproww);
-
-
-              var toprow = document.createElement('div');
-              toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No");
-              document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow);
-
-              var toprow2 = document.createElement('div');
-              toprow2.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj");
-              toprow2.innerHTML = "Size ";
-              document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow2);
-
-              var toprow3 = document.createElement('div');
-              toprow3.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
-              document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprow3);
-
-              var toprow4 = document.createElement('div');
-              toprow4.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy");
-              toprow4.innerHTML = "Price ";
-              document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow4);
-
-              var toprow5 = document.createElement('div');
-              toprow5.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
-              document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow5);
-
-              var toprow6 = document.createElement('div');
-              toprow6.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3U1i7AzOk6yO_edgzEnIJI");
-              toprow6.innerHTML = "Time";
-              document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow6);
-
-              var bottomrow = document.createElement('div');
-              bottomrow.classList.add("_3rhft_8tou3TxOH2wrLf_P");
-              document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(bottomrow);
-
-              // add price
-              //var feed = document.createElement('div');
-              //feed.classList.add("_3rhft_8tou3TxOH2wrLf_P");
-              //document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(feed);
-              
-              var feed2 = document.createElement('div');
-              feed2.classList.add("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9");
-              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].appendChild(feed2);
-              
               // feed 1 loop here
               //var feed2 = document.createElement('div');
               //feed2.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
               //feed2.innerHTML = "";
               //document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed2);
 
+              console.log('222 document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")=', document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9"));
               var pricecolor = document.createElement('div');
               pricecolor.classList.add("_1C-D0uZhA8Ep3ASdoMbdPR","_2xqGgVJfiUA6YcqvCn_Z13");
               //pricecolor. add width 1px
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[i].appendChild(pricecolor);
+              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[0].appendChild(pricecolor);
 
               
                 //other elements here
               var feed3 = document.createElement('div');
               feed3.classList.add("_1s82us_xipfJAAmP5kFka9");
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[i].appendChild(feed3);
+              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed3);
 
              var feed6 = document.createElement('div');
              feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
-             document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed6);
+             let els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
+             els[els - 1].appendChild(feed6);
 
              var feed7 = document.createElement('span');
              feed7.innerHTML = tokens_in_amount;
-             document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj _2xqGgVJfiUA6YcqvCn_Z13")[i].appendChild(feed7);
+             els = document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj _2xqGgVJfiUA6YcqvCn_Z13");
+             els[els - 1].appendChild(feed7);
 
               var feed4 = document.createElement('div');
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
               feed4.innerHTML = price;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed4);
+              els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
+              els[els - 1].appendChild(feed4);
 
               var feed5 = document.createElement('div');
               feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
               feed5.innerHTML = time;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed5);
+              els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
+              els[els - 1].appendChild(feed5);
 
             } 
         console.log("exp3");
