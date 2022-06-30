@@ -377,7 +377,7 @@ function fetchPreviousTrades(){
       var lengthnessoflinks = data.length;
       console.log(lengthnessoflinks);
       console.log("rightside: "+rightside);
-        for (let i = 0; i < lengthnessoflinks; i++) {
+        for (var i = 0; i < lengthnessoflinks; i++) {
           console.log("total links lengthness:"+lengthnessoflinks);
           tokens_in = data[i].tokenAddressIn;
           tokens_out = data[i].tokenAddressOut;
