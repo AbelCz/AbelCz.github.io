@@ -518,7 +518,7 @@ function fetchPreviousTrades(){
 
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
               sells++;
-              max = Math.max(max, tokens_out_amount);
+              max = Math.max(max, tokens_in_amount);
 
               // feed 1 loop here
               //let feed2 = document.createElement('div');
