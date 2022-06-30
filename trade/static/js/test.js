@@ -390,6 +390,8 @@ function fetchPreviousTrades(){
 
       let toproww = document.createElement('div');
       toproww.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
+      document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].innerHTML = "";
+      
       document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].appendChild(toproww);
 
       console.log('toproww=', toproww);
