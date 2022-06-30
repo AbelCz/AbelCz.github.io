@@ -560,13 +560,13 @@ function fetchPreviousTrades(){
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
               feed4.innerHTML = price;
               els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
-              els[els - 1].appendChild(feed4);
+              els[els.length - 1].appendChild(feed4);
 
               let feed5 = document.createElement('div');
               feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
               feed5.innerHTML = time;
               els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
-              els[els - 1].appendChild(feed5);
+              els[els.length - 1].appendChild(feed5);
 
             } 
         console.log("exp3");
