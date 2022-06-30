@@ -423,7 +423,7 @@ function fetchPreviousTrades(){
               tokens_in = data[i].tokenAddressIn;
               tokens_out = data[i].tokenAddressOut;
               tx_hash = data[i].hash;
-              console.log("hash: "+tx_hash)[i];
+              console.log("hash: "+tx_hash);
               timestamp = data[i].timestamp;
               tokens_in_amount = data[i].tokenAmountIn;
               tokens_out_amount = data[i].tokenAmountOut;
