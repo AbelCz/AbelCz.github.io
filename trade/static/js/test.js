@@ -376,7 +376,7 @@ function fetchPreviousTrades(){
       console.log("rightside: "+leftside);
       rightside = currentUrl10.split('_').pop().toLowerCase();
       console.log("rightside: "+rightside);
-        for (let i = 0; i < data.length; i++) {
+        for (let i = 0; i < lengthnessoflinks; i++) {
           console.log("exp0");
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
               console.log("exp1");
