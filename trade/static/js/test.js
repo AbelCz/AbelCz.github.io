@@ -445,7 +445,7 @@ function fetchPreviousTrades(){
               var pricecolor = document.createElement('div');
               pricecolor.classList.add("_1C-D0uZhA8Ep3ASdoMbdPR","_2xqGgVJfiUA6YcqvCn_Z13");
               //pricecolor. add width 1px
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[i].appendChild(pricecolor);
+              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(pricecolor);
 
               
                 //other elements here
@@ -545,7 +545,7 @@ function fetchPreviousTrades(){
               var pricecolor = document.createElement('div');
               pricecolor.classList.add("_1C-D0uZhA8Ep3ASdoMbdPR","_2xqGgVJfiUA6YcqvCn_Z13");
               //pricecolor. add width 1px
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[i].appendChild(pricecolor);
+              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(pricecolor);
 
               
                 //other elements here
