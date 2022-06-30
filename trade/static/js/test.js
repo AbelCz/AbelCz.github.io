@@ -440,39 +440,39 @@ function fetchPreviousTrades(){
 
                 var feed2 = document.createElement('div');
               feed2.classList.add("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9");
-              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].appendChild(feed2);
+              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[i].appendChild(feed2);
 
               var pricecolor = document.createElement('div');
               pricecolor.classList.add("_1C-D0uZhA8Ep3ASdoMbdPR","_2xqGgVJfiUA6YcqvCn_Z13");
               //pricecolor. add width 1px
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(pricecolor);
+              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[i].appendChild(pricecolor);
 
               
                 //other elements here
               var feed3 = document.createElement('div');
               feed3.classList.add("_1s82us_xipfJAAmP5kFka9");
               feed3.innerHTML = "";
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed3);
+              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[i].appendChild(feed3);
 
               var feed6 = document.createElement('div');
              feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
-             document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed6);
+             document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed6);
 
              var feed7 = document.createElement('span');
              feed7.innerHTML = tokens_in_amount;
-             document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13")[0].appendChild(feed7);
+             document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13")[i].appendChild(feed7);
 
 
              
               var feed4 = document.createElement('div');
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
               feed4.innerHTML = price;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed4);
+              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed4);
 
               var feed5 = document.createElement('div');
               feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
               feed5.innerHTML = time;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed5);
+              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed5);
 
 
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
@@ -534,7 +534,7 @@ function fetchPreviousTrades(){
               
               var feed2 = document.createElement('div');
               feed2.classList.add("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9");
-              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].appendChild(feed2);
+              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[i].appendChild(feed2);
               
               // feed 1 loop here
               //var feed2 = document.createElement('div');
@@ -545,32 +545,32 @@ function fetchPreviousTrades(){
               var pricecolor = document.createElement('div');
               pricecolor.classList.add("_1C-D0uZhA8Ep3ASdoMbdPR","_2xqGgVJfiUA6YcqvCn_Z13");
               //pricecolor. add width 1px
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(pricecolor);
+              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[i].appendChild(pricecolor);
 
               
                 //other elements here
               var feed3 = document.createElement('div');
               feed3.classList.add("_1s82us_xipfJAAmP5kFka9");
               feed3.innerHTML = "";
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed3);
+              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[i].appendChild(feed3);
 
              var feed6 = document.createElement('div');
              feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
-             document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed6);
+             document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed6);
 
              var feed7 = document.createElement('span');
              feed7.innerHTML = tokens_in_amount;
-             document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13")[0].appendChild(feed7);
+             document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13")[i].appendChild(feed7);
 
               var feed4 = document.createElement('div');
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
               feed4.innerHTML = price;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed4);
+              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed4);
 
               var feed5 = document.createElement('div');
               feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
               feed5.innerHTML = time;
-              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed5);
+              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[i].appendChild(feed5);
 
             } 
         console.log("exp3");
