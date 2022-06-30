@@ -517,7 +517,7 @@ function fetchPreviousTrades(){
              
               let feed4 = document.createElement('div');
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
-              feed4.innerHTML = price;
+              feed4.innerHTML = amountUsd / tokens_in_amount;
               els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
               els[els.length - 1].appendChild(feed4);
 
@@ -570,7 +570,7 @@ function fetchPreviousTrades(){
 
               let feed4 = document.createElement('div');
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
-              feed4.innerHTML = price;
+              feed4.innerHTML = amountUsd / tokens_out_amount;
               els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
               els[els.length - 1].appendChild(feed4);
 
