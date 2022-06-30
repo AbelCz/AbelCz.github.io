@@ -438,7 +438,9 @@ function fetchPreviousTrades(){
       let bottomrow = document.createElement('div');
       bottomrow.classList.add("_3rhft_8tou3TxOH2wrLf_P");
       document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(bottomrow);
-      document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].innerHTML = "";
+
+      /////// new test here delete this if this breaks keke
+      //document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].innerHTML = "";
       // add price
       //let feed = document.createElement('div');
       //feed.classList.add("_3rhft_8tou3TxOH2wrLf_P");
