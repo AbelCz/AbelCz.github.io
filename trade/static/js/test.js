@@ -390,7 +390,7 @@ function fetchPreviousTrades(){
 
       let toproww = document.createElement('div');
       toproww.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
-      document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].innerHTML = "";
+      // DAVE TEST document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].innerHTML = "";
       
       document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].appendChild(toproww);
 
@@ -438,6 +438,7 @@ function fetchPreviousTrades(){
       let bottomrow = document.createElement('div');
       bottomrow.classList.add("_3rhft_8tou3TxOH2wrLf_P");
       document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(bottomrow);
+      document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].innerHTML = "";
       // add price
       //let feed = document.createElement('div');
       //feed.classList.add("_3rhft_8tou3TxOH2wrLf_P");
