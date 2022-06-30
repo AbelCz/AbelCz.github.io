@@ -1,6 +1,6 @@
 window.onload = function() {
     fetchStatus();
-    fetchWalletStatus();
+    //fetchWalletStatus();
   };
 function fetchStatus() {
     var currentUrl = window.location.href;
