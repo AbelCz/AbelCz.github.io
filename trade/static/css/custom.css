@@ -970,3 +970,19 @@ div#tv-price-chart{
 .button-9pA37sIi.isInteractive-9pA37sIi.isActive-9pA37sIi{
     color: #f7f7f7;
 }
+.fFdWsd:checked {
+    background-color: var(--color-purple);
+}
+.fFdWsd {
+    --animation-speed: 200ms;
+    position: relative;
+    background-color: var(--color-layer-darker);
+    border-radius: 20px;
+    cursor: pointer;
+    appearance: none;
+    transition: all var(--animation-speed) ease-in-out;
+    --toggle-distance: 12px;
+    height: 18px;
+    width: 30px;
+}
+
