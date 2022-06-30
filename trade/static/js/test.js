@@ -90,7 +90,7 @@ function fetchStatus() {
         console.log("pemp")
         pemp.play();
     } else {
-      return;
+      console.log("kek");
     }
     // Overwrite the existing HTML with new content received.
     tbl.innerHTML = dsa;
@@ -374,7 +374,7 @@ function fetchPreviousTrades(){
       leftside = currentUrl10.split('?').pop().split('_')[0].toLowerCase();
       console.log("rightside: "+leftside);
       rightside = currentUrl10.split('_').pop().toLowerCase();
-      var lengthnessoflinks = data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside;
+      var lengthnessoflinks = data.tokenAddressIn === leftside && data.tokenAddressOut === rightside;
       console.log(lengthnessoflinks);
       console.log("rightside: "+rightside);
         for (let i = 0; i < lengthnessoflinks; i++) {
