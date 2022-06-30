@@ -403,10 +403,10 @@ function fetchPreviousTrades(){
       document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow2);
 
       //var thisShitcoin = document.getElementsByClassName("_38idpiULmwLdV8ZLER8eXp _2p9QAAMCqbu8kWNa-OxhxO aZJzIkLG4sRsoY7PeO5H6")[0].innerHTML;
-      //let toprowSymbol = document.createElement('div');
-      //toprowSymbol.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_1Io-xGeWSmRodp84w_CceQ");
-      //toprowSymbol.innerHTML = thisShitcoin;
-      //docoument.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprowSymbol);
+      let toprowSymbol = document.createElement('div');
+      toprowSymbol.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_1Io-xGeWSmRodp84w_CceQ");
+      toprowSymbol.innerHTML = "test";
+      docoument.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprowSymbol);
 
 
       let toprow3 = document.createElement('div');
