@@ -454,7 +454,7 @@ function fetchPreviousTrades(){
               document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed3);
 
               var feed6 = document.createElement('div');
-             feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj _2xqGgVJfiUA6YcqvCn_Z13");
+             feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
              feed6.innerHTML = "<span>+"+tokens_in_amount+"</span>"
 
              
@@ -549,7 +549,7 @@ function fetchPreviousTrades(){
               document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed3);
 
              var feed6 = document.createElement('div');
-             feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj _2xqGgVJfiUA6YcqvCn_Z13");
+             feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
              feed6.innerHTML = "<span>+"+tokens_in_amount+"</span>"
 
              document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9")[0].appendChild(feed6);
