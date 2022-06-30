@@ -377,7 +377,7 @@ function fetchPreviousTrades(){
 };
 
     function PreviousTrades(data){
-      data.sort((a,b) => a.timestamp - b.timestamp)
+      data.sort((a,b) => b.timestamp - a.timestamp)
       let currentUrl10 = window.location.href;
       leftside = currentUrl10.split('?').pop().split('_')[0].toLowerCase();
       console.log("rightside: "+leftside);
