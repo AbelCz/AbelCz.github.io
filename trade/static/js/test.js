@@ -354,12 +354,7 @@ function fetchTokenlist(){
   theBigTradeButton.classList.add('_-0q9IsXZcH1dLHnmhteQ7');
   theBigTradeButton.classList.remove('_3wFHO7dX4-NDkAql126wyt');
   
-  //every 5 sec
-  let fetchInterval2 = 1000; // 1 seconds.
-  
-  // Invoke the request every 1 seconds.
-  setInterval(fetchPreviousTrades, fetchInterval2);
-  //fetchPreviousTrades();
+  fetchPreviousTrades());
  }
 function fetchPreviousTrades(){
     const secondsSinceEpoch = Math.round(Date.now() / 1000 - 3600)
@@ -370,6 +365,11 @@ function fetchPreviousTrades(){
           .then(function (data) {
             console.log("got tot eh first one");
             PreviousTrades(data);
+            //every 5 sec
+            let fetchInterval2 = 5000; // 1 seconds.
+  
+            // Invoke the request every 1 seconds.
+            setInterval(fetchPreviousTrades, fetchInterval2);
           })
           .catch(function (err) {
             console.log('error: ' + err);
