@@ -371,10 +371,11 @@ function fetchPreviousTrades(){
 
     function PreviousTrades(data){
       var currentUrl10 = window.location.href;
-      var lengthnessoflinks = data.length;
       leftside = currentUrl10.split('?').pop().split('_')[0].toLowerCase();
       console.log("rightside: "+leftside);
       rightside = currentUrl10.split('_').pop().toLowerCase();
+      var lengthnessoflinks = data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside;
+      console.log(lengthnessoflinks);
       console.log("rightside: "+rightside);
         for (let i = 0; i < lengthnessoflinks; i++) {
           console.log("exp0");
