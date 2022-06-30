@@ -392,8 +392,8 @@ function fetchPreviousTrades(){
                 getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
 
                 var toproww = document.createElement('div');
-                toproww.classList.add("_2nZgkBSqEo0JyF1xLxrfaa");
-                document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toproww);
+                toproww.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
+                document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].appendChild(toproww);
 
                 var toprow = document.createElement('div');
                 toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No");
@@ -440,8 +440,8 @@ function fetchPreviousTrades(){
               getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
 
               var toproww = document.createElement('div');
-              toproww.classList.add("_2nZgkBSqEo0JyF1xLxrfaa");
-              document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toproww);
+              toproww.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
+              document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].appendChild(toproww);
 
 
               var toprow = document.createElement('div');
