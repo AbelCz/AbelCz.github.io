@@ -438,9 +438,9 @@ function fetchPreviousTrades(){
           tx_hash = data[i].hash;
           //console.log("hash: "+tx_hash);
           timestamp = data[i].timestamp;
-          tokens_in_amount = data[i].tokenAmountIn;
-          tokens_out_amount = data[i].tokenAmountOut;
-          price = data[i].amountUsd;
+          tokens_in_amount = Math.round(data[i].tokenAmountIn * 100) / 100;
+          tokens_out_amount = Math.round(data[i].tokenAmountOut * 100) / 100;
+          price = Math.round(data[i].amountUsd * 100) / 100;
           time = data[i].timestamp;
           href_for_txid = "https://blockscan.com/tx/"+tx_hash;
 
@@ -538,17 +538,17 @@ function fetchPreviousTrades(){
               let els = document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9");
               els[els.length - 1].appendChild(pricecolor);
 
-              
                 //other elements here
               let feed3 = document.createElement('div');
               feed3.classList.add("_1s82us_xipfJAAmP5kFka9");
               els = document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9");
               els[els.length - 1].appendChild(feed3);
-
-             let feed6 = document.createElement('div');
+             
+              let feed6 = document.createElement('div');
              feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_3f6v7G3F-zXEJU7j-zQ_8R");
-            els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
-             els[els - 1].appendChild(feed6);
+             els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
+             console.log('els=', els);
+             els[els.length - 1].appendChild(feed6);
 
              let feed7 = document.createElement('span');
               feed7.innerHTML = tokens_in_amount;
