@@ -3,9 +3,9 @@ window.onload = function() {
     //fetchWalletStatus();
   };
 function fetchStatus() {
-    var currentUrl = window.location.href;
+    let currentUrl = window.location.href;
     if (currentUrl.includes("?")){
-      var firstToken = currentUrl.split('?').pop().split('_')[0];
+      let firstToken = currentUrl.split('?').pop().split('_')[0];
       fetch('https://api137.radioshack.org/api/tokens/'+firstToken)
       .then(function (response) {
         return response.json();
@@ -33,7 +33,7 @@ function fetchStatus() {
 }  
   window.addEventListener('load', function () {
     // Your document is loaded.
-    var fetchInterval = 5000; // 5 seconds.
+    let fetchInterval = 5000; // 5 seconds.
   
     // Invoke the request every 5 seconds.
     setInterval(fetchStatus, fetchInterval);
@@ -63,7 +63,7 @@ function fetchStatus() {
   })
 
   function getTheCurrentLink(){
-  var currentUrl = window.location.href;
+  let currentUrl = window.location.href;
   firstToken = currentUrl.indexOf("?")+1, currentUrl.lastIndexOf(";");
   console.log(firstToken);
   };
@@ -72,14 +72,14 @@ function fetchStatus() {
 
 
   function appendDataAsTable(data) {
-    var oldPrice = localStorage.getItem(data.data.symbol+'price');
+    let oldPrice = localStorage.getItem(data.data.symbol+'price');
     tbl = document.getElementById('pricerealtime');
     localStorage.setItem(data.data.symbol+'price', data.data.price);
-    var currentPrice = localStorage.getItem(data.data.symbol+'price');
+    let currentPrice = localStorage.getItem(data.data.symbol+'price');
     asd = data.data.price.substring(0, 7);
     dsa = '$' + asd;
-    var pemp = new Audio('/sounds/nice.m4a');
-    var demp = new Audio('/sounds/bruh.m4a');
+    let pemp = new Audio('/sounds/nice.m4a');
+    let demp = new Audio('/sounds/bruh.m4a');
 
     if (oldPrice > currentPrice){
         document.getElementById("pricerealtime").style.color = "#ff5353"
@@ -97,9 +97,9 @@ function fetchStatus() {
 };
 
 function tokenDetails(data){
-  var fullnameoftokentext = data.data.name;
-  var symboloftokentext = data.data.symbol;
-  //var symbolcolletoraltext = data3.data.symbol;
+  let fullnameoftokentext = data.data.name;
+  let symboloftokentext = data.data.symbol;
+  //let symbolcolletoraltext = data3.data.symbol;
   fullnameoftoken = document.getElementById('_3TcfXW9zOvs5Y857gZVxgv');
   //fullnameoftoken2 = document.getElementById('3Bx-FZIaBbVKssHb-LYGou');
   fullnameoftoken3 = document.getElementById('_1WwkcxTzl-09aDCpRhYU1u');
@@ -122,15 +122,15 @@ function tokenDetails(data){
   lowercase_symbols2 = symboloftokentext.toLowerCase();
   url_logos2 = "https://abelcz.github.io/currencies/"+lowercase_symbols2+".svg";
   tokenlogo.src = url_logos2;
-  var currentUrl2 = window.location.href;
+  let currentUrl2 = window.location.href;
     if (currentUrl2.includes("?")){
-      var secondToken = currentUrl2.split('_').pop();
+      let secondToken = currentUrl2.split('_').pop();
       fetch('https://api137.radioshack.org/api/tokens/'+secondToken)
       .then(function (response) {
         return response.json();
       })
       .then(function (data3) {
-        var symbolcolletoraltext = data3.data.symbol;
+        let symbolcolletoraltext = data3.data.symbol;
         symbolcolletoral = document.getElementById('priceinwhat');
         symbolcolletoral2 = document.getElementById('sc-kTCsyW gxdqsh');
         symbolcolletoral.innerHTML = symbolcolletoraltext;
@@ -146,7 +146,7 @@ function tokenDetails(data){
         return response.json();
       })
       .then(function (data4) {
-        var symbolcolletoraltext = data4.data.symbol;
+        let symbolcolletoraltext = data4.data.symbol;
         symbolcolletoral = document.getElementById('priceinwhat');
         symbolcolletoral2 = document.getElementById('sc-kTCsyW gxdqsh');
         symbolcolletoral.innerHTML = symbolcolletoraltext;
@@ -266,12 +266,12 @@ function fetchTokenlist(){
         })
   };
   function tokenList(data2){
-    var totalpairs = Object.keys(data2.data).length;
+    let totalpairs = Object.keys(data2.data).length;
     let keyNames = Object.keys(data2.data);
     console.log("total trades " + totalpairs);
     console.log(data2.data);
 
-    for (var zozo = 0; zozo <= totalpairs; zozo++) {
+    for (let zozo = 0; zozo <= totalpairs; zozo++) {
       base_symbols = data2.data[keyNames[zozo]].base_symbol;
       base_names = data2.data[keyNames[zozo]].base_name;
       quote_symbols = data2.data[keyNames[zozo]].quote_symbol;
@@ -282,58 +282,58 @@ function fetchTokenlist(){
       quote_addresses = data2.data[keyNames[zozo]].quote_address;
       href_for_tokens = "/trade/trade/?"+base_addresses+"_"+quote_addresses;
       //eth button
-      var m = document.createElement('a');
+      let m = document.createElement('a');
       m.classList.add("_1i_jfKy_CR-3JEUUoLyTyo");
       m.setAttribute("role","button");
       m.setAttribute("href",href_for_tokens);
       document.getElementsByClassName("_6_s1igBgOZG_l67nN_HjG")[0].appendChild(m);
       
-      var n = document.createElement('div');
+      let n = document.createElement('div');
       n.classList.add("_2jve0XRK1SS7xTFWQHU7sV");
       document.getElementsByClassName("_1i_jfKy_CR-3JEUUoLyTyo")[zozo].appendChild(n);
 
     
-      var o = document.createElement('div');
+      let o = document.createElement('div');
       o.classList.add("_3703-MxhX16pYBOSod3SpG");
       document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[zozo].appendChild(o);
 
-      var p = document.createElement('div');
+      let p = document.createElement('div');
       p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS");
       document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(p);
       //add image
 
-      var q = document.createElement('img');
+      let q = document.createElement('img');
       q.src = url_logos;
       document.getElementsByClassName("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS")[zozo].appendChild(q);
       //add name
 
-      var r = document.createElement('span');
+      let r = document.createElement('span');
       r.innerHTML = base_names;
       document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(r);
       //add ticker
 
-      var s = document.createElement('span');
+      let s = document.createElement('span');
       s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6");
       s.innerHTML =  base_symbols+"/"+quote_symbols;
       document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(s);
 
   
-      var t = document.createElement('div');
+      let t = document.createElement('div');
       t.classList.add("_2d-dptgdt6bp7FHSPkHbT6");
       document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[zozo].appendChild(t);
       // price here
 
-      var u = document.createElement('span');
+      let u = document.createElement('span');
       u.innerHTML = prices;
       document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[zozo].appendChild(u);
 
 
-      var v = document.createElement('div');
+      let v = document.createElement('div');
       v.classList.add("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R");
       document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[zozo].appendChild(v);
       //price change
 
-      var w = document.createElement('span');
+      let w = document.createElement('span');
       w.innerHTML = "percentage";
       document.getElementsByClassName("_1spo-4DNNHD_uNqIyedTNs","_3CAUNSCsacK-I2JgikLL4R")[zozo].appendChild(w);
 
@@ -342,14 +342,14 @@ function fetchTokenlist(){
   }
 // the previous trades section omg om gom go mgo mgom gogm ogm ogm ogm gomog m ogmo gmogm ogm ogm gomg ogm o mgo mogm ogmom gom gom go mgo mgo gmo gm
  function showPreviousTrades(){
-  var hideOrderBook = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
+  let hideOrderBook = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
   hideOrderBook.innerHTML = "";
-  //var oldBookButton = document.getElementsByClassName("_3wFHO7dX4-NDkAql126wyt _-0q9IsXZcH1dLHnmhteQ7")[1];
-  var hideOrderBookButton = document.getElementsByClassName("_-0q9IsXZcH1dLHnmhteQ7")[1];
+  //let oldBookButton = document.getElementsByClassName("_3wFHO7dX4-NDkAql126wyt _-0q9IsXZcH1dLHnmhteQ7")[1];
+  let hideOrderBookButton = document.getElementsByClassName("_-0q9IsXZcH1dLHnmhteQ7")[1];
   hideOrderBookButton.classList.add('_3wFHO7dX4-NDkAql126wyt');
   hideOrderBookButton.classList.remove('_3wFHO7dX4-NDkAql126wyt');
   hideOrderBookButton.classList.remove('_-0q9IsXZcH1dLHnmhteQ7');
-  var theBigTradeButton = document.getElementsByClassName('_3wFHO7dX4-NDkAql126wyt')[3];
+  let theBigTradeButton = document.getElementsByClassName('_3wFHO7dX4-NDkAql126wyt')[3];
   theBigTradeButton.classList.add('_3wFHO7dX4-NDkAql126wyt');
   theBigTradeButton.classList.add('_-0q9IsXZcH1dLHnmhteQ7');
   theBigTradeButton.classList.remove('_3wFHO7dX4-NDkAql126wyt');
@@ -370,75 +370,73 @@ function fetchPreviousTrades(){
 };
 
     function PreviousTrades(data){
-      var currentUrl10 = window.location.href;
+      let currentUrl10 = window.location.href;
       leftside = currentUrl10.split('?').pop().split('_')[0].toLowerCase();
       console.log("rightside: "+leftside);
       rightside = currentUrl10.split('_').pop().toLowerCase();
-      var lengthnessoflinks = data.length;
+      let lengthnessoflinks = data.length;
       console.log(lengthnessoflinks);
       console.log("rightside: "+rightside);
-      var getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
+      let getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
       getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
 
-      var toproww = document.createElement('div');
+      let toproww = document.createElement('div');
       toproww.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
       document.getElementsByClassName("_2nZgkBSqEo0JyF1xLxrfaa")[0].appendChild(toproww);
 
       console.log('toproww=', toproww);
 
-      var toprow = document.createElement('div');
+      let toprow = document.createElement('div');
       toprow.classList.add("_2ab3SH6MAkzo43W9WCX5No");
       document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(toprow);
 
-      var toprow2 = document.createElement('div');
+      let toprow2 = document.createElement('div');
       toprow2.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_1p3YrEenhsnTZrupGOZVOj");
       toprow2.innerHTML = "Size ";
       document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow2);
 
-      var toprow3 = document.createElement('div');
+      let toprow3 = document.createElement('div');
       toprow3.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
       document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _1p3YrEenhsnTZrupGOZVOj")[0].appendChild(toprow3);
 
-      var toprow4 = document.createElement('div');
+      let toprow4 = document.createElement('div');
       toprow4.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3RdijzfMpz7h3mZQEstaGy");
       toprow4.innerHTML = "Price ";
       document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow4);
 
-      var toprow5 = document.createElement('div');
+      let toprow5 = document.createElement('div');
       toprow5.classList.add("_38idpiULmwLdV8ZLER8eXp","_2p9QAAMCqbu8kWNa-OxhxO","_2vJHIXEgndqu-Cq35HsqZt");
       document.getElementsByClassName("_3-OvbtdtsAtsuRCbktIDXs _3RdijzfMpz7h3mZQEstaGy")[0].appendChild(toprow5);
 
-      var toprow6 = document.createElement('div');
+      let toprow6 = document.createElement('div');
       toprow6.classList.add("_3-OvbtdtsAtsuRCbktIDXs","_3U1i7AzOk6yO_edgzEnIJI");
       toprow6.innerHTML = "Time";
       document.getElementsByClassName("_2ab3SH6MAkzo43W9WCX5No")[0].appendChild(toprow6);
 
-      var bottomrow = document.createElement('div');
+      let bottomrow = document.createElement('div');
       bottomrow.classList.add("_3rhft_8tou3TxOH2wrLf_P");
       document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(bottomrow);
       // add price
-      //var feed = document.createElement('div');
+      //let feed = document.createElement('div');
       //feed.classList.add("_3rhft_8tou3TxOH2wrLf_P");
       //document.getElementsByClassName("_2H-KnsGBQ-xgYidGE8XypH")[0].appendChild(feed);
       // feed 1 loop here
-      //var feed = document.createElement('div');
+      //let feed = document.createElement('div');
       //feed.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
       //document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed);
 
-      var feed2 = document.createElement('div');
-      feed2.classList.add("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9");
-      document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].appendChild(feed2);
+      
 
 
 
 
         for (let i = 0; i < lengthnessoflinks; i++) {
-          console.log('i=', i);
-          console.log("total links lengthness:"+lengthnessoflinks);
+          //console.log('i=', i);
+          //console.log("total links lengthness:"+lengthnessoflinks);
           tokens_in = data[i].tokenAddressIn;
           tokens_out = data[i].tokenAddressOut;
           tx_hash = data[i].hash;
-          console.log("hash: "+tx_hash);
+          //console.log("hash: "+tx_hash);
           timestamp = data[i].timestamp;
           tokens_in_amount = data[i].tokenAmountIn;
           tokens_out_amount = data[i].tokenAmountOut;
@@ -446,50 +444,58 @@ function fetchPreviousTrades(){
           time = data[i].timestamp;
           href_for_txid = "https://blockscan.com/tx/"+tx_hash;
 
+          
             if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
+              console.log('tokens_in_amount=', tokens_in_amount);
               console.log(data[i]);
               console.log("exp1");
                 //top row button
+
+              let feed2 = document.createElement('div');
+              feed2.classList.add("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9");
+              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].appendChild(feed2);
                 
               console.log('document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")=', document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9"));
               console.log(11);
-              var pricecolor = document.createElement('div');
+              let pricecolor = document.createElement('div');
               console.log(12);
               pricecolor.classList.add("_1C-D0uZhA8Ep3ASdoMbdPR","_2xqGgVJfiUA6YcqvCn_Z13");
               console.log(13);
               //pricecolor. add width 1px
-              console.log('i=', i);
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[0].appendChild(pricecolor);
+              let els = document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9");
+              els[els.length - 1].appendChild(pricecolor);
 
               console.log(22);
               
               //other elements here
-              var feed3 = document.createElement('div');
+              let feed3 = document.createElement('div');
               feed3.classList.add("_1s82us_xipfJAAmP5kFka9");
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed3);
+              els = document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9");
+              els[els.length - 1].appendChild(feed3);
               
               console.log(23);
-              var feed6 = document.createElement('div');
+              let feed6 = document.createElement('div');
               feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
-              let els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
+              els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
               els[els.length - 1].appendChild(feed6);
               
               console.log(24);
-              var feed7 = document.createElement('span');
+              let feed7 = document.createElement('span');
               feed7.innerHTML = tokens_in_amount;
               els = document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj _2xqGgVJfiUA6YcqvCn_Z13");
+              console.log(els);
               els[els.length - 1].appendChild(feed7);
               
               console.log(25);
 
              
-              var feed4 = document.createElement('div');
+              let feed4 = document.createElement('div');
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
               feed4.innerHTML = price;
               els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
               els[els.length - 1].appendChild(feed4);
 
-              var feed5 = document.createElement('div');
+              let feed5 = document.createElement('div');
               feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
               feed5.innerHTML = time;
               els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
@@ -497,6 +503,8 @@ function fetchPreviousTrades(){
 
 
             } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
+              console.log('tokens_in_amount2=', tokens_in_amount);
+
               console.log(data[i]);
               console.log("exp2");
               tokens_in = data[i].tokenAddressIn;
@@ -512,40 +520,47 @@ function fetchPreviousTrades(){
               //top row button
 
               // feed 1 loop here
-              //var feed2 = document.createElement('div');
+              //let feed2 = document.createElement('div');
               //feed2.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
               //feed2.innerHTML = "";
               //document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed2);
 
+              let feed2 = document.createElement('div');
+              feed2.classList.add("dvIq_OZoY8VUH70vCqckz","FnnkD_kOLThFafR6bqKu9");
+              document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].appendChild(feed2);
+
               console.log('222 document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")=', document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9"));
-              var pricecolor = document.createElement('div');
+              let pricecolor = document.createElement('div');
               pricecolor.classList.add("_1C-D0uZhA8Ep3ASdoMbdPR","_2xqGgVJfiUA6YcqvCn_Z13");
               //pricecolor. add width 1px
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[0].appendChild(pricecolor);
+              let els = document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9");
+              els[els.length - 1].appendChild(pricecolor);
 
               
                 //other elements here
-              var feed3 = document.createElement('div');
+              let feed3 = document.createElement('div');
               feed3.classList.add("_1s82us_xipfJAAmP5kFka9");
-              document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9")[0].appendChild(feed3);
+              els = document.getElementsByClassName("dvIq_OZoY8VUH70vCqckz FnnkD_kOLThFafR6bqKu9");
+              els[els.length - 1].appendChild(feed3);
 
-             var feed6 = document.createElement('div');
+             let feed6 = document.createElement('div');
              feed6.classList.add("_1p3YrEenhsnTZrupGOZVOj","_2xqGgVJfiUA6YcqvCn_Z13");
-             let els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
+            els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
              els[els - 1].appendChild(feed6);
 
-             var feed7 = document.createElement('span');
+             let feed7 = document.createElement('span');
              feed7.innerHTML = tokens_in_amount;
              els = document.getElementsByClassName("_1p3YrEenhsnTZrupGOZVOj _2xqGgVJfiUA6YcqvCn_Z13");
+             console.log(els);
              els[els - 1].appendChild(feed7);
 
-              var feed4 = document.createElement('div');
+              let feed4 = document.createElement('div');
               feed4.classList.add("_3RdijzfMpz7h3mZQEstaGy");
               feed4.innerHTML = price;
               els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
               els[els - 1].appendChild(feed4);
 
-              var feed5 = document.createElement('div');
+              let feed5 = document.createElement('div');
               feed5.classList.add("_3U1i7AzOk6yO_edgzEnIJI");
               feed5.innerHTML = time;
               els = document.getElementsByClassName("_1s82us_xipfJAAmP5kFka9");
@@ -553,7 +568,7 @@ function fetchPreviousTrades(){
 
             } 
         console.log("exp3");
-      //var totaltrades = Object.keys(data6.tokenAddressIn).length;
+      //let totaltrades = Object.keys(data6.tokenAddressIn).length;
       //console.log("total trades " + totaltrades);
       //console.log(data6.data);
       }
