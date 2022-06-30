@@ -586,13 +586,14 @@ function fetchPreviousTrades(){
       let currBuy = 0;
       let currSell = 0;
       for (let i = 0; i < lengthnessoflinks; i++) {
-        console.log('percent=', percent);
         if (data[i].tokenAddressIn === leftside && data[i].tokenAddressOut === rightside) {
           let percent = Math.round(data[i].tokenAmountIn / max * 100);
+          console.log('percent=', percent);
           buyEls[currBuy].style.width = `${percent}px`;
           currBuy++;
         } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
           let percent = Math.round(data[i].tokenAmountOut / max * 100);
+          console.log('percent=', percent);
           console.log('sellEls[currSell]=', sellEls[currSell]);
           sellEls[currSell].style.width = `${percent}px`;
           currSell++;
