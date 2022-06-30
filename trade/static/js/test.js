@@ -356,7 +356,7 @@ function fetchTokenlist(){
   fetchPreviousTrades();
  }
 function fetchPreviousTrades(){
-    const secondsSinceEpoch = Math.round(Date.now() / 1000 - 86400)
+    const secondsSinceEpoch = Math.round(Date.now() / 1000 - 7200)
     fetch('https://api.radioshack.org/v1/trades/range?start='+secondsSinceEpoch+'&end=9999999999')
     .then(function (response) {
             return response.json();
