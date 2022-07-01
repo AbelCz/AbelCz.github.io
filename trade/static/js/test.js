@@ -324,7 +324,7 @@ function fetchTokenlist(){
       // price here
 
       let u = document.createElement('span');
-      u.innerHTML = prices.toFixed(4);
+      u.innerHTML = (Math.round(prices * 10000)/10000).toFixed(4);
       document.getElementsByClassName("_2d-dptgdt6bp7FHSPkHbT6")[zozo].appendChild(u);
 
 
