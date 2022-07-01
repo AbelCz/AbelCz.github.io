@@ -459,6 +459,7 @@ function fetchPreviousTrades(){
         let sells = 0;
 
         for (let i = 0; i < lengthnessoflinks; i++) {
+          document.getElementsByClassName("_3rhft_8tou3TxOH2wrLf_P")[0].innerHTML = "";
           //console.log('i=', i);
           //console.log("total links lengthness:"+lengthnessoflinks);
           tokens_in = data[i].tokenAddressIn;
