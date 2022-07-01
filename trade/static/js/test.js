@@ -1,6 +1,7 @@
 window.onload = function() {
     fetchStatus();
-    document.getElementsByClassName("_3vyOJ83C9yxEzDZbeX0JEg")[0].scrollIntoView({block: "center"});
+    console.log(document.getElementsByClassName("_3vyOJ83C9yxEzDZbeX0JEg"));
+    //[0].scrollIntoView({block: "center"})
     //fetchWalletStatus();
   };
 function fetchStatus() {
