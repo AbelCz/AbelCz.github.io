@@ -197,6 +197,38 @@ function switcher() {
     k.classList.add("_14rwWgDcatef27EFjPdYOM");
     document.getElementsByClassName("GV27ba5q8OKFWJJOAIZpH")[0].appendChild(k);
 
+    const l0 = document.createElement('div');
+    l0.classList.add("_2z2i1mkEDgu2j-xrgxxJ3G");
+    document.getElementsByClassName("_14rwWgDcatef27EFjPdYOM")[0].appendChild(l0);
+
+    const l1 = document.createElement('div');
+    l1.classList.add("_3SguaKQvkpf7A4VgoqTLOX");
+    document.getElementsByClassName("_2z2i1mkEDgu2j-xrgxxJ3G")[0].appendChild(l1);
+
+    const l2 = document.createElement('button');
+    l2.classList.add("sc-ezzafa","ouAUG");
+    l2.shape = "Pill";
+    l2.innerHTML = "All"
+    document.getElementsByClassName("_3SguaKQvkpf7A4VgoqTLOX")[0].appendChild(l2);
+
+    const l3 = document.createElement('button');
+    l3.classList.add("sc-ezzafa","bcGabg");
+    l3.shape = "Pill";
+    l3.innerHTML = "Layer 1"
+    document.getElementsByClassName("_3SguaKQvkpf7A4VgoqTLOX")[0].appendChild(l3);
+
+    const l4 = document.createElement('button');
+    l4.classList.add("sc-ezzafa","bcGabg");
+    l4.shape = "Pill";
+    l4.innerHTML = "All"
+    document.getElementsByClassName("_3SguaKQvkpf7A4VgoqTLOX")[0].appendChild(l4);
+
+    const l5 = document.createElement('div');
+    l5.classList.add("kwOQiVl5Q1SR9UgIVPVF4","_2RFtvPWYT-lz51OowGTRMR","_27rPgVJ26O74okbiBtqpdr","Gvjrem0Pk2DBYfbMoYklK");
+    document.getElementsByClassName("_2z2i1mkEDgu2j-xrgxxJ3G")[0].appendChild(l5);
+
+    //const l6 = document.createElement('')
+
     const l = document.createElement('div');
     l.classList.add("_6_s1igBgOZG_l67nN_HjG");
     l.setAttribute("id","_6_s1igBgOZG_l67nN_HjG");
