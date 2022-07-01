@@ -294,12 +294,12 @@ function fetchTokenlist(){
 
     
       let o = document.createElement('div');
-      o.classList.add("_3703-MxhX16pYBOSod3SpG");
+      o.classList.add("iQf-YzyF_N-syktHoSgoL");
       document.getElementsByClassName("_2jve0XRK1SS7xTFWQHU7sV")[zozo].appendChild(o);
 
       let p = document.createElement('div');
       p.classList.add("_1WIhq_BSoc6G4Z_9FtHB63","_242klziznfQnEkLJuh1ZoS");
-      document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(p);
+      document.getElementsByClassName("iQf-YzyF_N-syktHoSgoL")[zozo].appendChild(p);
       //add image
 
       let q = document.createElement('img');
@@ -309,13 +309,13 @@ function fetchTokenlist(){
 
       let r = document.createElement('span');
       r.innerHTML = base_symbols;
-      document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(r);
+      document.getElementsByClassName("iQf-YzyF_N-syktHoSgoL")[zozo].appendChild(r);
       //add ticker
 
       let s = document.createElement('span');
       s.classList.add("_38idpiULmwLdV8ZLER8eXp","aZJzIkLG4sRsoY7PeO5H6");
       s.innerHTML =  base_symbols+"/"+quote_symbols;
-      document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(s);
+      document.getElementsByClassName("iQf-YzyF_N-syktHoSgoL")[zozo].appendChild(s);
 
   
       let t = document.createElement('div');
