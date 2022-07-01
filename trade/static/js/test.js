@@ -78,6 +78,7 @@ function fetchStatus() {
     let currentPrice = localStorage.getItem(data.data.symbol+'price');
     asd = data.data.price.substring(0, 7);
     dsa = '$' + asd;
+    document.title = dsa+data.data.symbol+" • RadioShack"
     let pemp = new Audio('/sounds/nice.m4a');
     let demp = new Audio('/sounds/bruh.m4a');
 
