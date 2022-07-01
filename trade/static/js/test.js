@@ -308,7 +308,7 @@ function fetchTokenlist(){
       //add name
 
       let r = document.createElement('span');
-      r.innerHTML = base_names;
+      r.innerHTML = base_symbols;
       document.getElementsByClassName("_3703-MxhX16pYBOSod3SpG")[zozo].appendChild(r);
       //add ticker
 
