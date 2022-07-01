@@ -397,11 +397,6 @@ function fetchPreviousTrades(){
           .then(function (data) {
             console.log("got tot eh first one");
             PreviousTrades(data);
-            //every 5 sec
-            let fetchInterval2 = 5000; // 1 seconds.
-  
-            // Invoke the request every 1 seconds.
-            setInterval(fetchPreviousTrades, fetchInterval2);
           })
           .catch(function (err) {
             console.log('error: ' + err);
@@ -418,7 +413,9 @@ function fetchPreviousTrades(){
       console.log(lengthnessoflinks);
       console.log("rightside: "+rightside);
       let getRidOfThis = document.getElementsByClassName("_3zhDTrkiD2aZbl97c3BSNG")[0];
-      getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
+      if (getRidOfThis) {
+        getRidOfThis.classList.remove("_3zhDTrkiD2aZbl97c3BSNG");
+      }
 
       let toproww = document.createElement('div');
       toproww.classList.add("_2H-KnsGBQ-xgYidGE8XypH");
@@ -497,9 +494,9 @@ function fetchPreviousTrades(){
           tokens_out = data[i].tokenAddressOut;
           tx_hash = data[i].hash;
           //console.log("hash: "+tx_hash);
-          tokens_in_amount = Math.round(data[i].tokenAmountIn * 100) / 100;
-          tokens_out_amount = Math.round(data[i].tokenAmountOut * 100) / 100;
-          price = Math.round(data[i].amountUsd * 100) / 100;
+          tokens_in_amount = Math.round(data[i].tokenAmountIn * 10000) / 10000;
+          tokens_out_amount = Math.round(data[i].tokenAmountOut * 10000) / 10000;
+          price = Math.round(data[i].amountUsd * 100000) / 100000;
           time = data[i].timestamp;
           let datetime = new Date(0);
           datetime.setUTCSeconds(time);
@@ -642,12 +639,13 @@ function fetchPreviousTrades(){
         } else if (data[i].tokenAddressIn === rightside && data[i].tokenAddressOut === leftside) {
           let percent = Math.round(data[i].tokenAmountOut / max * 100);
           console.log('percent=', percent);
-          console.log('sellEls[currSell]=', sellEls[currSell]);
           sellEls[currSell].style.width = `${percent}px`;
           currSell++;
         }
       }
 
+      let fetchInterval2 = 5000; // 5 seconds.
+      setTimeout(fetchPreviousTrades, fetchInterval2);
     };
 
 function fetchWalletStatus() {
