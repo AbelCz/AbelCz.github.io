@@ -214,13 +214,13 @@ function switcher() {
     const l3 = document.createElement('button');
     l3.classList.add("sc-ezzafa","bcGabg");
     l3.shape = "Pill";
-    l3.innerHTML = "Layer 1"
+    l3.innerHTML = "RADIO"
     document.getElementsByClassName("_3SguaKQvkpf7A4VgoqTLOX")[0].appendChild(l3);
 
     const l4 = document.createElement('button');
     l4.classList.add("sc-ezzafa","bcGabg");
     l4.shape = "Pill";
-    l4.innerHTML = "All"
+    l4.innerHTML = "DeFi"
     document.getElementsByClassName("_3SguaKQvkpf7A4VgoqTLOX")[0].appendChild(l4);
 
     const l5 = document.createElement('div');
